@@ -33,6 +33,10 @@ const techstack = [
         icon: "TailwindCSS",
     },
     {
+        name: "Bootstrap",
+        icon: "Bootstrap",
+    },
+    {
         name: "Git",
         icon: "Git",
     },    
@@ -51,7 +55,15 @@ const techstack = [
     {
         name: "Figma",
         icon: "Figma",
-    },    
+    },      
+    {
+        name: "Photoshop",
+        icon: "Photoshop",
+    },
+    {
+        name: "Illustrator",
+        icon: "Illustrator",
+    }
 ]
 
 export default techstack
