@@ -18,7 +18,7 @@ const school = [
         id: 3,        
         title: "SMP N 1 Warungasem",
         duration: "2016 - 2019",
-        major: "-",
+        major: "Reguler",
         address: "Kabupaten Batang",
     },
 

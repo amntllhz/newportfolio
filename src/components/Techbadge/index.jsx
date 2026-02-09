@@ -1,5 +1,5 @@
 import techstack from "../../data/techstack"
-import { SiAdobeillustrator, SiAdobephotoshop, SiBootstrap, SiCss3, SiFigma, SiGit, SiGithub, SiHtml5, SiJavascript, SiLaravel, SiMysql, SiNpm, SiPhp, SiReact, SiTailwindcss, SiVite } from "react-icons/si"
+import { SiAdobeillustrator, SiAdobephotoshop, SiAlpinedotjs, SiBootstrap, SiCss3, SiFigma, SiFilament, SiGit, SiGithub, SiHtml5, SiJavascript, SiLaravel, SiMysql, SiNpm, SiPhp, SiReact, SiTailwindcss, SiVite } from "react-icons/si"
 import { motion } from "framer-motion"
 
 const IconMap = {
@@ -19,18 +19,24 @@ const IconMap = {
     "Figma": SiFigma,
     "Photoshop": SiAdobephotoshop,
     "Illustrator": SiAdobeillustrator,
+    "AlpineJS": SiAlpinedotjs,
+    "Filament": SiFilament,
 };
 
-const Techbadge = ({variants}) => {
+const Techbadge = ({variants, items, iconSize = "text-3xl", roundedSize = "rounded-md"}) => {
+
+    const displayItems = items || techstack.map(t => t.icon);
+
     return (
         <>
             <div className="relative flex justify-center items-center">
                 <div className="flex flex-wrap max-w-lg justify-left items-center gap-2.5">
-                    {techstack.map((tech) => {
-                        const Icon = IconMap[tech.icon];
+                    {displayItems.map((techName) => {
+                        const Icon = IconMap[techName];
+                        if (!Icon) return null;
                         return (
-                            <motion.div variants={variants} key={tech.name} className="relative flex justify-center items-center">
-                                <Icon className="text-3xl text-gray-400 p-1 rounded-md bg-gray-100"/>                                
+                            <motion.div variants={variants} key={techName} className="relative flex justify-center items-center">
+                                <Icon className={`${iconSize} text-gray-400 p-1 ${roundedSize} bg-gray-100`}/>                                
                             </motion.div>
                         );
                     })}

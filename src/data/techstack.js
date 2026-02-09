@@ -63,7 +63,7 @@ const techstack = [
     {
         name: "Illustrator",
         icon: "Illustrator",
-    }
+    },    
 ]
 
 export default techstack

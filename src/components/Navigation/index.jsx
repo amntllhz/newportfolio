@@ -21,7 +21,7 @@ const Navigation = ({active, onChange}) => {
                             <button
                             key={section.key}
                             onClick={() => onChange(section.key)}
-                            className={`rounded-md p-1 transition
+                            className={`rounded-md cursor-pointer p-1 transition
                                 ${isActive ? "bg-gray-100" : "hover:bg-gray-100"}
                             `}
                             aria-label={section.title}

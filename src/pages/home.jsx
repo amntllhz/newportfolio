@@ -2,10 +2,12 @@ import Hero from "../sections/Hero"
 import Navigation from "../components/Navigation"
 import { useState } from "react"
 import Education from "../sections/Education";
+import Projects from "@/sections/Projects";
 
 const SECTION_MAP = {
   profile: Hero, 
-  education: Education 
+  education: Education,
+  projects: Projects
 };
 
 const Home = () => {

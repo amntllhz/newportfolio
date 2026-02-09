@@ -1,0 +1,87 @@
+import imageA from "../assets/pp.jpg"
+
+const showcase = [
+    {
+        title: "Internval",
+        subtitle: "Internship Validation",
+        cover:  imageA,
+        description: "Internval is a web-based application designed to streamline the internship application and tracking process for university students. This platform allows students to submit internship applications to various institutions and monitor the status of their submissions in real-time. Administrators and faculty can manage and verify submissions efficiently through an intuitive Filament-powered dashboard.",
+        techstack: ["PHP","JS", "Laravel", "MySQL", "TailwindCSS", "AlpineJS", "Filament"],
+        role: ["Fullstack Web Developer"],
+        problem: "The application procedure for internships or field work practices (PKL) at the Faculty of Engineering and Computer Science (UMPP) currently faces various administrative obstacles that hinder efficient service delivery for students. Several crucial issues that require attention are :",
+        subproblem: [
+            "Students must physically visit campus just to collect paper forms",
+            "Manual entries increase the risk of errors and data inconsistency", 
+            "Validation is delayed by the requirement for the Program Head's physical presence", 
+            "Students must move between offices multiple times to complete the process", 
+            "The absence of real-time tracking forces manual status checks",
+            "Irresponsible multiple applications damage the university's reputation",
+        ],
+        solution: "The system resolves administrative bottlenecks by transitioning from manual paperwork to a centralized management system. By implementing multi-role dashboards and dynamic data handling, the platform automates the validation process between departments. The integration of an automated PDF & QR code engine ensures document authenticity, while real-time tracking and responsive digital forms provide transparency and accessibility for students at every stage of their application.",
+        keyfeaturesdesc: "This development has successfully delivered a series of features designed to bridge the gap between students and administrative bodies which can be seen below.",
+        keyfeatures: [
+            "Responsive Digital Forms",
+            "Dynamic Data Handling", 
+            "Real-Time Application Tracking", 
+            "Automated PDF & QR Code Engine", 
+            "Multi-Role Dashboard",
+            "Centralized Management System",
+        ],
+    },
+    {
+        title: "E-Goverse",
+        subtitle: " E-Government Services",
+        cover:  imageA,
+        description: "Internval is a web-based application designed to streamline the internship application and tracking process for university students. This platform allows students to submit internship applications to various institutions and monitor the status of their submissions in real-time. Administrators and faculty can manage and verify submissions efficiently through an intuitive Filament-powered dashboard.",
+        techstack: ["PHP","JS", "Laravel", "MySQL", "TailwindCSS"],
+        role: ["Front-end Web Developer", "UI/UX Designer"],
+        problem: "Internval is a web-based application designed to streamline the internship application and tracking process for university students. This platform allows students to submit internship applications to various institutions and monitor the status of their submissions in real-time. Administrators and faculty can manage and verify submissions efficiently through an intuitive Filament-powered dashboard.",
+        subproblem: [
+            "Students must physically visit campus just to collect paper forms",
+            "Manual entries increase the risk of errors and data inconsistency", 
+            "Validation is delayed by the requirement for the Program Head's physical presence", 
+            "Students must move between offices multiple times to complete the process", 
+            "The absence of real-time tracking forces manual status checks",
+            "Irresponsible multiple applications damage the university's reputation",
+        ],
+        solution: "The system resolves administrative bottlenecks by transitioning from manual paperwork to a centralized management system. By implementing multi-role dashboards and dynamic data handling, the platform automates the validation process between departments. The integration of an automated PDF & QR code engine ensures document authenticity, while real-time tracking and responsive digital forms provide transparency and accessibility for students at every stage of their application.",
+        keyfeaturesdesc: "This development has successfully delivered a series of features designed to bridge the gap between students and administrative bodies which can be seen below.",
+        keyfeatures: [
+            "Responsive Digital Forms",
+            "Dynamic Data Handling", 
+            "Real-Time Application Tracking", 
+            "Automated PDF & QR Code Engine", 
+            "Multi-Role Dashboard",
+            "Centralized Management System",
+        ],
+    },
+    {
+        title: "Anaksehat",
+        subtitle: "Nutrition Status Calculator",
+        cover:  imageA,
+        description: "Internval is a web-based application designed to streamline the internship application and tracking process for university students. This platform allows students to submit internship applications to various institutions and monitor the status of their submissions in real-time. Administrators and faculty can manage and verify submissions efficiently through an intuitive Filament-powered dashboard.",
+        techstack: ["PHP","JS", "Laravel", "MySQL", "TailwindCSS"],
+        role: ["Fullstack Web Developer", "UI/UX Designer"],
+        problem: "Internval is a web-based application designed to streamline the internship application and tracking process for university students. This platform allows students to submit internship applications to various institutions and monitor the status of their submissions in real-time. Administrators and faculty can manage and verify submissions efficiently through an intuitive Filament-powered dashboard.",
+        subproblem: [
+            "Students must physically visit campus just to collect paper forms",
+            "Manual entries increase the risk of errors and data inconsistency", 
+            "Validation is delayed by the requirement for the Program Head's physical presence", 
+            "Students must move between offices multiple times to complete the process", 
+            "The absence of real-time tracking forces manual status checks",
+            "Irresponsible multiple applications damage the university's reputation",
+        ],
+        solution: "The system resolves administrative bottlenecks by transitioning from manual paperwork to a centralized management system. By implementing multi-role dashboards and dynamic data handling, the platform automates the validation process between departments. The integration of an automated PDF & QR code engine ensures document authenticity, while real-time tracking and responsive digital forms provide transparency and accessibility for students at every stage of their application.",
+        keyfeaturesdesc: "This development has successfully delivered a series of features designed to bridge the gap between students and administrative bodies which can be seen below.",
+        keyfeatures: [
+            "Responsive Digital Forms",
+            "Dynamic Data Handling", 
+            "Real-Time Application Tracking", 
+            "Automated PDF & QR Code Engine", 
+            "Multi-Role Dashboard",
+            "Centralized Management System",
+        ],
+    }
+]
+
+export default showcase
