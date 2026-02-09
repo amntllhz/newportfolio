@@ -1,25 +1,84 @@
 import { motion } from "framer-motion"
+import { useState, useEffect } from "react"
 import Subdetail from "../Subdetail"
 import { CiCircleChevLeft, CiStar } from "react-icons/ci"
 import Techbadge from "../Techbadge"
-import { PiChartPolarLight, PiSealWarningLight } from "react-icons/pi"
+import { PiChartPolarLight, PiUserSwitchLight, PiSealWarningLight } from "react-icons/pi"
 import { BsCaretRight } from "react-icons/bs"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import Badge from "../Badge"
 
 const Showdetail = ({project, onBack, variants}) => {
+    // State untuk melacak api carousel embla
+    const [api, setApi] = useState(null)
+    const [current, setCurrent] = useState(0)
+    const [count, setCount] = useState(0)
+
+    // Update state saat slide berubah
+    useEffect(() => {
+        if (!api) return
+
+        setCount(api.scrollSnapList().length)
+        setCurrent(api.selectedScrollSnap())
+
+        api.on("select", () => {
+        setCurrent(api.selectedScrollSnap())
+        })
+    }, [api])
+
+    const images = project.images || [project.cover]
+    
     return (
         <>  
                 <motion.div                      
                     variants={variants}                                           
                     className="max-w-lg w-full flex flex-col gap-4">                
-                        {/* Header khusus di dalam Detail */}
                         
+                        {/* Tombol kembali */}
                         <motion.button onClick={onBack} className="text-left w-fit flex items-center gap-1 hover:gap-1.5 transform ease-in-out duration-300 cursor-pointer">
                             <CiCircleChevLeft className="text-2xl text-gray-400 p-1 rounded-md" />
                             <p className="font-main text-sm text-gray-500/80">Back</p>                        
                         </motion.button>
 
-                        <motion.img variants={variants} src={project.cover} className="w-64 object-cover rounded-xl" />                        
+                        {/* Gambar */}
+                        <motion.div variants={variants} className="relative w-full">
+                            {/* SetApi digunakan untuk menangkap instance carousel */}
+                            <Carousel setApi={setApi} opts={{ align: "start" }} className="w-full">
+                                <CarouselContent className="ml-0">
+                                    {images.map((img, index) => (
+                                    <CarouselItem key={index} className="pl-0 basis-72">
+                                        <div className="pr-4">
+                                        <img src={img} className="w-72 h-40 object-cover rounded-xl border border-gray-100" />
+                                        </div>
+                                    </CarouselItem>
+                                    ))}
+                                </CarouselContent>
+                            </Carousel>
 
+                            {/* DOT INDICATORS - Di pojok kiri bawah gambar */}
+                            <div className="flex gap-1.5 mt-3 px-1">
+                                {Array.from({ length: count }).map((_, i) => (
+                                    <button
+                                    key={i}
+                                    onClick={() => api?.scrollTo(i)}
+                                    className={`h-1.5 rounded-full transition-all duration-300 ${
+                                        current === i 
+                                        ? "w-6 bg-gray-300" // Dot aktif lebih panjang dan gelap
+                                        : "w-1.5 bg-gray-300 hover:bg-gray-400" // Dot tidak aktif
+                                    }`}
+                                    aria-label={`Go to slide ${i + 1}`}
+                                    />
+                                ))}
+                            </div>
+                        </motion.div>
+                        
+                        {/* Detail */}
                         <motion.div variants={variants} className="flex flex-col gap-2">
 
                             {/* Nama Aplikasi */}
@@ -78,7 +137,23 @@ const Showdetail = ({project, onBack, variants}) => {
                                 </div>
                             </motion.div>
 
-                        </motion.div>                
+                            {/* Informasi Tambahan */}
+                            <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
+                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={PiUserSwitchLight}>Role and Responsibilities</Subdetail>                
+
+                                <motion.div className="flex items-start">                                      
+                                    <div className="flex flex-wrap gap-2 items-start">
+                                        {project.role.map((role, index) => {
+                                            return(                                        
+                                                <Badge key={index}>{role}</Badge>
+                                            )
+                                        })}
+                                    </div>
+                                </motion.div>
+                            </motion.div>
+
+                        </motion.div>  
+
                 </motion.div>                
                      
         </>

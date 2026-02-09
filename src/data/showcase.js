@@ -5,9 +5,16 @@ const showcase = [
         title: "Internval",
         subtitle: "Internship Validation",
         cover:  imageA,
+        images: [
+            imageA,
+            imageA,
+            imageA,
+            imageA,
+            imageA,
+        ],
         description: "Internval is a web-based application designed to streamline the internship application and tracking process for university students. This platform allows students to submit internship applications to various institutions and monitor the status of their submissions in real-time. Administrators and faculty can manage and verify submissions efficiently through an intuitive Filament-powered dashboard.",
         techstack: ["PHP","JS", "Laravel", "MySQL", "TailwindCSS", "AlpineJS", "Filament"],
-        role: ["Fullstack Web Developer"],
+        role: ["Fullstack Web Developer", "UI/UX Designer", "Graphic Designer"],
         problem: "The application procedure for internships or field work practices (PKL) at the Faculty of Engineering and Computer Science (UMPP) currently faces various administrative obstacles that hinder efficient service delivery for students. Several crucial issues that require attention are :",
         subproblem: [
             "Students must physically visit campus just to collect paper forms",
