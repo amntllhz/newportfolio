@@ -1,19 +1,18 @@
-import showcase from "../../data/showcase"
 import { motion } from "framer-motion"
 import Techbadge from "../Techbadge"
 
 
-const Showcard = ({variants, onSelect}) => {    
+const Showcard = ({data, variants, onSelect}) => {    
 
     return (
         <>            
             <div className="flex flex-wrap max-w-2xl w-full justify-between items-center gap-5">
-                {showcase.map((show, index) => {  
+                {data.map((show) => {  
                     const limitedTech = show.techstack.slice(0, 5);
                     const extraTech = show.techstack.length - 5;                  
 
                     return (
-                        <motion.button onClick={()=> onSelect(show)} variants={variants} key={index} className="group flex flex-col outline outline-offset-0 outline-gray-300/80 p-1 w-fit rounded-xl gap-2 cursor-pointer">                                
+                        <motion.button layout onClick={()=> onSelect(show)} variants={variants} key={show.title} className="group flex flex-col outline outline-offset-0 outline-gray-300/80 p-1 w-fit rounded-xl gap-2 cursor-pointer">                                
                             <div className="relative w-50 h-30 rounded-lg overflow-hidden outline outline-offset-0 outline-gray-300/80">
                                 <img 
                                     src={show.cover} 

@@ -2,7 +2,8 @@ import coverInternval from "../assets/internval/cover-internval.png"
 import coverEgoverse from "../assets/egoverse/cover-egoverse.png"
 
 const showcase = [
-    {
+    {   
+        category: "web",
         title: "Internval",
         subtitle: "Internship Validation",
         cover:  coverInternval,
@@ -36,7 +37,8 @@ const showcase = [
             "Centralized Management System",
         ],
     },
-    {
+    {   
+        category: "web",
         title: "E-Goverse",
         subtitle: " E-Government Services",
         cover:  coverEgoverse,
@@ -63,7 +65,8 @@ const showcase = [
             "Centralized Management System",
         ],
     },
-    {
+    {   
+        category: "web",
         title: "Anaksehat",
         subtitle: "Nutrition Status Calculator",
         cover:  coverInternval,
@@ -90,7 +93,8 @@ const showcase = [
             "Centralized Management System",
         ],
     },
-    {
+    {   
+        category: "design",
         title: "Anaksehat",
         subtitle: "Nutrition Status Calculator",
         cover:  coverInternval,
@@ -117,8 +121,9 @@ const showcase = [
             "Centralized Management System",
         ],
     },
-    {
-        title: "Anaksehat",
+    {   
+        category: "design",
+        title: "Arigato",
         subtitle: "Nutrition Status Calculator",
         cover:  coverInternval,
         description: "Internval is a web-based application designed to streamline the internship application and tracking process for university students. This platform allows students to submit internship applications to various institutions and monitor the status of their submissions in real-time. Administrators and faculty can manage and verify submissions efficiently through an intuitive Filament-powered dashboard.",
@@ -144,8 +149,9 @@ const showcase = [
             "Centralized Management System",
         ],
     },
-    {
-        title: "Anaksehat",
+    {   
+        category: "design",
+        title: "Anomali",
         subtitle: "Nutrition Status Calculator",
         cover:  coverInternval,
         description: "Internval is a web-based application designed to streamline the internship application and tracking process for university students. This platform allows students to submit internship applications to various institutions and monitor the status of their submissions in real-time. Administrators and faculty can manage and verify submissions efficiently through an intuitive Filament-powered dashboard.",
