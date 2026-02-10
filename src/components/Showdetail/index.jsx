@@ -5,13 +5,7 @@ import { CiCircleChevLeft, CiStar } from "react-icons/ci"
 import Techbadge from "../Techbadge"
 import { PiChartPolarLight, PiUserSwitchLight, PiSealWarningLight } from "react-icons/pi"
 import { BsCaretRight } from "react-icons/bs"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+import { Carousel, CarouselContent, CarouselItem,  } from "@/components/ui/carousel"
 import Badge from "../Badge"
 
 const Showdetail = ({project, onBack, variants}) => {

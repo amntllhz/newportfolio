@@ -36,7 +36,7 @@ const Techbadge = ({variants, items, iconSize = "text-3xl", roundedSize = "round
                         if (!Icon) return null;
                         return (
                             <motion.div variants={variants} key={techName} className="relative flex justify-center items-center">
-                                <Icon className={`${iconSize} text-gray-400 p-1 ${roundedSize} bg-gray-100`}/>                                
+                                <Icon className={`${iconSize} text-gray-400/70 p-1 ${roundedSize} bg-gray-100`}/>                                
                             </motion.div>
                         );
                     })}
