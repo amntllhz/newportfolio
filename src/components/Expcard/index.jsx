@@ -4,11 +4,12 @@ import experience from "../../data/experience"
 import { motion } from "framer-motion"
 
 const Expcard = ({variants}) => {
+    const dataDescending = experience.sort((a, b) => b.id - a.id);
     return (
         <>
-            {experience.map((exp, index) => {
+            {dataDescending.map((exp) => {
                 return (
-                    <motion.div key={index} variants={variants} className="flex rounded-xl p-1 justify-left items-start outline outline-offset-0 outline-gray-300/80 w-lg  gap-1">
+                    <motion.div key={exp.id} variants={variants} className="flex rounded-xl p-1 justify-left items-start outline outline-offset-0 outline-gray-300/80 w-lg  gap-1">
                         <div className="w-fit overflow-hidden rounded-lg">
                             <img src={exp.image} alt="" className="w-20 h-20 object-cover"/>
                         </div>

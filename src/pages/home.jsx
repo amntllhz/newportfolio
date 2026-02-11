@@ -3,11 +3,13 @@ import Navigation from "../components/Navigation"
 import { useState } from "react"
 import Education from "../sections/Education";
 import Projects from "@/sections/Projects";
+import Contact from "../sections/Contact";
 
 const SECTION_MAP = {
   profile: Hero, 
   education: Education,
-  projects: Projects
+  projects: Projects,
+  contact: Contact
 };
 
 const Home = () => {

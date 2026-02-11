@@ -4,11 +4,12 @@ import { GoLightBulb } from "react-icons/go"
 import { motion } from "framer-motion"
 
 const Schcard = ({variants}) => {
+    const dataDescending = school.sort((a, b) => b.id - a.id);
     return (
         <>
-            {school.map((sch, index) => {
+            {dataDescending.map((sch) => {
                 return (
-                    <motion.div key={index} variants={variants} className="flex rounded-xl p-1 justify-left items-start outline outline-offset-0 outline-gray-300/80 w-lg  gap-1">
+                    <motion.div key={sch.id} variants={variants} className="flex rounded-xl p-1 justify-left items-start outline outline-offset-0 outline-gray-300/80 w-lg  gap-1">
                         <div className="w-fit overflow-hidden rounded-lg">
                             <img src={sch.image} alt="" className="w-20 h-20 object-cover"/>
                         </div>

@@ -4,15 +4,16 @@ import Techbadge from "../Techbadge"
 
 const Showcard = ({data, variants, onSelect}) => {    
 
+    const dataDescending = data.sort((a, b) => b.id - a.id);
     return (
         <>            
             <div className="flex flex-wrap max-w-2xl w-full justify-between items-center gap-5">
-                {data.map((show) => {  
+                {dataDescending.map((show) => {  
                     const limitedTech = show.techstack.slice(0, 5);
                     const extraTech = show.techstack.length - 5;                  
 
                     return (
-                        <motion.button layout onClick={()=> onSelect(show)} variants={variants} key={show.title} className="group flex flex-col outline outline-offset-0 outline-gray-300/80 p-1 w-fit rounded-xl gap-2 cursor-pointer">                                
+                        <motion.button layout onClick={()=> onSelect(show)} variants={variants} key={show.id} className="group flex flex-col outline outline-offset-0 outline-gray-300/80 p-1 w-fit rounded-xl gap-2 cursor-pointer">                                
                             <div className="relative w-50 h-30 rounded-lg overflow-hidden outline outline-offset-0 outline-gray-300/80">
                                 <img 
                                     src={show.cover} 

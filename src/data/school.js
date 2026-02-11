@@ -2,10 +2,10 @@
 const school = [
     {
         id: 1,        
-        title: "Universitas Muhammadiyah Pekajangan Pekalongan",
-        duration: "2022 - 2026",
-        major: "Informatika",
-        address: "Kabupaten Pekalongan",
+        title: "SMP N 1 Warungasem",
+        duration: "2016 - 2019",
+        major: "Reguler",
+        address: "Kabupaten Batang",
     },
     {
         id: 2,        
@@ -16,10 +16,10 @@ const school = [
     },
     {
         id: 3,        
-        title: "SMP N 1 Warungasem",
-        duration: "2016 - 2019",
-        major: "Reguler",
-        address: "Kabupaten Batang",
+        title: "Universitas Muhammadiyah Pekajangan Pekalongan",
+        duration: "2022 - 2026",
+        major: "Informatika",
+        address: "Kabupaten Pekalongan",
     },
 
 ]
