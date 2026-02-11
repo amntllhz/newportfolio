@@ -1,7 +1,7 @@
 import Techbadge from "@/components/Techbadge"
-import { CiDesktopMouse1 } from "react-icons/ci"
 import { motion } from "framer-motion"
 import Subhead from "@/components/Subhead"
+import { PiGraphLight, PiMouseMiddleClickLight } from "react-icons/pi";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -30,7 +30,7 @@ const Technical = () => {
             <motion.div variants={containerVariants} initial="hidden" animate="visible" className="w-fit flex flex-col gap-2.5 justify-left items-start px-4 mt-8 mb-8">
 
                 <motion.div variants={itemVariants}>
-                    <Subhead icon={ CiDesktopMouse1 }>Technical Skill</Subhead>                                                              
+                    <Subhead icon={ PiMouseMiddleClickLight }>Technical Skill</Subhead>                                                              
                 </motion.div>
 
                 <Techbadge variants={itemVariants}></Techbadge>

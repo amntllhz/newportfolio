@@ -1,7 +1,7 @@
 import Subhead from "../../components/Subhead"
 import { motion } from "framer-motion"
 import Expcard from "../../components/Expcard"
-import { PiToolboxLight } from "react-icons/pi";
+import { PiBriefcaseLight } from "react-icons/pi";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -30,7 +30,7 @@ const Experience = () => {
             <motion.div variants={containerVariants} initial="hidden" animate="visible" className="w-fit flex flex-col gap-2.5 justify-left items-start px-4 mt-8">
 
                 <motion.div variants={itemVariants}>
-                    <Subhead icon={PiToolboxLight}>Experience</Subhead>                
+                    <Subhead icon={PiBriefcaseLight}>Experience</Subhead>                
                 </motion.div>
 
                 <Expcard variants={itemVariants}></Expcard>

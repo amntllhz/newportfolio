@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import Subdetail from "../Subdetail"
 import { CiCircleChevLeft, CiStar } from "react-icons/ci"
 import Techbadge from "../Techbadge"
-import { PiChartPolarLight, PiUserSwitchLight, PiSealWarningLight } from "react-icons/pi"
+import { PiChartPolarLight, PiUserSwitchLight, PiSealWarningLight, PiSirenLight } from "react-icons/pi"
 import { BsCaretRight } from "react-icons/bs"
 import { Carousel, CarouselContent, CarouselItem,  } from "@/components/ui/carousel"
 import Badge from "../Badge"
@@ -95,7 +95,7 @@ const Showdetail = ({project, onBack, variants}) => {
 
                             {/* Problem Statement */}
                             <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
-                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={PiSealWarningLight}>Problem Statement</Subdetail>                
+                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={PiSirenLight}>Problem Statement</Subdetail>                
                                 <p className="font-main text-xs text-justify text-gray-400 leading-relaxed mb-2">
                                     {project.problem}
                                 </p>  
