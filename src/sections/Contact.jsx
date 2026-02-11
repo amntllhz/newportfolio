@@ -1,5 +1,6 @@
 import Badge from "@/components/Badge"
 import { motion } from "framer-motion"
+import Talk from "../components/Talk"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -30,8 +31,9 @@ const Contact = () => {
                     <Badge variants={itemVariants}>Available</Badge>                    
                     <motion.h1 variants={itemVariants} className="font-main font-semibold text-3xl text-gray-900">Maybe we can Talk</motion.h1>                                            
                     <motion.p variants={itemVariants} className="font-main text-xs text-gray-400 text-center leading-normal">
-                        I'm currently available for new opportunities and collaborations. If you think my skills align with your needs, feel free to start a conversation
+                        I'm currently available for new opportunities and collaborations. If you think my skills align with your needs, feel free to start a conversation everywhere
                     </motion.p>
+                    <Talk variants={itemVariants}></Talk>
                 </motion.div>                                    
             </div>
         </>
