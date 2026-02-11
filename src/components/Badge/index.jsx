@@ -1,11 +1,12 @@
+import { motion } from "framer-motion"
 
 const Badge = (props) => {
-    const { children } = props
+    const { children, variants } = props
     return (
         <>
-            <div className="relative rounded-sm outline outline-offset-0 outline-gray-300/80 py-0.5 px-3 w-fit">
+            <motion.div initial="hidden" animate="visible" variants={variants} className="relative rounded-sm outline outline-offset-0 outline-gray-300/80 py-0.5 px-3 w-fit">
                 <p className="font-main text-gray-400 text-xs font-normal">{children}</p>
-            </div>
+            </motion.div>
         </>
     )
 }

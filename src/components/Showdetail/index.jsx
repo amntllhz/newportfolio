@@ -139,7 +139,7 @@ const Showdetail = ({project, onBack, variants}) => {
                                     <div className="flex flex-wrap gap-2 items-start">
                                         {project.role.map((role, index) => {
                                             return(                                        
-                                                <Badge key={index}>{role}</Badge>
+                                                <Badge key={index} variants={variants}>{role}</Badge>
                                             )
                                         })}
                                     </div>
