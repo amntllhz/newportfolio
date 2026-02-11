@@ -34,63 +34,68 @@ const Showcase = () => {
 
     return (
         <>
-            <div className="px-4 mt-8 mb-8">
+            <div className="px-4 mt-8 mb-8">                
+
+                
+                {!selectedProject && (
+                    <motion.div layout variants={containerVariants} initial="hidden" animate="visible" exit="hidden" className="flex justify-between w-2xl mb-2.5">
+                        <Subhead icon={CiBoxList }>Showcase</Subhead>
+
+                        <motion.div variants={itemVariants} className="flex gap-2 p-1 bg-gray-100/50 w-fit rounded-lg border border-gray-200">
+                            {["web", "design"].map((tab) => (
+                                <button                                                                        
+                                    key={tab}
+                                    onClick={() => setActiveTab(tab)}
+                                    className={`px-4 py-1.5 rounded-md text-xs font-main transition-colors duration-200 cursor-pointer border ${
+                                    activeTab === tab
+                                        ? "bg-white text-gray-900 border-gray-200"
+                                        : "text-gray-400 border-transparent hover:text-gray-600"
+                                    }`}
+                                >
+                                    {tab === "web" ? "Web App" : "Design"}
+                                </button>
+                            ))}
+                        </motion.div>
+                    </motion.div>                    
+                )}                
+
                 <AnimatePresence mode="wait">
-                  {selectedProject ? (  
-                      <motion.div 
-                          key="condetail" 
-                          variants={containerVariants} 
-                          initial="hidden" 
-                          animate="visible" 
-                          exit="hidden"
-                          className="flex flex-col gap-2.5 w-fit justify-left items-start "
-                      >
-                        <Showdetail 
-                            key="detail"
-                            variants={itemVariants}
-                            project={selectedProject} 
-                            onBack={() => setSelectedProject(null)}
-                        />
-                      </motion.div>
-                  ) : (                      
-                      <motion.div 
-                          layout
-                          key={`list-${activeTab}`}
-                          variants={containerVariants} 
-                          initial="hidden" 
-                          animate="visible" 
-                          exit="hidden"
-                          className="flex flex-col gap-2.5 w-fit justify-left items-start "
-                      >     
-                            <motion.div layout variants={itemVariants} className="flex justify-between w-full">
-                                <Subhead icon={CiBoxList }>Showcase</Subhead>
+                    {selectedProject ? (  
+                        <motion.div 
+                            key="condetail" 
+                            variants={containerVariants} 
+                            initial="hidden" 
+                            animate="visible" 
+                            exit="hidden"
+                            className="flex flex-col gap-2.5 w-full justify-left items-start "
+                        >
+                            <Showdetail 
+                                key="detail"
+                                variants={itemVariants}
+                                project={selectedProject} 
+                                onBack={() => setSelectedProject(null)}
+                            />
+                        </motion.div>
+                    ) : (                      
+                        <motion.div                           
+                            key={`list-${activeTab}`}
+                            variants={containerVariants} 
+                            initial="hidden" 
+                            animate="visible" 
+                            exit="hidden"
+                            className="flex flex-col w-full justify-left items-start "
+                        >                                 
 
-                                <div className="flex gap-2 p-1 bg-gray-100/50 w-fit rounded-lg border border-gray-200">
-                                    {["web", "design"].map((tab) => (
-                                        <button
-                                            key={tab}
-                                            onClick={() => setActiveTab(tab)}
-                                            className={`px-4 py-1.5 rounded-md text-xs font-main transition-all duration-300 cursor-pointer ${
-                                                activeTab === tab 
-                                                ? "bg-white text-xs text-gray-900 border border-gray-200" 
-                                                : "text-gray-400 text-xs hover:text-gray-600"
-                                            }`}
-                                        >
-                                            {tab === "web" ? "Web App" : "Design"}
-                                        </button>
-                                    ))}
-                                </div>
-                            </motion.div>
+                            <Showcard 
+                                key={activeTab}
+                                data={filteredData}                               
+                                variants={itemVariants} 
+                                onSelect={(project) => setSelectedProject(project)} 
+                            />
+                        </motion.div>
+                    )}
+                </AnimatePresence>                
 
-                          <Showcard 
-                              key={activeTab}
-                              data={filteredData}                               
-                              variants={itemVariants} 
-                              onSelect={(project) => setSelectedProject(project)} 
-                          />
-                      </motion.div>
-                  )}
-              </AnimatePresence>
             </div>
         </>
     )
