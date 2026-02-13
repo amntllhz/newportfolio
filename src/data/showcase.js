@@ -2,6 +2,8 @@ import coverInternval from "../assets/internval/cover-internval.png"
 import coverEgoverse from "../assets/egoverse/cover-egoverse.png"
 
 const showcase = [
+
+    // Web
     {   
         id: 1,
         category: "web",
@@ -95,7 +97,9 @@ const showcase = [
             "Multi-Role Dashboard",
             "Centralized Management System",
         ],
-    },        
+    },
+    
+    // Internval
     {   
         id: 4,
         category: "design",

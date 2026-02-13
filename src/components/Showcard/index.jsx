@@ -9,12 +9,12 @@ const Showcard = ({data, variants, onSelect}) => {
         <>            
             <div className="flex lg:flex-row xs:flex-col lg:max-w-2xl xs:max-w-full w-full justify-between items-center gap-5">
                 {dataDescending.map((show) => {  
-                    const limitedTech = show.techstack.slice(0, 5);
-                    const extraTech = show.techstack.length - 5;                  
+                    const limitedTech = show.techstack.slice(0, 4);
+                    const extraTech = show.techstack.length - 4;                  
 
                     return (
-                        <motion.button layout onClick={()=> onSelect(show)} variants={variants} key={show.id} className="group flex flex-col outline outline-offset-0 outline-gray-300/80 p-1 w-fit rounded-xl gap-2 cursor-pointer">                                
-                            <div className="relative lg:w-50 lg:h-30 xs:w-90 xs:h-60 rounded-lg overflow-hidden outline outline-offset-0 outline-gray-300/80">
+                        <motion.button layout onClick={()=> onSelect(show)} variants={variants} key={show.id} className="group flex flex-col outline outline-offset-0 outline-gray-300/80 lg:p-1 xs:p-1.5 w-fit rounded-xl gap-2 cursor-pointer">                                
+                            <div className="relative  rounded-lg overflow-hidden outline outline-offset-0 outline-gray-300/80">
                                 <img 
                                     src={show.cover} 
                                     className="w-full h-full object-cover" 
