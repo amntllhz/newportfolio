@@ -32,7 +32,7 @@ const Showdetail = ({project, onBack, variants}) => {
         <>  
                 <motion.div                      
                     variants={variants}                                           
-                    className="max-w-lg w-full flex flex-col gap-4">                
+                    className="lg:max-w-lg xs:max-w-full w-full flex flex-col gap-4">                
                         
                         {/* Tombol kembali */}
                         <motion.button onClick={onBack} className="text-left w-fit flex items-center gap-1 hover:gap-1.5 transform ease-in-out duration-300 cursor-pointer">
@@ -46,9 +46,9 @@ const Showdetail = ({project, onBack, variants}) => {
                             <Carousel setApi={setApi} opts={{ align: "start" }} className="w-full">
                                 <CarouselContent className="ml-0">
                                     {images.map((img, index) => (
-                                    <CarouselItem key={index} className="pl-0 basis-72">
+                                    <CarouselItem key={index} className="pl-0 lg:basis-72 xs:basis-52">
                                         <div className="pr-4">
-                                        <img src={img} className="w-72 h-40 object-cover rounded-xl border border-gray-100" />
+                                        <img src={img} className="lg:w-72 lg:h-40 xs:w-52 xs:h-32 object-cover rounded-xl border border-gray-100" />
                                         </div>
                                     </CarouselItem>
                                     ))}
@@ -73,7 +73,7 @@ const Showdetail = ({project, onBack, variants}) => {
                         </motion.div>
                         
                         {/* Detail */}
-                        <motion.div variants={variants} className="flex flex-col gap-2">
+                        <motion.div variants={variants} className="flex flex-col gap-2 lg:max-w-xl xs:max-w-full w-full ">
 
                             {/* Nama Aplikasi */}
                             <div className="flex">

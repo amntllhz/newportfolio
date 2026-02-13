@@ -27,7 +27,7 @@ const Contact = () => {
     return (
         <>
             <div className="w-full h-screen flex items-center justify-center">                
-                <motion.div variants={containerVariants} initial="hidden" animate="visible" className="flex flex-col items-center gap-2 max-w-lg">
+                <motion.div variants={containerVariants} initial="hidden" animate="visible" className="flex flex-col items-center gap-2 lg:max-w-lg xs:max-w-[85%]">
                     <Badge variants={itemVariants}>Available</Badge>                    
                     <motion.h1 variants={itemVariants} className="font-main font-semibold text-3xl text-gray-900">Maybe we can Talk</motion.h1>                                            
                     <motion.p variants={itemVariants} className="font-main text-xs text-gray-400 text-center leading-normal">

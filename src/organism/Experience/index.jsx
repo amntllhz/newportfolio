@@ -27,7 +27,7 @@ const itemVariants = {
 const Experience = () => {
     return (
         <>
-            <motion.div variants={containerVariants} initial="hidden" animate="visible" className="w-fit flex flex-col gap-2.5 justify-left items-start px-4 mt-8">
+            <motion.div variants={containerVariants} initial="hidden" animate="visible" className="w-full flex flex-col gap-2.5 justify-left items-start mt-8 lg:max-w-full xs:max-w-[90%] lg:px-2 xs:px-1">
 
                 <motion.div variants={itemVariants}>
                     <Subhead icon={PiBriefcaseLight}>Experience</Subhead>                

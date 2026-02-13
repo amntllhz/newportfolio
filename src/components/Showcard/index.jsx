@@ -7,14 +7,14 @@ const Showcard = ({data, variants, onSelect}) => {
     const dataDescending = data.sort((a, b) => b.id - a.id);
     return (
         <>            
-            <div className="flex flex-wrap max-w-2xl w-full justify-between items-center gap-5">
+            <div className="flex lg:flex-row xs:flex-col lg:max-w-2xl xs:max-w-full w-full justify-between items-center gap-5">
                 {dataDescending.map((show) => {  
                     const limitedTech = show.techstack.slice(0, 5);
                     const extraTech = show.techstack.length - 5;                  
 
                     return (
                         <motion.button layout onClick={()=> onSelect(show)} variants={variants} key={show.id} className="group flex flex-col outline outline-offset-0 outline-gray-300/80 p-1 w-fit rounded-xl gap-2 cursor-pointer">                                
-                            <div className="relative w-50 h-30 rounded-lg overflow-hidden outline outline-offset-0 outline-gray-300/80">
+                            <div className="relative lg:w-50 lg:h-30 xs:w-90 xs:h-60 rounded-lg overflow-hidden outline outline-offset-0 outline-gray-300/80">
                                 <img 
                                     src={show.cover} 
                                     className="w-full h-full object-cover" 
@@ -26,7 +26,7 @@ const Showcard = ({data, variants, onSelect}) => {
                                 />
                             </div>
                             <div className="flex flex-col justify-left items-start px-1.5 py-1.5 gap-1.5">
-                                <p className="font-main font-semibold text-xs text-gray-500/80">{show.title}</p>                                    
+                                <p className="font-main font-semibold lg:text-xs xs:text-md text-gray-500/80">{show.title}</p>                                    
                                 <div className="flex flex-wrap w-full gap-1 items-center">
                                     <Techbadge roundedSize="rounded-sm" iconSize="text-xl" items={limitedTech}></Techbadge>
                                     {extraTech > 0 && (

@@ -34,11 +34,11 @@ const Showcase = () => {
 
     return (
         <>
-            <div className="px-4 mt-8 mb-8">                
+            <div className="lg:px-4 xs:px-2 mt-8 mb-8 flex flex-col justify-center items-center lg:max-w-full xs:max-w-sm">                
 
                 
                 {!selectedProject && (
-                    <motion.div layout variants={containerVariants} initial="hidden" animate="visible" exit="hidden" className="flex justify-between w-2xl mb-2.5">
+                    <motion.div layout variants={containerVariants} initial="hidden" animate="visible" exit="hidden" className="flex justify-between lg:max-w-2xl xs:max-w-full w-full mb-2.5">
                         <Subhead icon={CiBoxList }>Showcase</Subhead>
 
                         <motion.div variants={itemVariants} className="flex gap-2 p-1 bg-gray-100/50 w-fit rounded-lg border border-gray-200">
@@ -67,7 +67,7 @@ const Showcase = () => {
                             initial="hidden" 
                             animate="visible" 
                             exit="hidden"
-                            className="flex flex-col gap-2.5 w-full justify-left items-start "
+                            className="flex flex-col gap-2.5 w-full max-w-full justify-left items-start "
                         >
                             <Showdetail 
                                 key="detail"
