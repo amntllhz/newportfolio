@@ -25,7 +25,7 @@ const Schcard = ({variants}) => {
                                 <div className="flex gap-1">
                                     <CiLocationOn className="lg:text-sm xs:text-xs text-gray-400"/>
                                     <p className="font-main lg:text-xs xs:text-[9px] text-gray-400">{sch.address}</p>
-                                    <p className="font-main font-semibold lg:text-xs xs:text-[9px] text-gray-500/80 mx-1">•</p>
+                                    <p className="font-main font-semibold lg:text-xs xs:text-[9px] text-gray-400 mx-1">•</p>
                                     <p className="font-main lg:text-xs xs:text-[9px] text-gray-400">{sch.duration}</p>
                                 </div>
                             </div>
