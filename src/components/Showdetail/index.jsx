@@ -32,7 +32,7 @@ const Showdetail = ({project, onBack, variants}) => {
         <>  
                 <motion.div                      
                     variants={variants}                                           
-                    className="lg:max-w-2xl xs:max-w-full w-full flex flex-col gap-4">                
+                    className="lg:max-w-xl xs:max-w-full w-full flex flex-col gap-4">                
                         
                         {/* Tombol kembali */}
                         <motion.button onClick={onBack} className="text-left w-fit flex items-center gap-1 hover:gap-1.5 transform ease-in-out duration-300 cursor-pointer">

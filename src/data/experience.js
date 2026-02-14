@@ -1,4 +1,6 @@
-import imageA from "../assets/pp.jpg"
+import imageA from "../assets/experience/anaksehat-logo.png"
+import imageB from "../assets/experience/logo-kabpkl.png"
+import imageC from "../assets/experience/internval-logo.png"
 
 const experience = [
     {   id: 1,
@@ -11,7 +13,7 @@ const experience = [
     },
     {   id: 2,
         title: "Front-end Web Developer",  
-        image: imageA,      
+        image: imageB,      
         company: "Dinas Komunikasi dan Informatika ",
         address: "Kabupaten Pekalongan",
         date: "Jul 2024 - Sep 2024",
@@ -20,7 +22,7 @@ const experience = [
     {   
         id: 3,        
         title: "Fullstack Web Developer",
-        image: imageA,
+        image: imageC,
         company: "Internval ( Internship Validation )",
         address: "Kabupaten Pekalongan",
         date: "Jan 2025 - Des 2025",

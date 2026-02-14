@@ -67,7 +67,7 @@ const Showcase = () => {
                             initial="hidden" 
                             animate="visible" 
                             exit="hidden"
-                            className="flex flex-col gap-2.5 w-full max-w-full justify-left items-start "
+                            className="flex flex-col gap-2.5 w-full max-w-full justify-center items-center" 
                         >
                             <Showdetail 
                                 key="detail"
