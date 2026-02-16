@@ -4,6 +4,7 @@ import { useState } from "react"
 import Education from "../sections/Education";
 import Projects from "@/sections/Projects";
 import Contact from "../sections/Contact";
+import { ModeToggle } from "../components/ModeToggle";
 
 const SECTION_MAP = {
   profile: Hero, 
@@ -25,6 +26,8 @@ const Home = () => {
                 active={activeSection}
                 onChange={setActiveSection}
             />
+
+            <ModeToggle></ModeToggle>
         </>
     )
 }

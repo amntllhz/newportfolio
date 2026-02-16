@@ -1,10 +1,16 @@
+import { TooltipProvider } from "./components/ui/tooltip"
+import { ThemeProvider } from "./components/theme-provider"
 import Home from "./pages/home"
 
 function App() {  
 
   return (
-    <>        
-      <Home />   
+    <>
+      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+        <TooltipProvider>
+          <Home />   
+        </TooltipProvider>
+      </ThemeProvider> 
     </>
   )
 }

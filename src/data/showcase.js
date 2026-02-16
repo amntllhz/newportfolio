@@ -1,5 +1,6 @@
-import coverInternval from "../assets/internval/cover-internval.png"
-import coverEgoverse from "../assets/egoverse/cover-egoverse.png"
+import coverInternval from "../assets/internval/internval-cover.png"
+import coverEgoverse from "../assets/egoverse/egoverse-cover.png"
+import coverAnaksehat from "../assets/anaksehat/anaksehat-cover.png"
 
 const showcase = [
 
@@ -9,7 +10,7 @@ const showcase = [
         category: "web",
         title: "Anaksehat",
         subtitle: "Nutrition Status Calculator",
-        cover:  coverInternval,
+        cover:  coverAnaksehat,
         description: "Internval is a web-based application designed to streamline the internship application and tracking process for university students. This platform allows students to submit internship applications to various institutions and monitor the status of their submissions in real-time. Administrators and faculty can manage and verify submissions efficiently through an intuitive Filament-powered dashboard.",
         techstack: ["PHP","JS", "Laravel", "MySQL", "TailwindCSS"],
         role: ["Fullstack Web Developer", "UI/UX Designer"],
@@ -99,7 +100,7 @@ const showcase = [
         ],
     },
     
-    // Internval
+    // Design
     {   
         id: 4,
         category: "design",

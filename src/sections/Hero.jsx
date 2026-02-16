@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 const Hero = () => {
     return (
         <>
-            <div className="w-full h-screen flex gap-6 items-center justify-center lg:flex-row xs:flex-col">
+            <div className="w-full h-screen flex gap-6 items-center justify-center lg:flex-row xs:flex-col">                
                 <Card></Card> 
                 <motion.div 
                     initial={{ opacity: 0, y: 80 }} 

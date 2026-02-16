@@ -13,7 +13,7 @@ const Talklink = [
     {
         id: 3,
         name: "Github",
-        link: "https://github.com/Amntllhz"
+        link: "https://github.com/amntllhz"
     },
     {
         id: 4,

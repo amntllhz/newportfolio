@@ -1,6 +1,11 @@
 import techstack from "../../data/techstack"
 import { SiAdobeillustrator, SiAdobephotoshop, SiAlpinedotjs, SiBootstrap, SiCss3, SiFigma, SiFilament, SiGit, SiGithub, SiHtml5, SiJavascript, SiLaravel, SiMysql, SiNpm, SiPhp, SiReact, SiTailwindcss, SiVite } from "react-icons/si"
 import { motion } from "framer-motion"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 const IconMap = {
     "HTML": SiHtml5,
@@ -35,9 +40,16 @@ const Techbadge = ({variants, items, iconSize = "text-3xl", roundedSize = "round
                         const Icon = IconMap[techName];
                         if (!Icon) return null;
                         return (
-                            <motion.div variants={variants} key={techName} className="relative flex justify-center items-center">
-                                <Icon className={`${iconSize} text-gray-400/70 p-1 ${roundedSize} bg-gray-100`}/>                                
-                            </motion.div>
+                            <Tooltip key={techName}>
+                                <TooltipTrigger asChild>
+                                    <motion.div variants={variants} className="relative flex justify-center items-center">
+                                        <Icon className={`${iconSize} text-gray-400/70 p-1 ${roundedSize} bg-gray-100`}/>                                
+                                    </motion.div>
+                                </TooltipTrigger>
+                                <TooltipContent className="">
+                                    <p className="font-main text-xs">{techName}</p>
+                                </TooltipContent>
+                            </Tooltip>
                         );
                     })}
                 </div>
