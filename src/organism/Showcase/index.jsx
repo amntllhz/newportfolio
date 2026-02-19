@@ -41,15 +41,15 @@ const Showcase = () => {
                     <motion.div layout variants={containerVariants} initial="hidden" animate="visible" exit="hidden" className="flex justify-between lg:max-w-2xl xs:max-w-full w-full mb-2.5">
                         <Subhead icon={CiBoxList }>Showcase</Subhead>
 
-                        <motion.div variants={itemVariants} className="flex gap-2 p-1 bg-gray-100/50 w-fit rounded-lg border border-gray-200">
+                        <motion.div variants={itemVariants} className="flex gap-2 p-1 bg-gray-100/50 w-fit rounded-lg outline outline-offset-0 outline-gray-300/80 dark:bg-neutral-950 dark:outline-neutral-800">
                             {["web", "design"].map((tab) => (
                                 <button                                                                        
                                     key={tab}
                                     onClick={() => setActiveTab(tab)}
                                     className={`px-4 py-1.5 rounded-md text-xs font-main transition-colors duration-200 cursor-pointer border ${
                                     activeTab === tab
-                                        ? "bg-white text-gray-900 border-gray-200"
-                                        : "text-gray-400 border-transparent hover:text-gray-600"
+                                        ? "bg-white text-gray-900 border-gray-200 dark:border-neutral-900 dark:bg-neutral-900 dark:text-neutral-100"
+                                        : "text-gray-400 border-transparent hover:text-gray-600 dark:text-neutral-600 dark:hover:text-neutral-600"
                                     }`}
                                 >
                                     {tab === "web" ? "Web App" : "Design"}

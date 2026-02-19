@@ -1,6 +1,6 @@
-import coverInternval from "../assets/internval/internval-cover.png"
-import coverEgoverse from "../assets/egoverse/egoverse-cover.png"
-import coverAnaksehat from "../assets/anaksehat/anaksehat-cover.png"
+import coverInternval from "../assets/internval/internval-cover.jpg"
+import coverEgoverse from "../assets/egoverse/egoverse-cover.jpg"
+import coverAnaksehat from "../assets/anaksehat/anaksehat-cover.jpg"
 
 const showcase = [
 

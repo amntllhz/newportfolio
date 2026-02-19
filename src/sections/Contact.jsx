@@ -29,8 +29,8 @@ const Contact = () => {
             <div className="w-full h-screen flex items-center justify-center">                
                 <motion.div variants={containerVariants} initial="hidden" animate="visible" className="flex flex-col items-center gap-2 lg:max-w-lg xs:max-w-[85%]">
                     <Badge variants={itemVariants}>Available</Badge>                    
-                    <motion.h1 variants={itemVariants} className="font-main font-semibold text-3xl text-gray-900">Maybe we can Talk</motion.h1>                                            
-                    <motion.p variants={itemVariants} className="font-main text-xs text-gray-400 text-center leading-normal">
+                    <motion.h1 variants={itemVariants} className="font-main font-semibold text-3xl text-gray-900 dark:text-neutral-100">Maybe we can Talk</motion.h1>                                            
+                    <motion.p variants={itemVariants} className="font-main text-xs text-gray-400 text-center leading-normal dark:text-neutral-400">
                         I'm currently available for new opportunities and collaborations. If you think my skills align with your needs, feel free to start a conversation everywhere
                     </motion.p>
                     <Talk variants={itemVariants}></Talk>
