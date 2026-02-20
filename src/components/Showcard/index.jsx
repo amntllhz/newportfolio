@@ -22,7 +22,7 @@ const Showcard = ({data, variants, onSelect}) => {
                                 
                                 {/* Overlay Shadow */}
                                 <div 
-                                    className="absolute bottom-0 left-0 w-full h-2/4 bg-linear-to-t from-gray-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" 
+                                    className="absolute bottom-0 left-0 w-full h-2/4 bg-linear-to-t from-neutral-900/20 dark:from-neutral-50/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" 
                                 />
                             </div>
                             <div className="flex flex-col justify-left items-start px-1.5 py-1.5 gap-1.5">
