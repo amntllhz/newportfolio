@@ -1,6 +1,7 @@
 import coverInternval from "../assets/internval/internval-cover.jpg"
 import coverEgoverse from "../assets/egoverse/egoverse-cover.jpg"
 import coverAnaksehat from "../assets/anaksehat/anaksehat-cover.jpg"
+import coverSecondmarket from "../assets/secondmarket/secondmarket-cover.jpg"
 
 const showcase = [
 
@@ -101,9 +102,9 @@ const showcase = [
     {   
         id: 4,
         category: "design",
-        title: "Anaksehat",
-        subtitle: "Nutrition Status Calculator",
-        cover:  coverInternval,
+        title: "Secondmarket",
+        subtitle: "Prelove and Thrift Marketplace",
+        cover:  coverSecondmarket,
         description: "Internval is a web-based application designed to streamline the internship application and tracking process for university students. This platform allows students to submit internship applications to various institutions and monitor the status of their submissions in real-time. Administrators and faculty can manage and verify submissions efficiently through an intuitive Filament-powered dashboard.",
         techstack: ["PHP","JS", "Laravel", "MySQL", "TailwindCSS"],
         role: ["Fullstack Web Developer", "UI/UX Designer"],

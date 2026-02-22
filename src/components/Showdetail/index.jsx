@@ -48,7 +48,7 @@ const Showdetail = ({project, onBack, variants}) => {
                                     {images.map((img, index) => (
                                     <CarouselItem key={index} className="pl-0 lg:basis-80 xs:basis-full">
                                         <div className="pr-4">
-                                            <img src={img} className="lg:w-80 xs:w-full object-cover rounded-xl border border-gray-100 dark:border-neutral-700" />
+                                            <img src={img} className="lg:w-80 xs:w-full object-cover rounded-xl border border-gray-100 dark:border-neutral-900" />
                                         </div>
                                     </CarouselItem>
                                     ))}
