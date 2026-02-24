@@ -7,13 +7,13 @@ const Showcard = ({data, variants, onSelect}) => {
     const dataDescending = data.sort((a, b) => b.id - a.id);
     return (
         <>            
-            <div className="flex lg:flex-row xs:flex-col lg:max-w-2xl xs:max-w-full w-full justify-between items-center gap-5">
+            <div className="grid lg:grid-cols-3 grid-cols-1 lg:max-w-2xl xs:max-w-full w-full justify-between items-center gap-5">
                 {dataDescending.map((show) => {  
                     const limitedTech = show.techstack.slice(0, 4);
                     const extraTech = show.techstack.length - 4;                  
 
                     return (
-                        <motion.button layout onClick={()=> onSelect(show)} variants={variants} key={show.id} className="group flex flex-col outline outline-offset-0 outline-gray-300/80 lg:p-1 xs:p-1.5 w-fit rounded-xl gap-2 cursor-pointer dark:outline-neutral-800">                                
+                        <motion.button layout onClick={()=> onSelect(show)} variants={variants} key={show.id} className="group flex flex-col outline outline-offset-0 outline-gray-300/80 lg:p-1 xs:p-1.5 w-full rounded-xl gap-2 cursor-pointer dark:outline-neutral-800">                                
                             <div className="relative  rounded-lg overflow-hidden outline outline-offset-0 outline-gray-300/80 dark:outline-neutral-800">
                                 <img 
                                     src={show.cover} 

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import Subdetail from "../Subdetail"
 import { CiCircleChevLeft, CiStar } from "react-icons/ci"
 import Techbadge from "../Techbadge"
-import { PiChartPolarLight, PiUserSwitchLight, PiSealWarningLight, PiSirenLight } from "react-icons/pi"
+import { PiChartPolarLight, PiUserSwitchLight, PiSealWarningLight, PiSirenLight, PiListMagnifyingGlassLight, PiLightbulbLight, PiPolygonLight, PiPenNibLight } from "react-icons/pi"
 import { BsCaretRight } from "react-icons/bs"
 import { Carousel, CarouselContent, CarouselItem,  } from "@/components/ui/carousel"
 import Badge from "../Badge"
@@ -27,6 +27,7 @@ const Showdetail = ({project, onBack, variants}) => {
     }, [api])
 
     const images = project.images || [project.cover]
+    const isWeb = project.category === "web"
     
     return (
         <>  
@@ -89,41 +90,44 @@ const Showdetail = ({project, onBack, variants}) => {
 
                             {/* Techstack */}
                             <motion.div className="flex justify-start items-center gap-1.5">
-                                <p className="font-main text-xs text-gray-400 dark:text-neutral-400">Build with : </p>
+                                <p className="font-main text-xs text-gray-400 dark:text-neutral-400">{isWeb ? "Build with :" : "Made using : " }</p>
                                 <Techbadge roundedSize="rounded-sm" iconSize="text-2xl" items={project.techstack} variants={variants}></Techbadge>
                             </motion.div> 
 
                             {/* Problem Statement */}
                             <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
-                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={PiSirenLight}>Problem Statement</Subdetail>                
+                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={isWeb ? PiSirenLight : PiPolygonLight}>{isWeb ? "Problem Statement" : "Challenge"}</Subdetail>                
                                 <p className="font-main text-xs text-justify text-gray-400 dark:text-neutral-400 leading-relaxed mb-2">
-                                    {project.problem}
+                                    {isWeb ? project.problem : project.challenge}
                                 </p>  
-                                <div className="flex flex-col items-start">
-                                    {project.subproblem.map((subproblem, index) => {
-                                        return(                                        
-                                            <Subdetail key={index} darkLabel="dark:text-neutral-400" textAlign="text-justify" padding="py-0 pr-2.5" fontWeight="font-normal" labelColor="text-gray-400" iconSize="text-xl" labelSize="text-xs" icon={BsCaretRight}>{subproblem}</Subdetail>
-                                        )
-                                    })}
-                                </div>
+
+                                {isWeb && project.subproblem && (
+                                    <div className="flex flex-col items-start">
+                                        {project.subproblem.map((subproblem, index) => {
+                                            return(                                        
+                                                <Subdetail key={index} darkLabel="dark:text-neutral-400" textAlign="text-justify" padding="py-0 pr-2.5" fontWeight="font-normal" labelColor="text-gray-400" iconSize="text-xl" labelSize="text-xs" icon={BsCaretRight}>{subproblem}</Subdetail>
+                                            )
+                                        })}
+                                    </div>
+                                )}
                             </motion.div>
 
                             {/* Problem Resolution */}
                             <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
-                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={PiChartPolarLight}>Problem Resolution</Subdetail>                
+                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={isWeb ? PiChartPolarLight : PiPenNibLight}>{isWeb ? "Problem Resolution" : "Design Concept"}</Subdetail>                
                                 <p className="font-main text-xs text-justify text-gray-400 leading-relaxed mb-2 dark:text-neutral-400">
-                                    {project.solution}
+                                    {isWeb ? project.solution : project.concept}
                                 </p>                                  
                             </motion.div>
 
                             {/* Key Features */}
                             <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
-                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={CiStar}>Development Result</Subdetail>                
+                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={CiStar}>{isWeb ? "Development Result" : "Final Deliverables"}</Subdetail>                
                                 <p className="font-main text-xs text-justify text-gray-400 leading-relaxed mb-2 dark:text-neutral-400">
-                                    {project.keyfeaturesdesc}
+                                    {isWeb ? project.keyfeaturesdesc : project.deliverablesdesc}
                                 </p>  
                                 <div className="flex flex-col items-start">
-                                    {project.keyfeatures.map((keyfeatures, index) => {
+                                    {(isWeb ? project.keyfeatures : project.deliverables)?.map((keyfeatures, index) => {
                                         return(                                        
                                             <Subdetail key={index} darkLabel="dark:text-neutral-400" textAlign="text-justify" padding="py-0 pr-2.5" fontWeight="font-normal" labelColor="text-gray-400" iconSize="text-xl" labelSize="text-xs" icon={BsCaretRight}>{keyfeatures}</Subdetail>
                                         )
