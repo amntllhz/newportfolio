@@ -1,6 +1,7 @@
 import { TooltipProvider } from "./components/ui/tooltip"
 import { ThemeProvider } from "./components/theme-provider"
 import Home from "./pages/home"
+import "./i18n"
 
 function App() {  
 

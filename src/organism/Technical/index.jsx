@@ -2,6 +2,7 @@ import Techbadge from "@/components/Techbadge"
 import { motion } from "framer-motion"
 import Subhead from "@/components/Subhead"
 import { PiGraphLight, PiMouseMiddleClickLight } from "react-icons/pi";
+import { useTranslation } from "react-i18next";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -25,12 +26,13 @@ const itemVariants = {
 };
 
 const Technical = () => {
+    const { t } = useTranslation();
     return (
         <>
             <motion.div variants={containerVariants} initial="hidden" animate="visible" className="w-full flex flex-col gap-2.5 justify-left items-start mt-8 mb-8 lg:max-w-full xs:max-w-[90%] lg:px-2 xs:px-1">
 
                 <motion.div variants={itemVariants}>
-                    <Subhead icon={ PiMouseMiddleClickLight }>Technical Skill</Subhead>                                                              
+                    <Subhead icon={ PiMouseMiddleClickLight }>{t("subhead.technical")}</Subhead>                                                              
                 </motion.div>
 
                 <Techbadge variants={itemVariants}></Techbadge>

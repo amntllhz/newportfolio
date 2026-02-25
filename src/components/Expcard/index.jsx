@@ -2,8 +2,11 @@ import { CiLocationOn } from "react-icons/ci"
 import { PiBuildingOfficeThin } from "react-icons/pi"
 import experience from "../../data/experience"
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 const Expcard = ({variants}) => {
+    const { i18n } = useTranslation();    
+    const currentLang = i18n.language.split('-')[0];
     const dataDescending = experience.sort((a, b) => b.id - a.id);
     return (
         <>
@@ -26,9 +29,9 @@ const Expcard = ({variants}) => {
                                 </div>
                                 <div className="flex gap-1">
                                     <CiLocationOn className="lg:text-sm xs:text-xs text-gray-400 dark:text-neutral-400"/>
-                                    <p className="font-main lg:text-xs xs:text-[9px] text-gray-400 dark:text-neutral-400">{exp.address}</p>
+                                    <p className="font-main lg:text-xs xs:text-[9px] text-gray-400 dark:text-neutral-400">{exp.address[currentLang]}</p>
                                     <p className="font-main font-semibold lg:text-xs xs:text-[9px] text-gray-400 dark:text-neutral-400 mx-1">•</p>
-                                    <p className="font-main lg:text-xs xs:text-[9px] text-gray-400 dark:text-neutral-400">{exp.date}</p>
+                                    <p className="font-main lg:text-xs xs:text-[9px] text-gray-400 dark:text-neutral-400">{exp.date[currentLang]}</p>
                                 </div>
                             </div>
                         </div>

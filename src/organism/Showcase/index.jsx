@@ -5,6 +5,7 @@ import Showcard from "@/components/Showcard";
 import { useState } from "react";
 import Showdetail from "@/components/Showdetail";
 import showcase from "../../data/showcase"
+import { useTranslation } from "react-i18next";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -28,6 +29,7 @@ const itemVariants = {
 };
 
 const Showcase = () => {
+    const { t } = useTranslation();
     const [selectedProject, setSelectedProject] = useState(null);   
     const [activeTab, setActiveTab] = useState("web");
     const filteredData = showcase.filter((item) => item.category === activeTab); 
@@ -39,7 +41,7 @@ const Showcase = () => {
                 
                 {!selectedProject && (
                     <motion.div layout variants={containerVariants} initial="hidden" animate="visible" exit="hidden" className="flex justify-between lg:max-w-2xl xs:max-w-full w-full mb-2.5">
-                        <Subhead icon={CiBoxList }>Showcase</Subhead>
+                        <Subhead icon={CiBoxList }>{t("subhead.showcase")}</Subhead>
 
                         <motion.div variants={itemVariants} className="flex gap-2 p-1 bg-gray-100/50 w-fit rounded-lg outline outline-offset-0 outline-gray-300/80 dark:bg-neutral-950 dark:outline-neutral-800">
                             {["web", "design"].map((tab) => (
@@ -52,7 +54,7 @@ const Showcase = () => {
                                         : "text-gray-400 border-transparent hover:text-gray-600 dark:text-neutral-600 dark:hover:text-neutral-600"
                                     }`}
                                 >
-                                    {tab === "web" ? "Web App" : "Design"}
+                                    {tab === "web" ? t("tabs.web") : t("tabs.design")}
                                 </button>
                             ))}
                         </motion.div>

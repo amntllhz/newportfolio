@@ -2,8 +2,11 @@ import { CiLocationOn } from "react-icons/ci"
 import school from "../../data/school"
 import { GoLightBulb } from "react-icons/go"
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 const Schcard = ({variants}) => {
+    const { i18n } = useTranslation();
+    const currentLang = i18n.language.split('-')[0];
     const dataDescending = school.sort((a, b) => b.id - a.id);
     return (
         <>
@@ -20,11 +23,11 @@ const Schcard = ({variants}) => {
                             <div className="flex flex-col gap-1 mt-1">
                                 <div className="flex gap-1">
                                     <GoLightBulb className="lg:text-sm xs:text-xs text-gray-400 dark:text-neutral-400"/>
-                                    <p className="font-main lg:text-xs xs:text-[9px] text-gray-400 dark:text-neutral-400">{sch.major}</p>
+                                    <p className="font-main lg:text-xs xs:text-[9px] text-gray-400 dark:text-neutral-400">{sch.major[currentLang]}</p>
                                 </div>
                                 <div className="flex gap-1">
                                     <CiLocationOn className="lg:text-sm xs:text-xs text-gray-400 dark:text-neutral-400"/>
-                                    <p className="font-main lg:text-xs xs:text-[9px] text-gray-400 dark:text-neutral-400">{sch.address}</p>
+                                    <p className="font-main lg:text-xs xs:text-[9px] text-gray-400 dark:text-neutral-400">{sch.address[currentLang]}</p>
                                     <p className="font-main font-semibold lg:text-xs xs:text-[9px] text-gray-400 dark:text-neutral-400 mx-1">•</p>
                                     <p className="font-main lg:text-xs xs:text-[9px] text-gray-400 dark:text-neutral-400">{sch.duration}</p>
                                 </div>
