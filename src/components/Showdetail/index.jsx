@@ -3,10 +3,11 @@ import { useState, useEffect } from "react"
 import Subdetail from "../Subdetail"
 import { CiCircleChevLeft, CiStar } from "react-icons/ci"
 import Techbadge from "../Techbadge"
-import { PiChartPolarLight, PiUserSwitchLight, PiSealWarningLight, PiSirenLight, PiListMagnifyingGlassLight, PiLightbulbLight, PiPolygonLight, PiPenNibLight } from "react-icons/pi"
+import { PiChartPolarLight, PiUserSwitchLight, PiSirenLight, PiPolygonLight, PiPenNibLight } from "react-icons/pi"
 import { BsCaretRight } from "react-icons/bs"
 import { Carousel, CarouselContent, CarouselItem,  } from "@/components/ui/carousel"
 import Badge from "../Badge"
+import { useTranslation } from "react-i18next"
 
 const Showdetail = ({project, onBack, variants}) => {
     // State untuk melacak api carousel embla
@@ -28,6 +29,8 @@ const Showdetail = ({project, onBack, variants}) => {
 
     const images = project.images || [project.cover]
     const isWeb = project.category === "web"
+    const { t, i18n } = useTranslation();
+    const currentLang = i18n.language.split('-')[0];
     
     return (
         <>  
@@ -38,7 +41,7 @@ const Showdetail = ({project, onBack, variants}) => {
                         {/* Tombol kembali */}
                         <motion.button onClick={onBack} className="text-left w-fit flex items-center gap-1 hover:gap-1.5 transform ease-in-out duration-300 cursor-pointer">
                             <CiCircleChevLeft className="text-2xl text-gray-400 p-1 rounded-md dark:text-neutral-100" />
-                            <p className="font-main text-sm text-gray-500/80 dark:text-neutral-100">Back</p>                        
+                            <p className="font-main text-sm text-gray-500/80 dark:text-neutral-100">{t("detail.back")}</p>                        
                         </motion.button>
 
                         {/* Gambar */}
@@ -80,30 +83,30 @@ const Showdetail = ({project, onBack, variants}) => {
                             <div className="flex">
                                 <p className="font-main font-semibold text-sm text-gray-900 dark:text-neutral-100">{project.title}</p>
                                 <p className="font-main font-semibold text-sm text-gray-900 dark:text-neutral-100 mx-2">•</p>
-                                <p className="font-main font-semibold text-sm text-gray-900 dark:text-neutral-100">{project.subtitle}</p>
+                                <p className="font-main font-semibold text-sm text-gray-900 dark:text-neutral-100">{project.subtitle[currentLang]}</p>
                             </div>
 
                             {/* Deskripsi */}
                             <p className="font-main text-xs text-justify text-gray-400 dark:text-neutral-400 leading-relaxed">
-                                {project.description}
+                                {project.description[currentLang]}
                             </p>  
 
                             {/* Techstack */}
                             <motion.div className="flex justify-start items-center gap-1.5">
-                                <p className="font-main text-xs text-gray-400 dark:text-neutral-400">{isWeb ? "Build with :" : "Made using : " }</p>
+                                <p className="font-main text-xs text-gray-400 dark:text-neutral-400">{isWeb ? t("detail.buildWith") : t("detail.madeUsing") }</p>
                                 <Techbadge roundedSize="rounded-sm" iconSize="text-2xl" items={project.techstack} variants={variants}></Techbadge>
                             </motion.div> 
 
                             {/* Problem Statement */}
                             <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
-                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={isWeb ? PiSirenLight : PiPolygonLight}>{isWeb ? "Problem Statement" : "Challenge"}</Subdetail>                
+                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={isWeb ? PiSirenLight : PiPolygonLight}>{isWeb ? t("detail.problem") : t("detail.challenge")}</Subdetail>                
                                 <p className="font-main text-xs text-justify text-gray-400 dark:text-neutral-400 leading-relaxed mb-2">
-                                    {isWeb ? project.problem : project.challenge}
+                                    {isWeb ? project.problem[currentLang] : project.challenge[currentLang]}
                                 </p>  
 
                                 {isWeb && project.subproblem && (
                                     <div className="flex flex-col items-start">
-                                        {project.subproblem.map((subproblem, index) => {
+                                        {project.subproblem[currentLang].map((subproblem, index) => {
                                             return(                                        
                                                 <Subdetail key={index} darkLabel="dark:text-neutral-400" textAlign="text-justify" padding="py-0 pr-2.5" fontWeight="font-normal" labelColor="text-gray-400" iconSize="text-xl" labelSize="text-xs" icon={BsCaretRight}>{subproblem}</Subdetail>
                                             )
@@ -114,20 +117,20 @@ const Showdetail = ({project, onBack, variants}) => {
 
                             {/* Problem Resolution */}
                             <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
-                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={isWeb ? PiChartPolarLight : PiPenNibLight}>{isWeb ? "Problem Resolution" : "Design Concept"}</Subdetail>                
+                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={isWeb ? PiChartPolarLight : PiPenNibLight}>{isWeb ? t("detail.resolution") : t("detail.concept")}</Subdetail>                
                                 <p className="font-main text-xs text-justify text-gray-400 leading-relaxed mb-2 dark:text-neutral-400">
-                                    {isWeb ? project.solution : project.concept}
+                                    {isWeb ? project.solution[currentLang] : project.concept[currentLang]}
                                 </p>                                  
                             </motion.div>
 
                             {/* Key Features */}
                             <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
-                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={CiStar}>{isWeb ? "Development Result" : "Final Deliverables"}</Subdetail>                
+                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={CiStar}>{isWeb ? t("detail.result") : t("detail.deliverables")}</Subdetail>                
                                 <p className="font-main text-xs text-justify text-gray-400 leading-relaxed mb-2 dark:text-neutral-400">
-                                    {isWeb ? project.keyfeaturesdesc : project.deliverablesdesc}
+                                    {isWeb ? project.keyfeaturesdesc[currentLang] : project.deliverablesdesc[currentLang]}
                                 </p>  
                                 <div className="flex flex-col items-start">
-                                    {(isWeb ? project.keyfeatures : project.deliverables)?.map((keyfeatures, index) => {
+                                    {(isWeb ? project.keyfeatures[currentLang] : project.deliverables[currentLang])?.map((keyfeatures, index) => {
                                         return(                                        
                                             <Subdetail key={index} darkLabel="dark:text-neutral-400" textAlign="text-justify" padding="py-0 pr-2.5" fontWeight="font-normal" labelColor="text-gray-400" iconSize="text-xl" labelSize="text-xs" icon={BsCaretRight}>{keyfeatures}</Subdetail>
                                         )
@@ -137,11 +140,11 @@ const Showdetail = ({project, onBack, variants}) => {
 
                             {/* Informasi Tambahan */}
                             <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
-                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={PiUserSwitchLight}>Role and Responsibilities</Subdetail>                
+                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={PiUserSwitchLight}>{t("detail.role")}</Subdetail>                
 
                                 <motion.div className="flex items-start">                                      
                                     <div className="flex flex-wrap gap-2 items-start">
-                                        {project.role.map((role, index) => {
+                                        {project.role[currentLang].map((role, index) => {
                                             return(                                        
                                                 <Badge key={index} variants={variants}>{role}</Badge>
                                             )

@@ -23,9 +23,11 @@ i18n
             resolution: "Problem Resolution",
             result: "Development Result",
             buildWith: "Build with",
-            challenge: "Design Challenge",
+            madeUsing: "Made using",
+            challenge: "Challenge",
             concept: "Design Concept",
             deliverables: "Project Deliverables",
+            role: "Role and Responsibilities",
           },    
           tabs: {
               web: "Web App",
@@ -44,19 +46,26 @@ i18n
             p1_end: ", I focus on creating digital products that are not only functional but also visually balanced and aesthetically pleasing.",
             p2: "I always strive to deliver modern interfaces with seamless user experience, while keeping innovation and usability in harmony. I value teamwork highly, i believe collaboration creates more efficient and effective solutions."
           },
+          contact: {
+            status: "Available",
+            title: "Maybe we can Talk",
+            desc: "I'm currently available for new opportunities and collaborations. If you think my skills align with your needs, feel free to start a conversation everywhere",
+          },
         }
       },
       id: {
         translation: {          
           detail: { 
             back: "Kembali", 
-            problem: "Pernyataan Masalah", 
+            problem: "Latar Belakang", 
             resolution: "Solusi Masalah",
             result: "Hasil Pengembangan",
             buildWith: "Dibuat dengan",
-            challenge: "Tantangan Desain",
+            madeUsing: "Dibuat menggunakan",
+            challenge: "Tantangan",
             concept: "Konsep Desain",
             deliverables: "Hasil Karya",
+            role: "Peran dan Tanggung Jawab",
           },  
           tabs: {
               web: "Aplikasi Web",
@@ -74,6 +83,11 @@ i18n
             p1_middle: "dan",
             p1_end: ", saya berfokus untuk menciptakan sebuah produk digital yang tidak hanya baik secara fungsional tetapi juga seimbang dari segi visual dan estetika.",
             p2: "Saya selalu berusaha menciptakan antarmuka modern dan pengalaman pengguna yang halus dengan menjaga keseimbangan inovasi dan kegunaan. Saya sangat menyukai kerja sama tim, saya percaya kolaborasi menciptakan solusi yang lebih efisien dan efektif."
+          },
+          contact: {
+            status: "Tersedia",
+            title: "Mungkin Kita Bisa Berkomunikasi",
+            desc: "Saat ini saya terbuka untuk kesempatan baru dan kolaborasi. Jika menurut anda keahlian saya sesuai dengan kebutuhan anda, jangan ragu untuk berkomunikasi di manapun",
           },
         }
       }
