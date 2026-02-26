@@ -36,7 +36,7 @@ const Showcase = () => {
 
     return (
         <>
-            <div className="px-1 mt-8 mb-8 flex flex-col justify-center items-center w-full">                
+            <div className="px-1 mt-8 lg:mb-8 xs:mb-16 flex flex-col justify-center items-center w-full">                
 
                 
                 {!selectedProject && (
