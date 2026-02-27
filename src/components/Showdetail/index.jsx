@@ -28,7 +28,7 @@ const Showdetail = ({project, onBack, variants}) => {
     }, [api])
 
     const images = project.images || [project.cover]
-    const isWeb = project.category === "web"
+    const isDev = project.category === "dev"
     const { t, i18n } = useTranslation();
     const currentLang = i18n.language.split('-')[0];
     
@@ -93,18 +93,18 @@ const Showdetail = ({project, onBack, variants}) => {
 
                             {/* Techstack */}
                             <motion.div className="flex justify-start items-center gap-1.5">
-                                <p className="font-main text-xs text-gray-400 dark:text-neutral-400">{isWeb ? t("detail.buildWith") : t("detail.madeUsing") }</p>
+                                <p className="font-main text-xs text-gray-400 dark:text-neutral-400">{isDev ? t("detail.buildWith") : t("detail.madeUsing") }</p>
                                 <Techbadge roundedSize="rounded-sm" iconSize="text-2xl" items={project.techstack} variants={variants}></Techbadge>
                             </motion.div> 
 
                             {/* Problem Statement */}
                             <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
-                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={isWeb ? PiSirenLight : PiPolygonLight}>{isWeb ? t("detail.problem") : t("detail.challenge")}</Subdetail>                
+                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={isDev ? PiSirenLight : PiPolygonLight}>{isDev ? t("detail.problem") : t("detail.challenge")}</Subdetail>                
                                 <p className="font-main text-xs text-justify text-gray-400 dark:text-neutral-400 leading-relaxed mb-2">
-                                    {isWeb ? project.problem[currentLang] : project.challenge[currentLang]}
+                                    {isDev ? project.problem[currentLang] : project.challenge[currentLang]}
                                 </p>  
 
-                                {isWeb && project.subproblem && (
+                                {isDev && project.subproblem && (
                                     <div className="flex flex-col items-start">
                                         {project.subproblem[currentLang].map((subproblem, index) => {
                                             return(                                        
@@ -117,20 +117,20 @@ const Showdetail = ({project, onBack, variants}) => {
 
                             {/* Problem Resolution */}
                             <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
-                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={isWeb ? PiChartPolarLight : PiPenNibLight}>{isWeb ? t("detail.resolution") : t("detail.concept")}</Subdetail>                
+                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={isDev ? PiChartPolarLight : PiPenNibLight}>{isDev ? t("detail.resolution") : t("detail.concept")}</Subdetail>                
                                 <p className="font-main text-xs text-justify text-gray-400 leading-relaxed mb-2 dark:text-neutral-400">
-                                    {isWeb ? project.solution[currentLang] : project.concept[currentLang]}
+                                    {isDev ? project.solution[currentLang] : project.concept[currentLang]}
                                 </p>                                  
                             </motion.div>
 
                             {/* Key Features */}
                             <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
-                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={CiStar}>{isWeb ? t("detail.result") : t("detail.deliverables")}</Subdetail>                
+                                <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={CiStar}>{isDev ? t("detail.result") : t("detail.deliverables")}</Subdetail>                
                                 <p className="font-main text-xs text-justify text-gray-400 leading-relaxed mb-2 dark:text-neutral-400">
-                                    {isWeb ? project.keyfeaturesdesc[currentLang] : project.deliverablesdesc[currentLang]}
+                                    {isDev ? project.keyfeaturesdesc[currentLang] : project.deliverablesdesc[currentLang]}
                                 </p>  
                                 <div className="flex flex-col items-start">
-                                    {(isWeb ? project.keyfeatures[currentLang] : project.deliverables[currentLang])?.map((keyfeatures, index) => {
+                                    {(isDev ? project.keyfeatures[currentLang] : project.deliverables[currentLang])?.map((keyfeatures, index) => {
                                         return(                                        
                                             <Subdetail key={index} darkLabel="dark:text-neutral-400" textAlign="text-justify" padding="py-0 pr-2.5" fontWeight="font-normal" labelColor="text-gray-400" iconSize="text-xl" labelSize="text-xs" icon={BsCaretRight}>{keyfeatures}</Subdetail>
                                         )

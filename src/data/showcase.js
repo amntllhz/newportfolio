@@ -8,6 +8,7 @@ import coverGaneshacup from "../assets/ganeshacup/ganeshacup-cover.jpg"
 import coverEgoverselogo from "../assets/egoverse/egoverselogo-cover.jpg"
 import coverInternvallogo from "../assets/internval/internvallogo-cover.jpg"
 import coverKknlogo from "../assets/kkn/kknlogo-cover.jpg"
+import coverLabhub from "../assets/labhub/labhub-cover.jpg"
 
 // Images
 import Internval1 from "../assets/internval/internval-car-1.jpg"
@@ -21,7 +22,68 @@ const showcase = [
     // Web
     {   
         id: 1,
-        category: "web",
+        category: "dev",
+        title: "Labhub",
+        subtitle: {
+            en: "Laboratory Facility Reporting App",
+            id: "Aplikasi Pelaporan Fasilitas Laboratorium"
+        },
+        cover: coverLabhub,
+        description: {
+            en: "A simple desktop application developed using Python and Customtkinter for reporting computer and network facility issues in the computer laboratory at the Faculty of Engineering and Computer Science (UMPP). The system aims to provide an efficient communication channel between students/users and staff/managers.",
+            id: "Sebuah aplikasi desktop sederhana yang dikembangkan menggunakan Python dan Customtkinter untuk melaporkan masalah fasilitas komputer dan jaringan di laboratorium komputer Fakultas Teknik dan Ilmu Komputer (UMPP). Sistem ini bertujuan menyediakan saluran komunikasi yang efisien antara mahasiswa/pengguna dan staf/pengelola."
+        },
+        techstack: ["Python", "Customtkinter", "PHP", "JS", "MySQL", "TailwindCSS", "AlpineJS"],
+        role: {
+            en: ["Fullstack Developer", "UI/UX Designer"],
+            id: ["Fullstack Developer", "Desainer UI/UX"]
+        },
+        problem: {
+            en: "Frequent network disturbances and facility issues occur in the UMPP Computer Laboratory. The existing reporting method relies solely on direct, informal communication with staff or lecturers, which is inefficient and often results in delayed handling of issues.",
+            id: "Sering terjadi gangguan jaringan dan masalah fasilitas di Laboratorium Komputer UMPP. Metode pelaporan yang ada selama ini hanya menggunakan komunikasi langsung kepada staf atau dosen, yang dinilai tidak efisien dan seringkali menyebabkan penanganan masalah terlambat."
+        },
+        subproblem: {
+            en: [
+                "Disruptions to ongoing academic activities due to slow problem handling",
+                "Lack of a structured communication channel between lab users and management staff", 
+                "Risk of data inconsistency or errors with manual reporting methods", 
+                "Inefficient service delivery for students experiencing technical issues", 
+            ],
+            id: [
+                "Gangguan pada kegiatan perkuliahan akibat penanganan masalah yang lambat",
+                "Kurangnya saluran komunikasi terstruktur antara pengguna lab dan staf pengelola",
+                "Risiko inkonsistensi data atau kesalahan dengan metode pelaporan manual",
+                "Penyampaian layanan yang tidak efisien bagi mahasiswa yang mengalami masalah teknis",
+            ]
+        },
+        solution: {
+            en: "Developed a Python-based reporting program with a Customtkinter GUI that connects to a MySQL database (via PHPMyAdmin/XAMPP) to capture and manage facility issue reports. A PHP script is also implemented to present the collected data to administrators via a simple web interface.",
+            id: "Mengembangkan program pelaporan berbasis Python dengan GUI Customtkinter yang terhubung ke database MySQL (melalui PHPMyAdmin/XAMPP) untuk menangkap dan mengelola laporan masalah fasilitas. Script PHP juga diimplementasikan untuk menyajikan data yang terkumpul kepada administrator melalui antarmuka web sederhana."
+        },
+        keyfeaturesdesc: {
+            en: "The system provides core functionalities to improve lab facility management:",
+            id: "Sistem ini menyediakan fungsi inti untuk meningkatkan manajemen fasilitas lab:"
+        },
+        keyfeatures: {
+            en: [
+                "Customtkinter Graphical User Interface (GUI)",
+                "MySQL Database Integration", 
+                "PHP Data Presentation Webpage", 
+                "User-friendly Input Form", 
+                "Data Submission Confirmation & Error Handling",             
+            ],
+            id: [
+                "Antarmuka Pengguna Grafis (GUI) Customtkinter",
+                "Integrasi Basis Data MySQL",
+                "Halaman Web Presentasi Data PHP",
+                "Formulir Input yang Ramah Pengguna",
+                "Konfirmasi Pengiriman Data & Penanganan Kesalahan",
+            ]
+        },
+    },
+    {   
+        id: 2,
+        category: "dev",
         title: "Anaksehat",
         subtitle: {
             en: "Nutrition Status Calculator",
@@ -83,8 +145,8 @@ const showcase = [
         },
     },
     {   
-        id: 2,
-        category: "web",
+        id: 3,
+        category: "dev",
         title: "eGoverse",
         subtitle: {
             en: "E-Government Services",
@@ -148,8 +210,8 @@ const showcase = [
         },
     },
     {   
-        id: 3,
-        category: "web",
+        id: 4,
+        category: "dev",
         title: "Internval",
         subtitle: {
             en: "Internship Validation",

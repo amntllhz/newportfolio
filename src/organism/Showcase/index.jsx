@@ -31,7 +31,7 @@ const itemVariants = {
 const Showcase = () => {
     const { t } = useTranslation();
     const [selectedProject, setSelectedProject] = useState(null);   
-    const [activeTab, setActiveTab] = useState("web");
+    const [activeTab, setActiveTab] = useState("dev");
     const filteredData = showcase.filter((item) => item.category === activeTab); 
 
     return (
@@ -44,7 +44,7 @@ const Showcase = () => {
                         <Subhead icon={CiBoxList }>{t("subhead.showcase")}</Subhead>
 
                         <motion.div variants={itemVariants} className="flex gap-2 p-1 bg-gray-100/50 w-fit rounded-lg outline outline-offset-0 outline-gray-300/80 dark:bg-neutral-950 dark:outline-neutral-800">
-                            {["web", "design"].map((tab) => (
+                            {["dev", "design"].map((tab) => (
                                 <button                                                                        
                                     key={tab}
                                     onClick={() => setActiveTab(tab)}
@@ -54,7 +54,7 @@ const Showcase = () => {
                                         : "text-gray-400 border-transparent hover:text-gray-600 dark:text-neutral-600 dark:hover:text-neutral-600"
                                     }`}
                                 >
-                                    {tab === "web" ? t("tabs.web") : t("tabs.design")}
+                                    {tab === "dev" ? t("tabs.dev") : t("tabs.design")}
                                 </button>
                             ))}
                         </motion.div>

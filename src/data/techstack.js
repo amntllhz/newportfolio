@@ -80,6 +80,11 @@ const techstack = [
         name: "Illustrator",
         icon: "Illustrator",
     },    
+    {
+        id: 17,
+        name: "Python",
+        icon: "Python",
+    }
 ]
 
 export default techstack
