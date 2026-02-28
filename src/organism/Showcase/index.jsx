@@ -72,8 +72,7 @@ const Showcase = () => {
                             className="flex flex-col gap-2.5 w-full max-w-full justify-center items-center" 
                         >
                             <Showdetail 
-                                key="detail"
-                                variants={itemVariants}
+                                key="detail"                                
                                 project={selectedProject} 
                                 onBack={() => setSelectedProject(null)}
                             />

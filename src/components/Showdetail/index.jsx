@@ -9,7 +9,28 @@ import { Carousel, CarouselContent, CarouselItem,  } from "@/components/ui/carou
 import Badge from "../Badge"
 import { useTranslation } from "react-i18next"
 
-const Showdetail = ({project, onBack, variants}) => {
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      // Memberikan jeda 0.2 detik antar elemen anak
+      staggerChildren: 0.1, 
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { type: "spring", stiffness: 100 } 
+  },
+};
+
+const Showdetail = ({project, onBack}) => {
     // State untuk melacak api carousel embla
     const [api, setApi] = useState(null)
     const [current, setCurrent] = useState(0)
@@ -35,7 +56,7 @@ const Showdetail = ({project, onBack, variants}) => {
     return (
         <>  
                 <motion.div                      
-                    variants={variants}                                           
+                    variants={containerVariants} initial="hidden" animate="visible"                                         
                     className="lg:max-w-xl xs:max-w-full w-full flex flex-col gap-4">                
                         
                         {/* Tombol kembali */}
@@ -45,7 +66,7 @@ const Showdetail = ({project, onBack, variants}) => {
                         </motion.button>
 
                         {/* Gambar */}
-                        <motion.div variants={variants} className="relative w-full">
+                        <motion.div variants={itemVariants} className="relative w-full">
                             {/* SetApi digunakan untuk menangkap instance carousel */}
                             <Carousel setApi={setApi} opts={{ align: "start" }} className="w-full">
                                 <CarouselContent className="ml-0">
@@ -77,14 +98,14 @@ const Showdetail = ({project, onBack, variants}) => {
                         </motion.div>
                         
                         {/* Detail */}
-                        <motion.div variants={variants} className="flex flex-col gap-2 max-w-full w-full ">
+                        <motion.div variants={itemVariants} className="flex flex-col gap-2 max-w-full w-full ">
 
                             {/* Nama Aplikasi */}
-                            <div className="flex">
+                            <motion.div variants={itemVariants} className="flex">
                                 <p className="font-main font-semibold text-sm text-gray-900 dark:text-neutral-100">{project.title}</p>
                                 <p className="font-main font-semibold text-sm text-gray-900 dark:text-neutral-100 mx-2">•</p>
                                 <p className="font-main font-semibold text-sm text-gray-900 dark:text-neutral-100">{project.subtitle[currentLang]}</p>
-                            </div>
+                            </motion.div>
 
                             {/* Deskripsi */}
                             <p className="font-main text-xs text-justify text-gray-400 dark:text-neutral-400 leading-relaxed">
@@ -92,13 +113,13 @@ const Showdetail = ({project, onBack, variants}) => {
                             </p>  
 
                             {/* Techstack */}
-                            <motion.div className="flex justify-start items-center gap-1.5">
+                            <motion.div variants={containerVariants} className="flex justify-start items-center gap-1.5">
                                 <p className="font-main text-xs text-gray-400 dark:text-neutral-400">{isDev ? t("detail.buildWith") : t("detail.madeUsing") }</p>
-                                <Techbadge roundedSize="rounded-sm" iconSize="text-2xl" items={project.techstack} variants={variants}></Techbadge>
+                                <Techbadge roundedSize="rounded-sm" iconSize="text-2xl" items={project.techstack} variants={itemVariants}></Techbadge>
                             </motion.div> 
 
                             {/* Problem Statement */}
-                            <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
+                            <motion.div variants={containerVariants} className="flex flex-col gap-0.5 mt-4 justify-left items-start">
                                 <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={isDev ? PiSirenLight : PiPolygonLight}>{isDev ? t("detail.problem") : t("detail.challenge")}</Subdetail>                
                                 <p className="font-main text-xs text-justify text-gray-400 dark:text-neutral-400 leading-relaxed mb-2">
                                     {isDev ? project.problem[currentLang] : project.challenge[currentLang]}
@@ -142,11 +163,11 @@ const Showdetail = ({project, onBack, variants}) => {
                             <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
                                 <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={PiUserSwitchLight}>{t("detail.role")}</Subdetail>                
 
-                                <motion.div className="flex items-start">                                      
+                                <motion.div variants={itemVariants} className="flex items-start">                                      
                                     <div className="flex flex-wrap gap-2 items-start">
                                         {project.role[currentLang].map((role, index) => {
                                             return(                                        
-                                                <Badge key={index} variants={variants}>{role}</Badge>
+                                                <Badge key={index} variants={itemVariants}>{role}</Badge>
                                             )
                                         })}
                                     </div>
