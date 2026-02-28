@@ -98,7 +98,7 @@ const Showdetail = ({project, onBack}) => {
                         </motion.div>
                         
                         {/* Detail */}
-                        <motion.div variants={itemVariants} className="flex flex-col gap-2 max-w-full w-full ">
+                        <motion.div variants={containerVariants} className="flex flex-col gap-2 max-w-full w-full ">
 
                             {/* Nama Aplikasi */}
                             <motion.div variants={itemVariants} className="flex">
@@ -108,9 +108,9 @@ const Showdetail = ({project, onBack}) => {
                             </motion.div>
 
                             {/* Deskripsi */}
-                            <p className="font-main text-xs text-justify text-gray-400 dark:text-neutral-400 leading-relaxed">
+                            <motion.p variants={itemVariants} className="font-main text-xs text-justify text-gray-400 dark:text-neutral-400 leading-relaxed">
                                 {project.description[currentLang]}
-                            </p>  
+                            </motion.p>  
 
                             {/* Techstack */}
                             <motion.div variants={containerVariants} className="flex justify-start items-center gap-1.5">
@@ -119,7 +119,7 @@ const Showdetail = ({project, onBack}) => {
                             </motion.div> 
 
                             {/* Problem Statement */}
-                            <motion.div variants={containerVariants} className="flex flex-col gap-0.5 mt-4 justify-left items-start">
+                            <motion.div variants={itemVariants} className="flex flex-col gap-0.5 mt-4 justify-left items-start">
                                 <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={isDev ? PiSirenLight : PiPolygonLight}>{isDev ? t("detail.problem") : t("detail.challenge")}</Subdetail>                
                                 <p className="font-main text-xs text-justify text-gray-400 dark:text-neutral-400 leading-relaxed mb-2">
                                     {isDev ? project.problem[currentLang] : project.challenge[currentLang]}
@@ -137,7 +137,7 @@ const Showdetail = ({project, onBack}) => {
                             </motion.div>
 
                             {/* Problem Resolution */}
-                            <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
+                            <motion.div variants={itemVariants} className="flex flex-col gap-0.5 mt-4 justify-left items-start">
                                 <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={isDev ? PiChartPolarLight : PiPenNibLight}>{isDev ? t("detail.resolution") : t("detail.concept")}</Subdetail>                
                                 <p className="font-main text-xs text-justify text-gray-400 leading-relaxed mb-2 dark:text-neutral-400">
                                     {isDev ? project.solution[currentLang] : project.concept[currentLang]}
@@ -145,7 +145,7 @@ const Showdetail = ({project, onBack}) => {
                             </motion.div>
 
                             {/* Key Features */}
-                            <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
+                            <motion.div variants={itemVariants} className="flex flex-col gap-0.5 mt-4 justify-left items-start">
                                 <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={CiStar}>{isDev ? t("detail.result") : t("detail.deliverables")}</Subdetail>                
                                 <p className="font-main text-xs text-justify text-gray-400 leading-relaxed mb-2 dark:text-neutral-400">
                                     {isDev ? project.keyfeaturesdesc[currentLang] : project.deliverablesdesc[currentLang]}
@@ -160,10 +160,10 @@ const Showdetail = ({project, onBack}) => {
                             </motion.div>
 
                             {/* Informasi Tambahan */}
-                            <motion.div className="flex flex-col gap-0.5 mt-4 justify-left items-start">
+                            <motion.div variants={itemVariants} className="flex flex-col gap-0.5 mt-4 justify-left items-start">
                                 <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={PiUserSwitchLight}>{t("detail.role")}</Subdetail>                
 
-                                <motion.div variants={itemVariants} className="flex items-start">                                      
+                                <div variants={itemVariants} className="flex items-start">                                      
                                     <div className="flex flex-wrap gap-2 items-start">
                                         {project.role[currentLang].map((role, index) => {
                                             return(                                        
@@ -171,7 +171,7 @@ const Showdetail = ({project, onBack}) => {
                                             )
                                         })}
                                     </div>
-                                </motion.div>
+                                </div>
                             </motion.div>
 
                         </motion.div>  
