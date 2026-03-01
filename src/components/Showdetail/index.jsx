@@ -48,6 +48,7 @@ const Showdetail = ({project, onBack, scrollRef}) => {
         })
     }, [api])
 
+    // Reset scroll saat project berubah
     useLayoutEffect(() => {
         if (scrollRef && scrollRef.current) {
             const viewport = scrollRef.current.querySelector('[data-radix-scroll-area-viewport]');

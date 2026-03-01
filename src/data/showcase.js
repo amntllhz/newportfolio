@@ -11,11 +11,35 @@ import coverKknlogo from "../assets/kkn/kknlogo-cover.jpg"
 import coverLabhub from "../assets/labhub/labhub-cover.jpg"
 
 // Images
+
+// Internval
 import Internval1 from "../assets/internval/internval-car-1.jpg"
 import Internval2 from "../assets/internval/internval-car-2.jpg"
 import Internval3 from "../assets/internval/internval-car-3.jpg"
 import Internval4 from "../assets/internval/internval-car-4.jpg"
 import Internval5 from "../assets/internval/internval-car-5.jpg"
+
+// Egoverse
+import Egoverse1 from "../assets/egoverse/egoverse-car-1.jpg"
+import Egoverse2 from "../assets/egoverse/egoverse-car-2.jpg"
+import Egoverse3 from "../assets/egoverse/egoverse-car-3.jpg"
+import Egoverse4 from "../assets/egoverse/egoverse-car-4.jpg"
+import Egoverse5 from "../assets/egoverse/egoverse-car-5.jpg"
+
+// Anaksehat
+import Anaksehat1 from "../assets/anaksehat/anaksehat-car-1.jpg"
+import Anaksehat2 from "../assets/anaksehat/anaksehat-car-2.jpg"
+import Anaksehat3 from "../assets/anaksehat/anaksehat-car-3.jpg"
+import Anaksehat4 from "../assets/anaksehat/anaksehat-car-4.jpg"
+import Anaksehat5 from "../assets/anaksehat/anaksehat-car-5.jpg"
+
+// Labhub
+import Labhub1 from "../assets/labhub/labhub-car-1.jpg"
+import Labhub2 from "../assets/labhub/labhub-car-2.jpg"
+import Labhub3 from "../assets/labhub/labhub-car-3.jpg"
+import Labhub4 from "../assets/labhub/labhub-car-4.jpg"
+
+
 
 const showcase = [
 
@@ -29,6 +53,12 @@ const showcase = [
             id: "Aplikasi Pelaporan Fasilitas Laboratorium"
         },
         cover: coverLabhub,
+        images: [
+            Labhub1,
+            Labhub2,
+            Labhub3,
+            Labhub4
+        ],
         description: {
             en: "A simple desktop application developed using Python and Customtkinter for reporting computer and network facility issues in the computer laboratory at the Faculty of Engineering and Computer Science (UMPP). The system aims to provide an efficient communication channel between students/users and staff/managers.",
             id: "Sebuah aplikasi desktop sederhana yang dikembangkan menggunakan Python dan Customtkinter untuk melaporkan masalah fasilitas komputer dan jaringan di laboratorium komputer Fakultas Teknik dan Ilmu Komputer (UMPP). Sistem ini bertujuan menyediakan saluran komunikasi yang efisien antara mahasiswa/pengguna dan staf/pengelola."
@@ -90,6 +120,13 @@ const showcase = [
             id: "Kalkulator Status Gizi Anak"
         },
         cover: coverAnaksehat,
+        images: [
+            Anaksehat1,
+            Anaksehat2,
+            Anaksehat3,
+            Anaksehat4,
+            Anaksehat5            
+        ],
         description: {
             en: "Anaksehat is a website that contains nutritional information equipped with a toddler nutritional status calculation system using the z-score method according to standards. This website was created as an effort to reduce stunting in Indonesia through the dissemination of nutritional information and flexibility in checking the nutritional status of toddlers.",
             id: "Anaksehat adalah situs web yang berisi informasi gizi yang dilengkapi dengan sistem perhitungan status gizi balita menggunakan metode z-score sesuai standar. Situs web ini dibuat sebagai upaya untuk mengurangi stunting di Indonesia melalui penyebaran informasi gizi dan fleksibilitas dalam mengecek status gizi balita."
@@ -153,6 +190,13 @@ const showcase = [
             id: "Layanan E-Government"
         },
         cover: coverEgoverse,
+        images: [
+            Egoverse1,
+            Egoverse2,
+            Egoverse3,
+            Egoverse4,
+            Egoverse5
+        ],
         description: {
             en: "eGoverse or E-Government Services is an innovative OPD (Regional Apparatus Organization) Digitalization Service Portal designed to facilitate the submission of Clearance, Server, Device services, and other support to enhance the efficiency and performance of Regional Apparatus Organizations (OPD) in Pekalongan Regency.",
             id: "eGoverse atau E-Government Services adalah Portal Layanan Digitalisasi OPD (Organisasi Perangkat Daerah) inovatif yang dirancang untuk memfasilitasi pengajuan layanan Clearance, Server, Perangkat, dan dukungan lainnya guna meningkatkan efisiensi serta kinerja OPD di Kabupaten Pekalongan."
