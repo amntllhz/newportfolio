@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useLayoutEffect } from "react"
 import Subdetail from "../Subdetail"
 import { CiCircleChevLeft, CiStar } from "react-icons/ci"
 import Techbadge from "../Techbadge"
@@ -30,7 +30,7 @@ const itemVariants = {
   },
 };
 
-const Showdetail = ({project, onBack}) => {
+const Showdetail = ({project, onBack, scrollRef}) => {
     // State untuk melacak api carousel embla
     const [api, setApi] = useState(null)
     const [current, setCurrent] = useState(0)
@@ -48,6 +48,16 @@ const Showdetail = ({project, onBack}) => {
         })
     }, [api])
 
+    useLayoutEffect(() => {
+        if (scrollRef && scrollRef.current) {
+            const viewport = scrollRef.current.querySelector('[data-radix-scroll-area-viewport]');
+            if (viewport) {
+                // 'instant' memastikan tidak ada animasi scroll yang terlihat
+                viewport.scrollTo({ top: 0, behavior: 'instant' });
+            }
+        }
+    }, []);
+
     const images = project.images || [project.cover]
     const isDev = project.category === "dev"
     const { t, i18n } = useTranslation();
@@ -56,7 +66,10 @@ const Showdetail = ({project, onBack}) => {
     return (
         <>  
                 <motion.div                      
-                    variants={containerVariants} initial="hidden" animate="visible"                                         
+                    variants={containerVariants} 
+                    initial="hidden" 
+                    animate="visible"                                         
+                    exit="hidden"
                     className="lg:max-w-xl xs:max-w-full w-full flex flex-col gap-4">                
                         
                         {/* Tombol kembali */}
@@ -163,7 +176,7 @@ const Showdetail = ({project, onBack}) => {
                             <motion.div variants={itemVariants} className="flex flex-col gap-0.5 mt-4 justify-left items-start">
                                 <Subdetail fontWeight="font-medium" labelColor="text-gray-900" labelSize="text-sm" icon={PiUserSwitchLight}>{t("detail.role")}</Subdetail>                
 
-                                <div variants={itemVariants} className="flex items-start">                                      
+                                <motion.div variants={itemVariants} className="flex items-start">                                      
                                     <div className="flex flex-wrap gap-2 items-start">
                                         {project.role[currentLang].map((role, index) => {
                                             return(                                        
@@ -171,7 +184,7 @@ const Showdetail = ({project, onBack}) => {
                                             )
                                         })}
                                     </div>
-                                </div>
+                                </motion.div>
                             </motion.div>
 
                         </motion.div>  

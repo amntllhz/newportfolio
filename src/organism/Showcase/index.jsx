@@ -2,7 +2,7 @@ import { CiBoxList } from "react-icons/ci"
 import Subhead from "../../components/Subhead"
 import { motion, AnimatePresence } from "framer-motion"
 import Showcard from "@/components/Showcard";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Showdetail from "@/components/Showdetail";
 import showcase from "../../data/showcase"
 import { useTranslation } from "react-i18next";
@@ -28,11 +28,11 @@ const itemVariants = {
   },
 };
 
-const Showcase = () => {
+const Showcase = ({scrollRef}) => {
     const { t } = useTranslation();
     const [selectedProject, setSelectedProject] = useState(null);   
     const [activeTab, setActiveTab] = useState("dev");
-    const filteredData = showcase.filter((item) => item.category === activeTab); 
+    const filteredData = showcase.filter((item) => item.category === activeTab);     
 
     return (
         <>
@@ -74,6 +74,7 @@ const Showcase = () => {
                             <Showdetail 
                                 key="detail"                                
                                 project={selectedProject} 
+                                scrollRef={scrollRef}
                                 onBack={() => setSelectedProject(null)}
                             />
                         </motion.div>
