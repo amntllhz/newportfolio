@@ -1,4 +1,4 @@
-import profile from '../../assets/school/sma.png'
+import profile from '../../assets/school/sma-logo.png'
 import { motion } from "framer-motion"
 
 const Card = ({variants}) => {

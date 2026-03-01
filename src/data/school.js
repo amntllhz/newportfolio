@@ -1,6 +1,6 @@
-import imageA from "../assets/school/smp.png"
-import imageB from "../assets/school/sma.png"
-import imageC from "../assets/school/umpp.png"
+import imageA from "../assets/school/smp-logo.png"
+import imageB from "../assets/school/sma-logo.png"
+import imageC from "../assets/school/umpp-logo.png"
 
 const school = [
     {

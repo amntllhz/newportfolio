@@ -13,7 +13,7 @@ const Expcard = ({variants}) => {
             {dataDescending.map((exp) => {
                 return (
                     <motion.div key={exp.id} variants={variants} className="flex rounded-xl p-1 justify-left items-start outline outline-offset-0 outline-gray-300/80 w-full gap-1 dark:outline-neutral-800">
-                        <div className="w-fit overflow-hidden rounded-lg outline outline-offset-0 outline-gray-300/80 dark:outline-neutral-800">
+                        <div className="w-fit overflow-hidden rounded-lg bg-radial from-transparent to-transparent dark:bg-radial dark:from-transparent dark:to-neutral-50/5 outline outline-offset-0 outline-gray-300/80 dark:outline-neutral-800">
                             <img src={exp.image} alt="" className="lg:w-20 lg:h-20 xs:w-18 xs:h-18 object-cover"/>
                         </div>
                         <div className="flex flex-col gap-0.5 py-2 px-3">  
