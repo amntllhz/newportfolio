@@ -1,7 +1,8 @@
-import Badge from "@/components/Badge"
 import { motion } from "framer-motion"
 import Talk from "../components/Talk"
 import { useTranslation } from "react-i18next";
+import { ImagesBadge } from "@/components/ui/images-badge";
+import Images1 from "../assets/internval/internval-cover.jpg"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -24,18 +25,35 @@ const itemVariants = {
   },
 };
 
+const Images = [
+  Images1
+]
+
 const Contact = () => {
     const { t } = useTranslation();
     return (
         <>
             <div className="w-full h-screen flex items-center justify-center">                
                 <motion.div variants={containerVariants} initial="hidden" animate="visible" className="flex flex-col items-center gap-2 lg:max-w-lg xs:max-w-[85%]">
-                    <Badge variants={itemVariants}>{t("contact.status")}</Badge>                    
+                    <motion.div className="flex bg-gray-100 dark:bg-neutral-900 rounded-sm px-2 py-1" variants={itemVariants}>                      
+                      <ImagesBadge 
+                          images={Images} 
+                          variants={itemVariants}
+                          text={t("contact.cv")}
+                          href="/cv.pdf"
+                          target="_blank"
+                          folderSize={{ width: 22, height: 16 }}
+                          teaserImageSize={{ width: 14, height: 10 }}
+                          hoverImageSize={{ width: 36, height: 24 }}
+                          hoverTranslateY={-28}
+                          hoverSpread={14}>
+                      </ImagesBadge>
+                    </motion.div>                    
                     <motion.h1 variants={itemVariants} className="font-main text-center font-semibold text-3xl text-gray-900 dark:text-neutral-100">{t("contact.title")}</motion.h1>                                            
                     <motion.p variants={itemVariants} className="font-main text-xs text-gray-400 text-center leading-normal dark:text-neutral-400">
                         {t("contact.desc")}
                     </motion.p>
-                    <Talk variants={itemVariants}></Talk>
+                    <Talk variants={itemVariants}></Talk>                    
                 </motion.div>                                    
             </div>
         </>

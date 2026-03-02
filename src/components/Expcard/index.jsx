@@ -20,7 +20,7 @@ const Expcard = ({variants}) => {
                             <div className="flex items-center">
                                 <p className="font-main font-semibold lg:text-sm xs:text-[10px] text-gray-500/80 dark:text-neutral-100">{exp.title}</p>
                                 <p className="font-main font-extralight lg:text-sm xs:text-[10px] text-gray-400 dark:text-neutral-400 mx-2">|</p>
-                                <p className="font-main lg:text-xs xs:text-[10px] text-gray-400 dark:text-neutral-400">{exp.category}</p>
+                                <p className="font-main lg:text-xs xs:text-[10px] text-gray-400 dark:text-neutral-400">{exp.category[currentLang]}</p>
                             </div>                      
                             <div className="flex flex-col gap-1 mt-1">
                                 <div className="flex gap-1">

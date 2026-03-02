@@ -47,10 +47,10 @@ i18n
             p2: "I always strive to deliver modern interfaces with seamless user experience, while keeping innovation and usability in harmony. I value teamwork highly, i believe collaboration creates more efficient and effective solutions."
           },
           contact: {
-            status: "Available",
+            cv: "Resume",
             title: "Maybe we can Talk",
             desc: "I'm currently available for new opportunities and collaborations. If you think my skills align with your needs, feel free to start a conversation everywhere",
-          },
+          },          
         }
       },
       id: {
@@ -85,10 +85,10 @@ i18n
             p2: "Saya selalu berusaha menciptakan antarmuka modern dan pengalaman pengguna yang halus dengan menjaga keseimbangan inovasi dan kegunaan. Saya sangat menyukai kerja sama tim, saya percaya kolaborasi menciptakan solusi yang lebih efisien dan efektif."
           },
           contact: {
-            status: "Tersedia",
-            title: "Mungkin Kita Bisa Berkomunikasi",
+            cv: "Resume",
+            title: "Mungkin Kita Bisa Bicara",
             desc: "Saat ini saya terbuka untuk kesempatan baru dan kolaborasi. Jika menurut anda keahlian saya sesuai dengan kebutuhan anda, jangan ragu untuk berkomunikasi di manapun",
-          },
+          },          
         }
       }
     }

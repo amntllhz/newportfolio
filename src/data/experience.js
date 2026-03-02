@@ -15,7 +15,10 @@ const experience = [
             en: "Sep 2023 - Jun 2024",
             id: "Sep 2023 - Jun 2024"
         },
-        category: "Coursework Project"
+        category: {
+          en: "Coursework Project",
+          id: "Proyek Mata Kuliah"
+        }
     },
     {   id: 2,
         title: "Front-end Web Developer",  
@@ -29,7 +32,10 @@ const experience = [
             en : "Jul 2024 - Sep 2024",
             id : "Jul 2024 - Sep 2024"
         },
-        category: "Internship"
+        category: {
+            en: "Internship",
+            id: "Magang"
+        }
     },  
     {   
         id: 3,        
@@ -44,7 +50,10 @@ const experience = [
             en : "Jan 2025 - Dec 2025",
             id : "Jan 2025 - Des 2025"
         },
-        category: "Capstone Project"
+        category: {
+            en: "Capstone Project",
+            id: "Proyek Akhir"
+        }
     },          
 ];
 
