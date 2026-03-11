@@ -332,15 +332,15 @@ const showcase = [
     {   
         id: 4,
         category: "design",
-        title: "Secondmarket",
+        title: "Weestaw",
         subtitle: {
-            en: "Prelove and Thrift Marketplace",
-            id: "Marketplace Barang Bekas dan Thrifting"
+            en: "Prelove and Thrift Shoping App",
+            id: "Aplikasi Jual Beli Pakaian Bekas"
         },
         cover: coverSecondmarket,
         description: {
-            en: "Secondmarket is a dedicated UI/UX design for a specialized e-commerce platform focused on buying and selling high-quality pre-loved clothing. The project aims to bridge the gap between thrifting enthusiasts and sellers by providing a professional marketplace environment that distinguishes used goods from new products.",
-            id: "Secondmarket adalah desain UI/UX khusus untuk platform e-commerce yang berfokus pada jual beli pakaian bekas (pre-loved) berkualitas tinggi. Proyek ini bertujuan untuk menjembatani celah antara penggemar thrifting dan penjual dengan menyediakan lingkungan pasar profesional yang membedakan barang bekas dari produk baru."
+            en: "Weestaw is a dedicated UI/UX design for a specialized e-commerce platform focused on buying and selling high-quality pre-loved clothing. The project aims to bridge the gap between thrifting enthusiasts and sellers by providing a professional marketplace environment that distinguishes used goods from new products.",
+            id: "Weestaw adalah desain UI/UX khusus untuk platform e-commerce yang berfokus pada jual beli pakaian bekas (pre-loved) berkualitas tinggi. Proyek ini bertujuan untuk menjembatani celah antara penggemar thrifting dan penjual dengan menyediakan lingkungan pasar profesional yang membedakan barang bekas dari produk baru."
         },
         techstack: ["Photoshop", "Illustrator", "Figma"],
         role: {
