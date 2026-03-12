@@ -3,7 +3,7 @@
 import coverInternval from "../assets/internval/internval-cover.jpg"
 import coverEgoverse from "../assets/egoverse/egoverse-cover.jpg"
 import coverAnaksehat from "../assets/anaksehat/anaksehat-cover.jpg"
-import coverSecondmarket from "../assets/secondmarket/secondmarket-cover.jpg"
+import coverWeestaw from "../assets/weestaw/weestaw-cover.jpg"
 import coverGaneshacup from "../assets/ganeshacup/ganeshacup-cover.jpg"
 import coverEgoverselogo from "../assets/egoverse/egoverselogo-cover.jpg"
 import coverInternvallogo from "../assets/internval/internvallogo-cover.jpg"
@@ -337,7 +337,7 @@ const showcase = [
             en: "Prelove and Thrift Shoping App",
             id: "Aplikasi Jual Beli Pakaian Bekas"
         },
-        cover: coverSecondmarket,
+        cover: coverWeestaw,
         description: {
             en: "Weestaw is a dedicated UI/UX design for a specialized e-commerce platform focused on buying and selling high-quality pre-loved clothing. The project aims to bridge the gap between thrifting enthusiasts and sellers by providing a professional marketplace environment that distinguishes used goods from new products.",
             id: "Weestaw adalah desain UI/UX khusus untuk platform e-commerce yang berfokus pada jual beli pakaian bekas (pre-loved) berkualitas tinggi. Proyek ini bertujuan untuk menjembatani celah antara penggemar thrifting dan penjual dengan menyediakan lingkungan pasar profesional yang membedakan barang bekas dari produk baru."
