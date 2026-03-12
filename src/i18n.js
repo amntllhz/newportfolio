@@ -9,7 +9,8 @@ i18n
   .use(LanguageDetector) // Deteksi bahasa otomatis
   .use(initReactI18next) // Kirim i18n ke react-i18next
   .init({
-    debug: true, // Set false jika sudah siap sebar (production)
+    debug: false, // Set false jika sudah siap sebar (production)
+    lng: 'en',
     fallbackLng: 'en', // Jika bahasa user tidak didukung, pakai Inggris
     interpolation: {
       escapeValue: false, // React sudah otomatis aman dari XSS
