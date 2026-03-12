@@ -49,7 +49,7 @@ const Contact = () => {
                           hoverSpread={14}>
                       </ImagesBadge>
                     </motion.div>                    
-                    <motion.h1 variants={itemVariants} className="font-main text-center font-semibold text-3xl text-gray-900 dark:text-neutral-100">{t("contact.title")}</motion.h1>                                            
+                    <motion.h1 variants={itemVariants} className="font-main text-center font-semibold lg:text-3xl xs:text-2xl text-gray-900 dark:text-neutral-100">{t("contact.title")}</motion.h1>                                            
                     <motion.p variants={itemVariants} className="font-main text-xs text-gray-400 text-center leading-normal dark:text-neutral-400">
                         {t("contact.desc")}
                     </motion.p>

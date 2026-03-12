@@ -88,7 +88,7 @@ i18n
           contact: {
             cv: "Resume",
             title: "Mungkin Kita Bisa Bicara",
-            desc: "Saat ini saya terbuka untuk kesempatan baru dan kolaborasi. Jika menurut anda keahlian saya sesuai dengan kebutuhan anda, jangan ragu untuk berkomunikasi di manapun",
+            desc: "Saya terbuka untuk kesempatan baru dan kolaborasi. Jika menurut anda keahlian saya sesuai dengan kebutuhan anda, jangan ragu untuk berkomunikasi di manapun",
           },          
         }
       }
