@@ -1,9 +1,6 @@
-import { createContext, useContext, useEffect, useState } from "react"
-
-const ThemeProviderContext = createContext({
-  theme: "system",
-  setTheme: () => null,
-})
+// theme-provider.jsx
+import { useEffect, useState } from "react"
+import { ThemeProviderContext } from "./use-theme" // Impor dari file tadi
 
 export function ThemeProvider({
   children,
@@ -16,20 +13,20 @@ export function ThemeProvider({
 
   useEffect(() => {
     const root = window.document.documentElement
-
     root.classList.remove("light", "dark")
 
-    if (theme === "system") {
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-        .matches
-        ? "dark"
-        : "light"
+    const appliedTheme = theme === "system" 
+      ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+      : theme
 
-      root.classList.add(systemTheme)
-      return
+    root.classList.add(appliedTheme)
+
+    // Logika meta theme-color yang kita buat tadi
+    const metaThemeColor = window.document.querySelector('meta[name="theme-color"]')
+    if (metaThemeColor) {
+      const color = appliedTheme === "dark" ? "#09090b" : "#ffffff"
+      metaThemeColor.setAttribute("content", color)
     }
-
-    root.classList.add(theme)
   }, [theme])
 
   const value = {
@@ -45,14 +42,4 @@ export function ThemeProvider({
       {children}
     </ThemeProviderContext.Provider>
   )
-}
-
-export function useTheme() {
-  const context = useContext(ThemeProviderContext)
-
-  if (!context) {
-    throw new Error("useTheme must be used within ThemeProvider")
-  }
-
-  return context
 }
