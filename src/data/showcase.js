@@ -40,7 +40,6 @@ import Labhub3 from "../assets/labhub/labhub-car-3.jpg"
 import Labhub4 from "../assets/labhub/labhub-car-4.jpg"
 
 // Weestaw
-
 import Weestaw1 from "../assets/weestaw/weestaw-car-1.jpg"
 import Weestaw2 from "../assets/weestaw/weestaw-car-2.jpg"
 import Weestaw3 from "../assets/weestaw/weestaw-car-3.jpg"
@@ -48,11 +47,14 @@ import Weestaw4 from "../assets/weestaw/weestaw-car-4.jpg"
 import Weestaw5 from "../assets/weestaw/weestaw-car-5.jpg"
 
 // Ganeshacup
-
 import Ganeshacup1 from "../assets/ganeshacup/ganeshacup-car-1.jpg"
 import Ganeshacup2 from "../assets/ganeshacup/ganeshacup-car-2.jpg"
 import Ganeshacup3 from "../assets/ganeshacup/ganeshacup-car-3.jpg"
-import Ganeshacup4 from "../assets/ganeshacup/ganeshacup-car-4.jpg"
+
+// Egoverselogo
+import Egoverselogo1 from "../assets/egoverse/egoverselogo-car-1.jpg"
+import Egoverselogo2 from "../assets/egoverse/egoverselogo-car-2.jpg"
+import Egoverselogo3 from "../assets/egoverse/egoverselogo-car-3.jpg"
 
 
 const showcase = [
@@ -409,8 +411,7 @@ const showcase = [
         images: [
             Ganeshacup1,
             Ganeshacup2,
-            Ganeshacup3,
-            Ganeshacup4  
+            Ganeshacup3,            
         ],
         description: {
             en: "A complete set of print-ready designs for the Ganesha Cup II futsal tournament. This project includes a large-scale photo backdrop and various award banners, all maintaining a consistent visual theme to strengthen the event's identity and professional appearance.",
@@ -459,6 +460,11 @@ const showcase = [
             id: "Layanan E-Government"
         },
         cover: coverEgoverselogo,
+        images: [
+            Egoverselogo1,
+            Egoverselogo2,
+            Egoverselogo3
+        ],
         description: {
             en: "A comprehensive brand identity design for Egoverse (E-Government Services) at Dinkominfo Pekalongan Regency. The identity is crafted to bridge the gap between traditional government administration and modern digital efficiency, fostering trust and accessibility for the public.",
             id: "Desain identitas merek yang komprehensif untuk Egoverse (E-Government Services) di Dinkominfo Kabupaten Pekalongan. Identitas ini dirancang untuk menjembatani celah antara administrasi pemerintahan tradisional dan efisiensi digital modern, guna menumbuhkan kepercayaan dan aksesibilitas bagi publik."
