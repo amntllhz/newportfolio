@@ -39,6 +39,20 @@ import Labhub2 from "../assets/labhub/labhub-car-2.jpg"
 import Labhub3 from "../assets/labhub/labhub-car-3.jpg"
 import Labhub4 from "../assets/labhub/labhub-car-4.jpg"
 
+// Weestaw
+
+import Weestaw1 from "../assets/weestaw/weestaw-car-1.jpg"
+import Weestaw2 from "../assets/weestaw/weestaw-car-2.jpg"
+import Weestaw3 from "../assets/weestaw/weestaw-car-3.jpg"
+import Weestaw4 from "../assets/weestaw/weestaw-car-4.jpg"
+import Weestaw5 from "../assets/weestaw/weestaw-car-5.jpg"
+
+// Ganeshacup
+
+import Ganeshacup1 from "../assets/ganeshacup/ganeshacup-car-1.jpg"
+import Ganeshacup2 from "../assets/ganeshacup/ganeshacup-car-2.jpg"
+import Ganeshacup3 from "../assets/ganeshacup/ganeshacup-car-3.jpg"
+import Ganeshacup4 from "../assets/ganeshacup/ganeshacup-car-4.jpg"
 
 
 const showcase = [
@@ -338,6 +352,13 @@ const showcase = [
             id: "Aplikasi Jual Beli Pakaian Bekas"
         },
         cover: coverWeestaw,
+        images: [
+            Weestaw1,
+            Weestaw2,
+            Weestaw3,
+            Weestaw4,
+            Weestaw5
+        ],
         description: {
             en: "Weestaw is a dedicated UI/UX design for a specialized e-commerce platform focused on buying and selling high-quality pre-loved clothing. The project aims to bridge the gap between thrifting enthusiasts and sellers by providing a professional marketplace environment that distinguishes used goods from new products.",
             id: "Weestaw adalah desain UI/UX khusus untuk platform e-commerce yang berfokus pada jual beli pakaian bekas (pre-loved) berkualitas tinggi. Proyek ini bertujuan untuk menjembatani celah antara penggemar thrifting dan penjual dengan menyediakan lingkungan pasar profesional yang membedakan barang bekas dari produk baru."
@@ -385,6 +406,12 @@ const showcase = [
             id: "Identitas Acara & Media Cetak"
         },
         cover: coverGaneshacup,
+        images: [
+            Ganeshacup1,
+            Ganeshacup2,
+            Ganeshacup3,
+            Ganeshacup4  
+        ],
         description: {
             en: "A complete set of print-ready designs for the Ganesha Cup II futsal tournament. This project includes a large-scale photo backdrop and various award banners, all maintaining a consistent visual theme to strengthen the event's identity and professional appearance.",
             id: "Rangkaian lengkap desain siap cetak untuk turnamen futsal Ganesha Cup II. Proyek ini mencakup backdrop foto skala besar dan berbagai banner penghargaan, semuanya mempertahankan tema visual yang konsisten untuk memperkuat identitas acara dan kesan profesional."
