@@ -54,7 +54,6 @@ import Ganeshacup3 from "../assets/ganeshacup/ganeshacup-car-3.jpg"
 // Egoverselogo
 import Egoverselogo1 from "../assets/egoverse/egoverselogo-car-1.jpg"
 import Egoverselogo2 from "../assets/egoverse/egoverselogo-car-2.jpg"
-import Egoverselogo3 from "../assets/egoverse/egoverselogo-car-3.jpg"
 
 
 const showcase = [
@@ -462,8 +461,7 @@ const showcase = [
         cover: coverEgoverselogo,
         images: [
             Egoverselogo1,
-            Egoverselogo2,
-            Egoverselogo3
+            Egoverselogo2            
         ],
         description: {
             en: "A comprehensive brand identity design for Egoverse (E-Government Services) at Dinkominfo Pekalongan Regency. The identity is crafted to bridge the gap between traditional government administration and modern digital efficiency, fostering trust and accessibility for the public.",
