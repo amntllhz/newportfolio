@@ -24,7 +24,7 @@ export function ThemeProvider({
     // Logika meta theme-color yang kita buat tadi
     const metaThemeColor = window.document.querySelector('meta[name="theme-color"]')
     if (metaThemeColor) {
-      const color = appliedTheme === "dark" ? "#09090b" : "#ffffff"
+      const color = appliedTheme === "dark" ? "#0A0A0A" : "#ffffff"
       metaThemeColor.setAttribute("content", color)
     }
   }, [theme])
