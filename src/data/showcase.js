@@ -60,6 +60,11 @@ import Internvallogo1 from "../assets/internval/internvallogo-car-1.jpg"
 import Internvallogo2 from "../assets/internval/internvallogo-car-2.jpg"
 import Internvallogo3 from "../assets/internval/internvallogo-car-3.jpg"
 
+// Kknlogo
+import Kknlogo1 from "../assets/kkn/kknlogo-car-1.jpg"
+import Kknlogo2 from "../assets/kkn/kknlogo-car-2.jpg"
+import Kknlogo3 from "../assets/kkn/kknlogo-car-3.jpg"
+
 
 const showcase = [
 
@@ -567,6 +572,11 @@ const showcase = [
             id: "Identitas Merek KKN Pasirkratonkramat"
         },
         cover: coverKknlogo,
+        images: [
+            Kknlogo1,
+            Kknlogo2,
+            Kknlogo3
+        ],
         description: {
             en: "A specialized logo identity designed for the KKN (Community Service Program) in PasirKratonKramat, Pekalongan. The visual system integrates local geographical features, cultural heritage, and historical backgrounds into a unified symbol of community service.",
             id: "Identitas logo khusus yang dirancang untuk program KKN di PasirKratonKramat, Pekalongan. Sistem visual ini mengintegrasikan fitur geografis lokal, warisan budaya, dan latar belakang sejarah ke dalam simbol pengabdian masyarakat yang terpadu."
