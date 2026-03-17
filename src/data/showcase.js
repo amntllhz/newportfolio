@@ -13,57 +13,57 @@ import coverLabhub from "../assets/labhub/labhub-cover.webp"
 // Images
 
 // Internval
-import Internval1 from "../assets/internval/internval-car-1.jpg"
-import Internval2 from "../assets/internval/internval-car-2.jpg"
-import Internval3 from "../assets/internval/internval-car-3.jpg"
-import Internval4 from "../assets/internval/internval-car-4.jpg"
-import Internval5 from "../assets/internval/internval-car-5.jpg"
+import Internval1 from "../assets/internval/internval-car-1.webp"
+import Internval2 from "../assets/internval/internval-car-2.webp"
+import Internval3 from "../assets/internval/internval-car-3.webp"
+import Internval4 from "../assets/internval/internval-car-4.webp"
+import Internval5 from "../assets/internval/internval-car-5.webp"
 
 // Egoverse
-import Egoverse1 from "../assets/egoverse/egoverse-car-1.jpg"
-import Egoverse2 from "../assets/egoverse/egoverse-car-2.jpg"
-import Egoverse3 from "../assets/egoverse/egoverse-car-3.jpg"
-import Egoverse4 from "../assets/egoverse/egoverse-car-4.jpg"
-import Egoverse5 from "../assets/egoverse/egoverse-car-5.jpg"
+import Egoverse1 from "../assets/egoverse/egoverse-car-1.webp"
+import Egoverse2 from "../assets/egoverse/egoverse-car-2.webp"
+import Egoverse3 from "../assets/egoverse/egoverse-car-3.webp"
+import Egoverse4 from "../assets/egoverse/egoverse-car-4.webp"
+import Egoverse5 from "../assets/egoverse/egoverse-car-5.webp"
 
 // Anaksehat
-import Anaksehat1 from "../assets/anaksehat/anaksehat-car-1.jpg"
-import Anaksehat2 from "../assets/anaksehat/anaksehat-car-2.jpg"
-import Anaksehat3 from "../assets/anaksehat/anaksehat-car-3.jpg"
-import Anaksehat4 from "../assets/anaksehat/anaksehat-car-4.jpg"
-import Anaksehat5 from "../assets/anaksehat/anaksehat-car-5.jpg"
+import Anaksehat1 from "../assets/anaksehat/anaksehat-car-1.webp"
+import Anaksehat2 from "../assets/anaksehat/anaksehat-car-2.webp"
+import Anaksehat3 from "../assets/anaksehat/anaksehat-car-3.webp"
+import Anaksehat4 from "../assets/anaksehat/anaksehat-car-4.webp"
+import Anaksehat5 from "../assets/anaksehat/anaksehat-car-5.webp"
 
 // Labhub
-import Labhub1 from "../assets/labhub/labhub-car-1.jpg"
-import Labhub2 from "../assets/labhub/labhub-car-2.jpg"
-import Labhub3 from "../assets/labhub/labhub-car-3.jpg"
-import Labhub4 from "../assets/labhub/labhub-car-4.jpg"
+import Labhub1 from "../assets/labhub/labhub-car-1.webp"
+import Labhub2 from "../assets/labhub/labhub-car-2.webp"
+import Labhub3 from "../assets/labhub/labhub-car-3.webp"
+import Labhub4 from "../assets/labhub/labhub-car-4.webp"
 
 // Weestaw
-import Weestaw1 from "../assets/weestaw/weestaw-car-1.jpg"
-import Weestaw2 from "../assets/weestaw/weestaw-car-2.jpg"
-import Weestaw3 from "../assets/weestaw/weestaw-car-3.jpg"
-import Weestaw4 from "../assets/weestaw/weestaw-car-4.jpg"
-import Weestaw5 from "../assets/weestaw/weestaw-car-5.jpg"
+import Weestaw1 from "../assets/weestaw/weestaw-car-1.webp"
+import Weestaw2 from "../assets/weestaw/weestaw-car-2.webp"
+import Weestaw3 from "../assets/weestaw/weestaw-car-3.webp"
+import Weestaw4 from "../assets/weestaw/weestaw-car-4.webp"
+import Weestaw5 from "../assets/weestaw/weestaw-car-5.webp"
 
 // Ganeshacup
-import Ganeshacup1 from "../assets/ganeshacup/ganeshacup-car-1.jpg"
-import Ganeshacup2 from "../assets/ganeshacup/ganeshacup-car-2.jpg"
-import Ganeshacup3 from "../assets/ganeshacup/ganeshacup-car-3.jpg"
+import Ganeshacup1 from "../assets/ganeshacup/ganeshacup-car-1.webp"
+import Ganeshacup2 from "../assets/ganeshacup/ganeshacup-car-2.webp"
+import Ganeshacup3 from "../assets/ganeshacup/ganeshacup-car-3.webp"
 
 // Egoverselogo
-import Egoverselogo1 from "../assets/egoverse/egoverselogo-car-1.jpg"
-import Egoverselogo2 from "../assets/egoverse/egoverselogo-car-2.jpg"
+import Egoverselogo1 from "../assets/egoverse/egoverselogo-car-1.webp"
+import Egoverselogo2 from "../assets/egoverse/egoverselogo-car-2.webp"
 
 // Internvallogo
-import Internvallogo1 from "../assets/internval/internvallogo-car-1.jpg"
-import Internvallogo2 from "../assets/internval/internvallogo-car-2.jpg"
-import Internvallogo3 from "../assets/internval/internvallogo-car-3.jpg"
+import Internvallogo1 from "../assets/internval/internvallogo-car-1.webp"
+import Internvallogo2 from "../assets/internval/internvallogo-car-2.webp"
+import Internvallogo3 from "../assets/internval/internvallogo-car-3.webp"
 
 // Kknlogo
-import Kknlogo1 from "../assets/kkn/kknlogo-car-1.jpg"
-import Kknlogo2 from "../assets/kkn/kknlogo-car-2.jpg"
-import Kknlogo3 from "../assets/kkn/kknlogo-car-3.jpg"
+import Kknlogo1 from "../assets/kkn/kknlogo-car-1.webp"
+import Kknlogo2 from "../assets/kkn/kknlogo-car-2.webp"
+import Kknlogo3 from "../assets/kkn/kknlogo-car-3.webp"
 
 
 const showcase = [
