@@ -55,6 +55,11 @@ import Ganeshacup3 from "../assets/ganeshacup/ganeshacup-car-3.jpg"
 import Egoverselogo1 from "../assets/egoverse/egoverselogo-car-1.jpg"
 import Egoverselogo2 from "../assets/egoverse/egoverselogo-car-2.jpg"
 
+// Internvallogo
+import Internvallogo1 from "../assets/internval/internvallogo-car-1.jpg"
+import Internvallogo2 from "../assets/internval/internvallogo-car-2.jpg"
+import Internvallogo3 from "../assets/internval/internvallogo-car-3.jpg"
+
 
 const showcase = [
 
@@ -510,6 +515,11 @@ const showcase = [
             id: "Validasi Magang"
         },
         cover: coverInternvallogo,
+        images: [
+            Internvallogo1,
+            Internvallogo2,
+            Internvallogo3
+        ],
         description: {
             en: "A comprehensive brand identity design for Internval (Internship Validation) at the Faculty of Engineering and Computer Science (UMPP). The identity is crafted to bridge the gap between traditional academic administration and modern digital efficiency, fostering trust and accessibility for students.",
             id: "Desain identitas merek yang komprehensif untuk Internval (Internship Validation) di Fakultas Teknik dan Ilmu Komputer (UMPP). Identitas ini dirancang untuk menjembatani celah antara administrasi akademik tradisional dan efisiensi digital modern, guna menumbuhkan kepercayaan dan aksesibilitas bagi mahasiswa."
