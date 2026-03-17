@@ -1,14 +1,14 @@
 
 // Cover
-import coverInternval from "../assets/internval/internval-cover.jpg"
-import coverEgoverse from "../assets/egoverse/egoverse-cover.jpg"
-import coverAnaksehat from "../assets/anaksehat/anaksehat-cover.jpg"
-import coverWeestaw from "../assets/weestaw/weestaw-cover.jpg"
-import coverGaneshacup from "../assets/ganeshacup/ganeshacup-cover.jpg"
-import coverEgoverselogo from "../assets/egoverse/egoverselogo-cover.jpg"
-import coverInternvallogo from "../assets/internval/internvallogo-cover.jpg"
-import coverKknlogo from "../assets/kkn/kknlogo-cover.jpg"
-import coverLabhub from "../assets/labhub/labhub-cover.jpg"
+import coverInternval from "../assets/internval/internval-cover.webp"
+import coverEgoverse from "../assets/egoverse/egoverse-cover.webp"
+import coverAnaksehat from "../assets/anaksehat/anaksehat-cover.webp"
+import coverWeestaw from "../assets/weestaw/weestaw-cover.webp"
+import coverGaneshacup from "../assets/ganeshacup/ganeshacup-cover.webp"
+import coverEgoverselogo from "../assets/egoverse/egoverselogo-cover.webp"
+import coverInternvallogo from "../assets/internval/internvallogo-cover.webp"
+import coverKknlogo from "../assets/kkn/kknlogo-cover.webp"
+import coverLabhub from "../assets/labhub/labhub-cover.webp"
 
 // Images
 
