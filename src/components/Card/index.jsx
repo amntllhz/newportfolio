@@ -1,4 +1,4 @@
-import profile from '../../assets/school/sma-logo.png'
+import profile from '../../assets/profile.webp'
 import { motion } from "framer-motion"
 
 const Card = ({variants}) => {
