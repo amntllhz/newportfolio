@@ -28,7 +28,7 @@ const Hero = () => {
 
     return (
         <>
-            <motion.div initial="hidden" animate="visible" variants={containerVariants} className="w-full h-screen flex gap-6 items-center justify-center lg:flex-row xs:flex-col">                
+            <motion.div initial="hidden" animate="visible" variants={containerVariants} className="w-full h-dvh flex gap-6 items-center justify-center lg:flex-row xs:flex-col">                
                 <Card variants={itemVariants}></Card> 
                 <div className="flex flex-col gap-2 lg:max-w-lg xs:max-w-9/10">
                         <motion.h1 variants={itemVariants} className="font-main font-semibold lg:text-xl xs:text-md text-gray-900 lg:text-left xs:text-center dark:text-white">

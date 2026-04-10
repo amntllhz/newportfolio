@@ -33,7 +33,7 @@ const Contact = () => {
     const { t } = useTranslation();
     return (
         <>
-            <div className="w-full h-screen flex items-center justify-center">                
+            <div className="w-full h-dvh flex items-center justify-center">                
                 <motion.div variants={containerVariants} initial="hidden" animate="visible" className="flex flex-col items-center gap-2 lg:max-w-lg xs:max-w-[85%]">
                     <motion.div className="flex bg-gray-100 dark:bg-neutral-900 rounded-sm px-2 py-1" variants={itemVariants}>                      
                       <ImagesBadge 
