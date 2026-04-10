@@ -8,6 +8,7 @@ import { BsCaretRight } from "react-icons/bs"
 import { Carousel, CarouselContent, CarouselItem,  } from "@/components/ui/carousel"
 import Badge from "../Badge"
 import { useTranslation } from "react-i18next"
+import { Skeleton } from "../ui/skeleton"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -60,6 +61,19 @@ const Showdetail = ({project, onBack, scrollRef}) => {
     }, []);
 
     const images = project.images || [project.cover]
+
+    const [loadedStates, setLoadedStates] = useState(() => 
+        new Array(images.length).fill(false)
+    )
+    
+    const handleImageLoad = (index) => {
+        setLoadedStates(prev => {
+            const updated = [...prev]
+            updated[index] = true
+            return updated
+        })
+    }
+
     const isDev = project.category === "dev"
     const { t, i18n } = useTranslation();
     const currentLang = i18n.language.split('-')[0];
@@ -87,7 +101,23 @@ const Showdetail = ({project, onBack, scrollRef}) => {
                                     {images.map((img, index) => (
                                     <CarouselItem key={index} className="pl-0 lg:basis-80 xs:basis-full">
                                         <div className="pr-4">
-                                            <img src={img} className="lg:w-80 xs:w-full object-cover rounded-xl border border-gray-100 dark:border-neutral-900" />
+                                            {/* ✅ BARU: wrapper dengan rasio eksak + relative */}
+                                            <div className="relative aspect-1616/976 w-full rounded-xl overflow-hidden border border-gray-100 dark:border-neutral-900">
+                                                
+                                                {/* ✅ BARU: skeleton per gambar */}
+                                                {!loadedStates[index] && (
+                                                    <Skeleton className="absolute inset-0 w-full h-full rounded-xl z-10" />
+                                                )}
+
+                                                {/* ✅ BERUBAH: tambah opacity transition + onLoad, hapus loading attribute */}
+                                                <img 
+                                                    src={img}
+                                                    className={`w-full h-full object-cover rounded-xl border border-gray-100 dark:border-neutral-900 transition-opacity duration-700 ${
+                                                        loadedStates[index] ? "opacity-100" : "opacity-0"
+                                                    }`}
+                                                    onLoad={() => handleImageLoad(index)}
+                                                />
+                                            </div>
                                         </div>
                                     </CarouselItem>
                                     ))}
