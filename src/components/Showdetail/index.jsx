@@ -97,10 +97,10 @@ const Showdetail = ({project, onBack, scrollRef}) => {
                         <motion.div variants={itemVariants} className="relative w-full">
                             {/* SetApi digunakan untuk menangkap instance carousel */}
                             <Carousel setApi={setApi} opts={{ align: "start" }} className="w-full">
-                                <CarouselContent className="ml-0">
+                                <CarouselContent className="ml-0 gap-4">
                                     {images.map((img, index) => (
                                     <CarouselItem key={index} className="pl-0 lg:basis-80 xs:basis-full">
-                                        <div className="pr-4">
+                                        
                                             {/* ✅ BARU: wrapper dengan rasio eksak + relative */}
                                             <div className="relative aspect-1616/976 w-full rounded-xl overflow-hidden border border-gray-100 dark:border-neutral-900">
                                                 
@@ -118,7 +118,7 @@ const Showdetail = ({project, onBack, scrollRef}) => {
                                                     onLoad={() => handleImageLoad(index)}
                                                 />
                                             </div>
-                                        </div>
+                                        
                                     </CarouselItem>
                                     ))}
                                 </CarouselContent>
