@@ -39,7 +39,7 @@ const ShowcardItem = ({ show, variants, onSelect }) => {
                 <img 
                     src={show.cover}
                     loading="lazy"
-                    className={`w-full h-full object-cover transition-opacity duration-700 ${
+                    className={`w-full h-full transition-opacity duration-700 ${
                         isLoaded ? "opacity-100" : "opacity-0"
                     }`}
                     onLoad={() => setIsLoaded(true)}
