@@ -141,8 +141,8 @@ const showcase = [
         category: "dev",
         title: "Anaksehat",
         subtitle: {
-            en: "Nutrition Status Calculator",
-            id: "Kalkulator Status Gizi Anak"
+            en: "Nutrition Education & Prediction",
+            id: "Edukasi dan Prediksi Gizi"
         },
         cover: coverAnaksehat,
         images: [
@@ -154,7 +154,7 @@ const showcase = [
         ],
         description: {
             en: "Anaksehat is a website that contains nutritional information equipped with a toddler nutritional status calculation system using the z-score method according to standards. This website was created as an effort to reduce stunting in Indonesia through the dissemination of nutritional information and flexibility in checking the nutritional status of toddlers.",
-            id: "Anaksehat adalah situs web yang berisi informasi gizi yang dilengkapi dengan sistem perhitungan status gizi balita menggunakan metode z-score sesuai standar. Situs web ini dibuat sebagai upaya untuk mengurangi stunting di Indonesia melalui penyebaran informasi gizi dan fleksibilitas dalam mengecek status gizi balita."
+            id: "Anaksehat merupakan sebuah web edukasi yang tidak hanya menyediakan informasi gizi, tetapi juga dilengkapi dengan sistem perhitungan status gizi balita menggunakan metode z-score sesuai standar. Web ini dibuat sebagai upaya untuk mengurangi stunting di Indonesia melalui penyebaran informasi gizi dan fleksibilitas dalam mengecek status gizi balita."
         },
         techstack: ["PHP", "JS", "Laravel", "MySQL", "TailwindCSS", "Vite", "Filament", "AlpineJS"],
         role: {
@@ -162,28 +162,28 @@ const showcase = [
             id: ["Fullstack Web Developer", "Desainer UI/UX"]
         },
         problem: {
-            en: "Stunting and malnutrition in Indonesian toddlers often stem from a lack of accessible nutritional information and the absence of independent growth monitoring tools. Many parents cannot easily determine their child's nutritional status according to medical standards, leading to delayed intervention in cases of chronic malnutrition.",
-            id: "Stunting dan malnutrisi pada balita di Indonesia seringkali disebabkan oleh kurangnya akses terhadap informasi gizi dan tidak adanya alat pemantauan pertumbuhan yang independen. Banyak orang tua kesulitan menentukan status gizi anak mereka sesuai standar medis, sehingga menyebabkan keterlambatan intervensi pada kasus malnutrisi kronis."
+            en: "Stunting and malnutrition among toddlers in Indonesia are often caused by a lack of access to nutritional information and nutritional status measurement tools. Many parents struggle to determine their child's nutritional status according to medical standards, leading to delayed intervention in cases of chronic malnutrition.",
+            id: "Stunting dan malnutrisi pada balita di Indonesia seringkali disebabkan oleh kurangnya akses terhadap informasi gizi dan alat penghitung status gizi balita. Banyak orang tua kesulitan untuk mengetahui status gizi anak mereka sesuai standar medis, hal tersebut menyebabkan keterlambatan intervensi pada kasus malnutrisi kronis."
         },
         subproblem: {
             en: [
                 "High prevalence of stunting due to chronic micro and macronutrient deficiencies",
-                "Limited access for parents to perform independent nutritional screening outside of healthcare facilities", 
+                "Limited parental home-based nutritional screening", 
                 "The complexity of calculating nutritional status manually using anthropometric tables", 
                 "Lack of a centralized and manageable platform for disseminating validated nutritional education", 
                 "The urgent need for digital tools to support government programs in reducing stunting rates",
             ],
             id: [
                 "Tingginya angka stunting akibat defisiensi mikronutrien dan makronutrien kronis",
-                "Keterbatasan akses bagi orang tua untuk melakukan skrining gizi mandiri di luar fasilitas kesehatan",
+                "Keterbatasan akses bagi orang tua untuk melakukan skrining gizi mandiri diluar fasilitas kesehatan",
                 "Kompleksitas penghitungan status gizi secara manual menggunakan tabel antropometri",
-                "Kurangnya platform terpusat dan mudah dikelola untuk menyebarkan pendidikan gizi yang tervalidasi",
-                "Kebutuhan akan alat digital untuk mendukung program pemerintah dalam mengurangi angka stunting",
+                "Kurangnya platform untuk menyebarkan pendidikan gizi yang tervalidasi",
+                "Kebutuhan alat digital untuk mendukung pemerintah dalam mengurangi angka stunting",
             ]
         },
         solution: {
-            en: "The system provides a two-fold solution: an automated nutritional status calculator using the Z-Score method for accurate growth tracking, and a robust Content Management System (CMS) powered by Filament. This allows administrators to manage educational resources efficiently while giving parents a flexible, anytime-anywhere tool to ensure their children's nutritional needs are met.",
-            id: "Sistem ini memberikan solusi dua arah: kalkulator status gizi otomatis menggunakan metode Z-Score untuk pelacakan pertumbuhan yang akurat, dan Content Management System (CMS) tangguh berbasis Filament. Hal ini memungkinkan administrator mengelola sumber daya edukasi secara efisien sekaligus memberikan alat yang fleksibel bagi orang tua untuk memastikan kebutuhan gizi anak mereka terpenuhi kapan saja dan di mana saja."
+            en: "This system provides a 2-in-1 solution, equipped with an automatic nutritional status calculator using the Z-Score method for accurate growth tracking, and a robust Content Management System (CMS) based on Filament. This allows administrators to efficiently manage information resources. The combination of these two is expected to provide flexibility for parents to ensure their children's nutritional needs are met anytime and anywhere.",
+            id: "Sistem ini memberikan solusi 2 in 1, dilengkapi kalkulator status gizi otomatis menggunakan metode Z-Score untuk pelacakan pertumbuhan yang akurat, dan Content Management System (CMS) tangguh berbasis Filament. Hal ini memungkinkan administrator mengelola sumber informasi secara efisien, kedua kombinasi tersebut diharapkan dapat memberikan fleksibilitas bagi orang tua untuk memastikan kebutuhan gizi anak mereka terpenuhi kapan saja dan di mana saja."
         },
         keyfeaturesdesc: {
             en: "The platform integrates medical standards with modern web management to provide the following core functionalities:",
