@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import Talk from "../components/Talk"
 import { useTranslation } from "react-i18next";
 import { ImagesBadge } from "@/components/ui/images-badge";
-import Images1 from "../assets/internval/internval-cover.webp"
+import Images1 from "../assets/weestaw/weestaw-car-5.webp"
 
 const containerVariants = {
   hidden: { opacity: 0 },
