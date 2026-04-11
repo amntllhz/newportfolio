@@ -36,7 +36,7 @@ const SchcardItem = ({ sch, variants, currentLang }) => {
                 <img 
                     src={sch.image} 
                     alt="" 
-                    className={`w-full h-full object-cover transition-opacity duration-700 ${
+                    className={`w-full h-full object-cover transition-opacity pointer-events-none duration-700 ${
                         isLoaded ? "opacity-100" : "opacity-0"
                     }`}
                     onLoad={() => setIsLoaded(true)}

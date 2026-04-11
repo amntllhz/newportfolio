@@ -22,7 +22,7 @@ const Card = ({variants}) => {
                         src={profile} 
                         alt="Profile" 
                         fetchPriority="high"
-                        className={`w-40 h-40 object-cover rounded-lg transition-opacity duration-700 ${
+                        className={`w-40 h-40 object-cover rounded-lg transition-opacity pointer-events-none duration-700 ${
                             isLoaded ? "opacity-100" : "opacity-0"
                         }`}
                         onLoad={() => setIsLoaded(true)}

@@ -112,7 +112,7 @@ const Showdetail = ({project, onBack, scrollRef}) => {
                                                 {/* ✅ BERUBAH: tambah opacity transition + onLoad, hapus loading attribute */}
                                                 <img 
                                                     src={img}
-                                                    className={`absolute inset-0 object-cover w-full h-full rounded-xl border border-gray-100 dark:border-neutral-900 transition-opacity duration-700 ${
+                                                    className={`absolute inset-0 object-cover pointer-events-none w-full h-full rounded-xl border border-gray-100 dark:border-neutral-900 transition-opacity duration-700 ${
                                                         loadedStates[index] ? "opacity-100" : "opacity-0"
                                                     }`}
                                                     onLoad={() => handleImageLoad(index)}
