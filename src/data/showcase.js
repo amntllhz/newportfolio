@@ -372,7 +372,7 @@ const showcase = [
         ],
         description: {
             en: "Weestaw is a dedicated UI/UX design for a specialized e-commerce platform focused on buying and selling high-quality pre-loved clothing. The project aims to bridge the gap between thrifting enthusiasts and sellers by providing a professional marketplace environment that distinguishes used goods from new products.",
-            id: "Weestaw adalah desain UI/UX khusus untuk platform e-commerce yang berfokus pada jual beli pakaian bekas (pre-loved) berkualitas tinggi. Proyek ini bertujuan untuk menjembatani celah antara penggemar thrifting dan penjual dengan menyediakan lingkungan pasar profesional yang membedakan barang bekas dari produk baru."
+            id: "Weestaw adalah aplikasi yang berfokus pada jual beli pakaian bekas (pre-loved) berkualitas tinggi. Aplikasi ini menjembatani celah antara penggemar thrifting dan penjual dengan menyediakan lingkungan pasar profesional yang membedakan barang bekas dari produk baru."
         },
         techstack: ["Photoshop", "Illustrator", "Figma"],
         role: {
@@ -384,12 +384,12 @@ const showcase = [
             id: "Tantangan utamanya adalah merancang ekosistem khusus yang melegitimasi thrifting sebagai perdagangan profesional. Penjual saat ini terpaksa menggunakan platform media sosial non-komersial seperti Instagram dan TikTok yang tidak memiliki alat transaksi terstruktur. Selain itu, platform e-commerce umum sering mencampur barang baru dan bekas, sehingga menciptakan risiko tinggi kesalahpahaman pelanggan terkait kondisi sebenarnya dari produk tersebut."
         },        
         concept: {
-            en: "The design focuses on 'Transparency and Trust' to eliminate the stigma of used goods. By using a clean, modern aesthetic and implementing specific 'Condition Tags', the interface ensures users can clearly distinguish item quality. The layout is optimized to mimic a professional boutique experience while maintaining the 'thrift' value of affordability.",
-            id: "Desain ini berfokus pada 'Transparansi dan Kepercayaan' untuk menghilangkan stigma barang bekas. Dengan menggunakan estetika yang bersih dan modern serta menerapkan 'Tag Kondisi' yang spesifik, antarmuka memastikan pengguna dapat membedakan kualitas barang dengan jelas. Tata letak dioptimalkan untuk meniru pengalaman butik profesional namun tetap mempertahankan nilai 'thrift' yang terjangkau."
+            en: "This app themed Transparency and Trust aims to dispel the stigma that all secondhand goods are inherently bad. With a clean UI and comprehensive information about the item's condition, users can clearly understand and appreciate its condition.",
+            id: "Aplikasi ini mengangkat tema Transparansi dan Kepercayaan untuk menghilangkan stigma bahwa semua barang bekas pasti buruk. Dengan UI bersih dan informasi yang lengkap terkait kondisi barang, pengguna dapat mengerti dan memahami kondisi barang dengan jelas."
         },
         deliverablesdesc: {
-            en: "This design process resulted in a tailored solution for the secondary market ecosystem, including:",
-            id: "Proses desain ini menghasilkan solusi yang disesuaikan untuk ekosistem pasar barang bekas, termasuk:"
+            en: "This design process resulted in a tailored solution for the secondary market ecosystem, including :",
+            id: "Proses desain ini menghasilkan solusi yang disesuaikan untuk ekosistem pasar barang bekas, termasuk :"
         },
         deliverables: {
             en: [
@@ -423,8 +423,8 @@ const showcase = [
             Ganeshacup3,            
         ],
         description: {
-            en: "A complete set of print-ready designs for the Ganesha Cup II futsal tournament. This project includes a large-scale photo backdrop and various award banners, all maintaining a consistent visual theme to strengthen the event's identity and professional appearance.",
-            id: "Rangkaian lengkap desain siap cetak untuk turnamen futsal Ganesha Cup II. Proyek ini mencakup backdrop foto skala besar dan berbagai banner penghargaan, semuanya mempertahankan tema visual yang konsisten untuk memperkuat identitas acara dan kesan profesional."
+            en: "A complete suite of print-ready designs for a futsal tournament, the Ganesha Cup II. The project included backdrop designs and several award banners, all maintaining a consistent visual theme to reinforce the event's identity and professionalism.",
+            id: "Rangkaian lengkap desain siap cetak untuk sebuah turnamen futsal bertajuk Ganesha Cup II. Proyek ini mencakup desain backdrop dan beberapa banner penghargaan, semuanya mempertahankan tema visual yang konsisten untuk memperkuat identitas acara dan kesan profesional."
         },
         techstack: ["Photoshop", "Illustrator", "Figma"],
         role: {
@@ -432,16 +432,16 @@ const showcase = [
             id: ["Desainer Grafis"]
         },
         challenge: {
-            en: "The challenge was to create a cohesive visual language that represents both the competitive spirit of futsal and the event's branding. The design had to be versatile enough to work on a 3x4 meter backdrop while remaining clear and impactful on smaller award banners for Best Player, Top Scorer, and Champions.",
-            id: "Tantangannya adalah menciptakan bahasa visual kohesif yang merepresentasikan semangat kompetitif futsal sekaligus branding acara. Desain harus cukup fleksibel untuk diaplikasikan pada backdrop ukuran 3x4 meter namun tetap terlihat jelas dan kuat pada banner penghargaan yang lebih kecil untuk Pemain Terbaik, Pencetak Gol Terbanyak, dan Juara."
+            en: "The challenge was to determine key colors that would represent the spirit of the event. These colors would be applied throughout the entire event design. Furthermore, the design had to be flexible enough to be applied to multiple print media of varying sizes.",
+            id: "Tantangannya adalah menentukan warna-warna utama yang dapat merepresentasikan semangat acara tersebut, warna-warna tersebut akan diterapkan pada seluruh desain acara. Selain itu desain harus cukup fleksibel untuk diaplikasikan pada beberapa media cetak yang memiliki perbedaan ukuran."
         },        
         concept: {
-            en: "The concept revolves around the slogan 'Empower Together: Uniting Minds, Shaping Success!'. By using a white base to keep the layout clean, the vibrant blue and yellow accents (inspired by the branding of Ganesha Futsal and partners like Tri) are used to draw focus to key information. The composition is balanced to provide a perfect frame for photographs during the awarding session.",
-            id: "Konsepnya berpusat pada slogan 'Empower Together: Uniting Minds, Shaping Success!'. Dengan menggunakan dasar putih agar tata letak tetap bersih, aksen biru dan kuning cerah (terinspirasi dari branding Ganesha Futsal dan mitra seperti Tri) digunakan untuk menarik fokus ke informasi utama. Komposisinya diseimbangkan untuk memberikan bingkai yang sempurna bagi dokumentasi foto selama sesi penganugerahan."
+            en: "This design takes its meaning from the slogan 'Empower Together: Uniting Minds, Shaping Success!' and the Ganesha Futsal team logo which produces several colors, namely sky blue, white, and yellow. The color combination reflects the harmony between youthful enthusiasm, clean sportsmanship, and the ambition to achieve the highest achievements on the field.",
+            id: "Design ini mengambil makna pada slogan 'Empower Together: Uniting Minds, Shaping Success!' serta logo tim Ganesha Futsal yang menghasilkan beberapa warna yaitu biru langit, putih, dan kuning.Kombinasi warna tersebut mencerminkan harmoni antara semangat muda, sportivitas yang bersih, serta ambisi untuk meraih prestasi tertinggi di lapangan."
         },
         deliverablesdesc: {
-            en: "The design package includes several high-resolution assets ready for large-format printing:",
-            id: "Paket desain ini mencakup beberapa aset resolusi tinggi yang siap untuk pencetakan format besar:"
+            en: "The design package includes several high-resolution assets ready for large-format printing :",
+            id: "Paket desain ini mencakup beberapa aset resolusi tinggi yang siap untuk pencetakan format besar :"
         },
         deliverables: {
             en: [
@@ -452,10 +452,10 @@ const showcase = [
                 "Standardized Event Color Guide",
             ],
             id: [
-                "Backdrop Foto Acara Utama",
+                "Backdrop Acara Utama",
                 "Banner Penghargaan Pemain Terbaik & Top Scorer", 
                 "Banner Pemenang Juara 1, 2, dan 3", 
-                "Sistem Tipografi yang Kohesif", 
+                "Sistem Tipografi yang Tegas", 
                 "Panduan Warna Acara Terstandarisasi",
             ]
         },
@@ -474,8 +474,8 @@ const showcase = [
             Egoverselogo2            
         ],
         description: {
-            en: "A comprehensive brand identity design for Egoverse (E-Government Services) at Dinkominfo Pekalongan Regency. The identity is crafted to bridge the gap between traditional government administration and modern digital efficiency, fostering trust and accessibility for the public.",
-            id: "Desain identitas merek yang komprehensif untuk Egoverse (E-Government Services) di Dinkominfo Kabupaten Pekalongan. Identitas ini dirancang untuk menjembatani celah antara administrasi pemerintahan tradisional dan efisiensi digital modern, guna menumbuhkan kepercayaan dan aksesibilitas bagi publik."
+            en: "Complete visual identity design for Egoverse (E-Government Services) at the Pekalongan Regency Communications and Information Office. This identity aims to bridge conventional government administration with a more efficient digital system, creating more reliable and accessible public services.",
+            id: "Perancangan identitas visual lengkap untuk Egoverse (E-Government Services) di Dinkominfo Kabupaten Pekalongan. Identitas ini hadir untuk menjembatani administrasi pemerintah yang konvensional dengan sistem digital yang lebih efisien, demi menciptakan layanan publik yang lebih terpercaya dan mudah dijangkau."
         },
         techstack: ["Photoshop", "Illustrator", "Figma"],
         role: {
@@ -483,16 +483,16 @@ const showcase = [
             id: ["Desainer Grafis"]
         },
         challenge: {
-            en: "The primary challenge was to create a visual identity that humanizes rigid bureaucratic processes. The branding needed to represent the transition from manual, inefficient paper-based systems to a transparent, electronic-based government (E-Government) while aligning with the core principles of Good Governance and the technical prestige of Dinkominfo.",
-            id: "Tantangan utamanya adalah menciptakan identitas visual yang memanusiakan proses birokrasi yang kaku. Branding ini harus merepresentasikan transisi dari sistem berbasis kertas manual yang tidak efisien menuju pemerintahan berbasis elektronik (E-Government) yang transparan, sembari menyelaraskan dengan prinsip inti Tata Kelola Pemerintahan yang Baik serta prestise teknis Dinkominfo."
+            en: "The primary challenge was creating a visual identity that made the bureaucracy feel more welcoming and human. This branding reflected the transition from a manual, paper-based system to transparent digital services (e-government), while still prioritizing good governance and the technical expertise of the Communications and Information Technology Office.",
+            id: "Tantangan utamanya adalah menciptakan identitas visual yang membuat birokrasi terasa lebih ramah dan manusiawi. Branding ini harus menggambarkan transisi dari sistem manual berbasis kertas ke layanan digital (E-Government) yang transparan, dengan tetap mengutamakan tata kelola pemerintahan yang baik serta keahlian teknis Dinkominfo."
         },        
         concept: {
             en: "The 'eGoverse' identity utilizes a 'Modern-Global' approach. The logo features a stylized globe icon held by symmetrical hands, symbolizing universal service, care, and the protection of public interests. A professional monochromatic blue gradient is used to project stability, technology, and transparency. The use of a bold, rounded sans-serif typeface ensures high legibility and a friendly, accessible persona for the digital government initiative.",
-            id: "Identitas 'eGoverse' menggunakan pendekatan 'Modern-Global'. Logo tersebut menampilkan ikon bola dunia yang ditopang oleh tangan simetris, melambangkan layanan universal, kepedulian, dan perlindungan kepentingan publik. Gradasi biru monokromatik profesional digunakan untuk memproyeksikan stabilitas, teknologi, dan transparansi. Penggunaan tipografi sans-serif bulat yang tebal memastikan keterbacaan tinggi dan persona yang ramah serta mudah diakses untuk inisiatif pemerintah digital."
+            id: "'eGoverse' mengangkat tema 'Modern-Global'. Logo tersebut menampilkan ikon bola dunia yang ditopang oleh tangan simetris, melambangkan layanan universal, kepedulian, dan perlindungan kepentingan publik. Gradasi biru monokromatik profesional digunakan untuk memproyeksikan stabilitas, teknologi, dan transparansi. Penggunaan tipografi sans-serif bulat yang tebal memastikan keterbacaan tinggi dan persona yang ramah serta mudah diakses untuk inisiatif pemerintah digital."
         },
         deliverablesdesc: {
             en: "This project established a unified visual foundation to support the E-Government Development Index (EGDI) goals, including:",
-            id: "Proyek ini menetapkan fondasi visual terpadu untuk mendukung tujuan Indeks Pengembangan E-Government (EGDI), termasuk:"
+            id: "Proyek ini menetapkan fondasi visual terpadu untuk mendukung tujuan E-Government Development Index (EGDI), termasuk:"
         },
         deliverables: {
             en: [
@@ -517,7 +517,7 @@ const showcase = [
         title: "Internval",
         subtitle: {
             en: "Internship Validation",
-            id: "Validasi Magang"
+            id: "Validasi Magang Mahasiswa"
         },
         cover: coverInternvallogo,
         images: [
@@ -526,8 +526,8 @@ const showcase = [
             Internvallogo3
         ],
         description: {
-            en: "A comprehensive brand identity design for Internval (Internship Validation) at the Faculty of Engineering and Computer Science (UMPP). The identity is crafted to bridge the gap between traditional academic administration and modern digital efficiency, fostering trust and accessibility for students.",
-            id: "Desain identitas merek yang komprehensif untuk Internval (Internship Validation) di Fakultas Teknik dan Ilmu Komputer (UMPP). Identitas ini dirancang untuk menjembatani celah antara administrasi akademik tradisional dan efisiensi digital modern, guna menumbuhkan kepercayaan dan aksesibilitas bagi mahasiswa."
+            en: "Internship Validation logo design for the Faculty of Engineering and Computer Science (UMPP). This logo was designed for use on the Internval web application being developed. This ensures that the application is not only well-developed but also professionally developed.",
+            id: "Desain logo Internval (Internship Validation) untuk Fakultas Teknik dan Ilmu Komputer (UMPP). Logo ini dirancang untuk digunakan pada aplikasi web Internval yang dikembangkan. Dengan demikian, aplikasi tersebut tidak hanya dikembangkan dengan baik tetapi juga dikembangkan secara profesional."
         },
         techstack: ["Photoshop", "Illustrator", "Figma"],
         role: {
@@ -536,11 +536,11 @@ const showcase = [
         },
         challenge: {
             en: "The challenge was to visually translate the binary nature of administrative approval (yes or no) into a sophisticated brand mark. The identity had to represent the complex 'stages' of internal submissions while maintaining a clean and modern aesthetic that aligns with the speed of digital transformation.",
-            id: "Tantangannya adalah menerjemahkan sifat biner dari persetujuan administratif (ya atau tidak) secara visual ke dalam tanda merek yang canggih. Identitas tersebut harus merepresentasikan 'tahapan' kompleks dari pengajuan internal dengan tetap mempertahankan estetika bersih dan modern yang selaras dengan kecepatan transformasi digital."
+            id: "Tantangannya adalah menerjemahkan sistem persetujuan administrasi yang bersifat pasti (ya atau tidak) ke dalam identitas visual yang modern. Desain ini harus mampu menggambarkan kerumitan tahapan pengajuan internal, namun tetap mempertahankan estetika bersih dan dinamis yang sejalan dengan laju transformasi digital."
         },        
         concept: {
-            en: "The 'Internval' logo concept is derived from a checkbox element, representing a submission in its unapproved state. By 'cutting' the shape into multiple segments of varying lengths, the design visualizes the sequential stages and time-intensive nature of internal academic systems, ultimately resolved through digital efficiency.",
-            id: "Konsep logo 'Internval' diturunkan dari elemen kotak centang (checkbox), yang merepresentasikan pengajuan dalam keadaan belum disetujui. Dengan 'memotong' bentuk tersebut menjadi beberapa segmen dengan panjang yang bervariasi, desain ini memvisualisasikan tahapan berurutan dan sifat sistem akademik internal yang memakan waktu, yang akhirnya diselesaikan melalui efisiensi digital."
+            en: "The 'Internval' logo is inspired by the checkbox element, which represents yes or no. Visually, an empty checkbox means no, and in the case of an application, it means it has not been approved. By 'slicing' the shape into segments of varying lengths, the design visualizes the sequential stages and time-consuming nature of internal academic systems, ultimately resolved through digital efficiency.",
+            id: "Logo 'Internval' terinspirasi dari elemen kotak centang (checkbox), yang merepresentasikan ya atau tidak, secara visual checkbox kosong berarti tidak, dalam hal pengajuan bisa diartikan belum disetujui. Dengan 'memotong' bentuk tersebut menjadi beberapa segmen dengan panjang yang bervariasi, desain ini memvisualisasikan tahapan berurutan dan sifat sistem akademik internal yang memakan waktu, yang akhirnya diselesaikan melalui efisiensi digital."
         },
         deliverablesdesc: {
             en: "A complete visual toolkit designed to provide clarity throughout the internship validation lifecycle, including:",
@@ -568,8 +568,8 @@ const showcase = [
         category: "design",
         title: "KKN Logo",
         subtitle: {
-            en: "KKN Pasirkratonkramat Brand Identity",
-            id: "Identitas Merek KKN Pasirkratonkramat"
+            en: "KKN Pasirkratonkramat",
+            id: "KKN Pasirkratonkramat"
         },
         cover: coverKknlogo,
         images: [
@@ -578,8 +578,8 @@ const showcase = [
             Kknlogo3
         ],
         description: {
-            en: "A specialized logo identity designed for the KKN (Community Service Program) in PasirKratonKramat, Pekalongan. The visual system integrates local geographical features, cultural heritage, and historical backgrounds into a unified symbol of community service.",
-            id: "Identitas logo khusus yang dirancang untuk program KKN di PasirKratonKramat, Pekalongan. Sistem visual ini mengintegrasikan fitur geografis lokal, warisan budaya, dan latar belakang sejarah ke dalam simbol pengabdian masyarakat yang terpadu."
+            en: "A logo identity designed for the KKN program in PasirKratonKramat, Pekalongan City. This logo integrates local geographic conditions, cultural heritage, and historical background into a unified symbol of community service.",
+            id: "Identitas logo yang dirancang untuk program KKN di PasirKratonKramat, Kota Pekalongan. Logo ini mengintegrasikan beberapa kondisi geografis lokal, warisan budaya, dan latar belakang sejarah ke dalam simbol pengabdian masyarakat yang terpadu."
         },
         techstack: ["Photoshop", "Illustrator", "Figma"],
         role: {
@@ -587,16 +587,16 @@ const showcase = [
             id: ["Desainer Grafis"]
         },
         challenge: {
-            en: "The challenge was to synthesize five distinct local identities—geography, coastal culture, the batik industry, historical origins, and local landmarks—into a singular, cohesive emblem that resonates with the residents of PasirKratonKramat while maintaining a professional institutional appearance.",
-            id: "Tantangannya adalah menyintesis lima identitas lokal yang berbeda—geografi, budaya pesisir, industri batik, asal-usul sejarah, dan landmark lokal—menjadi satu lambang kohesif yang beresonansi dengan warga PasirKratonKramat sambil tetap mempertahankan tampilan institusional yang profesional."
+            en: "The challenge was to unite five diverse local identities, ranging from geography, coastal culture, the batik industry, history, and regional icons, into one cohesive symbol. This logo must feel close to the hearts of the PasirKratonKramat residents while still appearing professional as the identity of the KKN program. By harmonizing these distinctive elements, the resulting visual identity is expected to strengthen the community's emotional bond with their region.",
+            id: "Tantangannya adalah menyatukan lima identitas lokal yang beragam, mulai dari kondisi geografis, budaya pesisir, industri batik, sejarah, hingga ikon daerah, menjadi satu lambang yang utuh. Logo ini harus terasa dekat di hati warga PasirKratonKramat namun tetap terlihat profesional sebagai identitas program KKN. Dengan menyelaraskan berbagai elemen khas ini, identitas visual yang dihasilkan diharapkan dapat memperkuat ikatan emosional masyarakat terhadap daerahnya sendiri."
         },        
         concept: {
-            en: "The logo utilizes a 'Nested Symbolism' approach, where each layer of the emblem tells a story about the KKN location. By combining organic shapes representing nature (coastal waves and sand) with cultural patterns (Batik) and architectural silhouettes (Stadion Hoegeng), the design acts as a visual map of the Kelurahan's identity.",
-            id: "Logo ini menggunakan pendekatan 'Simbolisme Berlapis', di mana setiap lapisan lambang menceritakan kisah tentang lokasi KKN. Dengan menggabungkan bentuk organik yang mewakili alam (gelombang pesisir dan pasir) dengan pola budaya (Batik) serta siluet arsitektur (Stadion Hoegeng), desain ini bertindak sebagai peta visual dari identitas Kelurahan tersebut."
+            en: "This logo uses a 'Layered Symbolism' approach, where each element tells a profound story about the KKN location. By combining organic natural forms such as coastal waves and stretches of sand, distinctive cultural patterns of Batik, and the architectural silhouette of Hoegeng Stadium, this design serves as a visual map that encapsulates the entire identity of the village. This combination not only highlights the physical beauty of the area but also weaves the historical values ​​and life of the local community into a strong visual unity.",
+            id: "Logo ini menggunakan pendekatan 'Simbolisme Berlapis', di mana setiap elemennya menceritakan kisah mendalam tentang lokasi KKN. Dengan memadukan bentuk organik alam seperti gelombang pesisir dan hamparan pasir, pola budaya khas Batik, hingga siluet arsitektur Stadion Hoegeng, desain ini berfungsi sebagai peta visual yang merangkum seluruh identitas kelurahan tersebut. Kombinasi ini tidak hanya menonjolkan keindahan fisik daerahnya, tetapi juga merajut nilai sejarah dan kehidupan masyarakat setempat dalam satu kesatuan visual yang kuat."
         },
         deliverablesdesc: {
-            en: "This project delivered a culturally-rich identity system to be used throughout the KKN program duration, including:",
-            id: "Proyek ini menghasilkan sistem identitas yang kaya budaya untuk digunakan selama durasi program KKN, termasuk:"
+            en: "This project delivered a culturally-rich identity system to be used throughout the KKN program duration, including :",
+            id: "Proyek ini menghasilkan sistem identitas yang kaya budaya untuk digunakan selama durasi program KKN, termasuk :"
         },
         deliverables: {
             en: [
