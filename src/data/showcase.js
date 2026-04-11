@@ -250,7 +250,7 @@ const showcase = [
                 "Aksesibilitas terbatas bagi publik untuk memantau status pengajuan mereka", 
                 "Ketidakselarasan dengan prinsip Good Governance terkait efisiensi anggaran dan administrasi", 
                 "Rendahnya kesadaran dan sosialisasi publik terhadap sistem pemerintahan elektronik yang ada",
-                "Kebutuhan akan antarmuka yang lebih intuitif untuk menjembatani celah antara teknologi dan pengguna publik",
+                "Kebutuhan akan antarmuka yang intuitif untuk menjembatani celah antara teknologi dan pengguna publik",
             ]
         },
         solution: {
@@ -295,8 +295,8 @@ const showcase = [
             Internval5
         ],
         description: {
-            en: "Internval is a web-based application designed to streamline the internship application and tracking process for university students. This platform allows students to submit internship applications to various institutions and monitor the status of their submissions in real-time. Administrators and faculty can manage and verify submissions efficiently through an intuitive Filament-powered dashboard.",
-            id: "Internval adalah aplikasi berbasis web yang dirancang untuk menyederhanakan proses pengajuan dan pelacakan magang bagi mahasiswa. Platform ini memungkinkan mahasiswa untuk mengirimkan pengajuan magang ke berbagai instansi dan memantau status pengajuan mereka secara real-time. Admin dan fakultas dapat mengelola serta memverifikasi pengajuan secara efisien melalui dashboard berbasis Filament yang intuitif."
+            en: "Internval is a web-based application designed to simplify the internship application and tracking process for students. The platform allows students to submit internship applications from anywhere, anytime, and monitor the status of their applications in real time.",
+            id: "Internval adalah aplikasi berbasis web yang dirancang untuk menyederhanakan proses pengajuan dan pelacakan magang bagi mahasiswa. Platform ini memungkinkan mahasiswa untuk mengirimkan pengajuan magang dari manapun dan kapanpun, selain itu mahasiswa dapat memantau status pengajuan mereka secara real-time."
         },
         techstack: ["PHP", "JS", "Laravel", "MySQL", "TailwindCSS", "Vite", "AlpineJS", "Filament"],
         role: {
@@ -304,8 +304,8 @@ const showcase = [
             id: ["Fullstack Web Developer", "Desainer UI/UX", "Desainer Grafis"]
         },
         problem: {
-            en: "The application procedure for internships or field work practices (PKL) at the Faculty of Engineering and Computer Science (UMPP) currently faces various administrative obstacles that hinder efficient service delivery for students. Several crucial issues that require attention are:",
-            id: "Prosedur pengajuan magang atau Praktik Kerja Lapangan (PKL) di Fakultas Teknik dan Ilmu Komputer (UMPP) saat ini menghadapi berbagai hambatan administratif yang menghambat efisiensi layanan bagi mahasiswa. Beberapa masalah krusial yang memerlukan perhatian adalah:"
+            en: "The internship or Field Work Practice (PKL) application process at the Faculty of Engineering and Computer Science (UMPP) currently faces several administrative challenges that hinder efficient service delivery to students. Some crucial issues requiring attention are :",
+            id: "Prosedur pengajuan magang atau Praktik Kerja Lapangan (PKL) di Fakultas Teknik dan Ilmu Komputer (UMPP) saat ini masih memiliki beberapa kendala administratif yang menghambat efisiensi layanan bagi mahasiswa. Beberapa masalah krusial yang memerlukan perhatian adalah :"
         },
         subproblem: {
             en: [
@@ -326,8 +326,8 @@ const showcase = [
             ]
         },
         solution: {
-            en: "The system resolves administrative bottlenecks by transitioning from manual paperwork to a centralized management system. By implementing multi-role dashboards and dynamic data handling, the platform automates the validation process between departments. The integration of an automated PDF & QR code engine ensures document authenticity, while real-time tracking and responsive digital forms provide transparency and accessibility for students at every stage of their application.",
-            id: "Sistem ini menyelesaikan hambatan administratif dengan bertransisi dari tumpukan kertas manual ke sistem manajemen terpusat. Dengan menerapkan dashboard multi-peran dan penanganan data dinamis, platform ini mengotomatisasi proses validasi antar departemen. Integrasi mesin PDF & kode QR otomatis memastikan keaslian dokumen, sementara pelacakan real-time dan formulir digital responsif memberikan transparansi serta aksesibilitas bagi mahasiswa di setiap tahap pengajuan mereka."
+            en: "This system overcomes administrative challenges by transitioning from manual forms to a centralized digital management system. By implementing a multi-role dashboard and dynamic data handling, the platform automates the cross-department validation process. The integration of an automated PDF and QR code generator ensures document authenticity, while real-time tracking and responsive digital forms provide transparency and accessibility for students at every stage of their application.",
+            id: "Sistem ini mengatasi kendala administratif dengan bertransisi dari penggunaan formulir manual ke sistem manajemen digital yang terpusat. Dengan menerapkan dashboard multi-peran dan penanganan data dinamis, platform ini mengotomatisasi proses validasi antar bagian. Integrasi pembuat PDF & kode QR otomatis memastikan keaslian dokumen, sementara pelacakan real-time dan formulir digital responsif memberikan transparansi serta aksesibilitas bagi mahasiswa di setiap tahap pengajuan mereka."
         },
         keyfeaturesdesc: {
             en: "This development has successfully delivered a series of features designed to bridge the gap between students and administrative bodies which can be seen below.",
