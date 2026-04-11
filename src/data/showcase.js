@@ -86,7 +86,7 @@ const showcase = [
         ],
         description: {
             en: "A simple desktop application developed using Python and Customtkinter for reporting computer and network facility issues in the computer laboratory at the Faculty of Engineering and Computer Science (UMPP). The system aims to provide an efficient communication channel between students/users and staff/managers.",
-            id: "Sebuah aplikasi desktop sederhana yang dikembangkan menggunakan Python dan Customtkinter untuk melaporkan masalah fasilitas komputer dan jaringan di laboratorium komputer Fakultas Teknik dan Ilmu Komputer (UMPP). Sistem ini bertujuan menyediakan saluran komunikasi yang efisien antara mahasiswa/pengguna dan staf/pengelola."
+            id: "Sebuah aplikasi desktop sederhana yang dikembangkan menggunakan Python dan Customtkinter untuk melaporkan kendala yang dialami pengguna fasilitas komputer dan jaringan di laboratorium komputer Fakultas Teknik dan Ilmu Komputer (UMPP). Aplikasi ini dikembangkan untuk menyediakan saluran komunikasi yang efisien antara mahasiswa/pengguna dan staf/pengelola."
         },
         techstack: ["Python", "Customtkinter", "PHP", "JS", "MySQL", "TailwindCSS", "AlpineJS"],
         role: {
@@ -94,8 +94,8 @@ const showcase = [
             id: ["Fullstack Developer", "Desainer UI/UX"]
         },
         problem: {
-            en: "Frequent network disturbances and facility issues occur in the UMPP Computer Laboratory. The existing reporting method relies solely on direct, informal communication with staff or lecturers, which is inefficient and often results in delayed handling of issues.",
-            id: "Sering terjadi gangguan jaringan dan masalah fasilitas di Laboratorium Komputer UMPP. Metode pelaporan yang ada selama ini hanya menggunakan komunikasi langsung kepada staf atau dosen, yang dinilai tidak efisien dan seringkali menyebabkan penanganan masalah terlambat."
+            en: "Frequent network disturbances and facility issues occur in the Computer Laboratory. The existing reporting method relies solely on direct, informal communication with staff or lecturers, which is inefficient and often results in delayed handling of issues.",
+            id: "Sering terjadi gangguan jaringan dan masalah fasilitas di Laboratorium Komputer. Metode pelaporan yang ada selama ini hanya menggunakan komunikasi langsung kepada staf atau dosen, yang dinilai tidak efisien dan seringkali menyebabkan penanganan masalah terlambat."
         },
         subproblem: {
             en: [
@@ -112,12 +112,12 @@ const showcase = [
             ]
         },
         solution: {
-            en: "Developed a Python-based reporting program with a Customtkinter GUI that connects to a MySQL database (via PHPMyAdmin/XAMPP) to capture and manage facility issue reports. A PHP script is also implemented to present the collected data to administrators via a simple web interface.",
-            id: "Mengembangkan program pelaporan berbasis Python dengan GUI Customtkinter yang terhubung ke database MySQL (melalui PHPMyAdmin/XAMPP) untuk menangkap dan mengelola laporan masalah fasilitas. Script PHP juga diimplementasikan untuk menyajikan data yang terkumpul kepada administrator melalui antarmuka web sederhana."
+            en: "Developed a Python-based reporting program with a CustomTkinter GUI connected to a MySQL database to store and manage facility problem reports. Collected data is presented to administrators/staff through a simple web interface developed using PHP and TailwindCSS.",
+            id: "Mengembangkan program pelaporan berbasis Python dengan GUI Customtkinter yang terhubung dengan database MySQL untuk menyimpan dan mengelola laporan masalah fasilitas. Data yang terkumpul ditampilkan kepada administrator/staf melalui antarmuka web sederhana yang dikembangkan menggunakan PHP dan TailwindCSS."
         },
         keyfeaturesdesc: {
-            en: "The system provides core functionalities to improve lab facility management:",
-            id: "Sistem ini menyediakan fungsi inti untuk meningkatkan manajemen fasilitas lab:"
+            en: "The system provides core functionalities to improve lab facility management :",
+            id: "Sistem ini menyediakan fungsi inti untuk meningkatkan manajemen fasilitas lab :"
         },
         keyfeatures: {
             en: [
@@ -142,7 +142,7 @@ const showcase = [
         title: "Anaksehat",
         subtitle: {
             en: "Nutrition Education & Prediction",
-            id: "Edukasi dan Prediksi Gizi"
+            id: "Edukasi & Prediksi Gizi"
         },
         cover: coverAnaksehat,
         images: [
