@@ -139,7 +139,7 @@ const showcase = [
     {
         id: 2,
         category: "dev",
-        title: "Anaksehat",
+        title: "Nutrizie",
         subtitle: {
             en: "Nutrition Education & Prediction",
             id: "Edukasi & Prediksi Gizi"
