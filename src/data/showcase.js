@@ -2,7 +2,7 @@
 // Cover
 import coverInternval from "../assets/internval/internval-cover.webp"
 import coverEgoverse from "../assets/egoverse/egoverse-cover.webp"
-import coverAnaksehat from "../assets/anaksehat/anaksehat-cover.webp"
+import coverNutrizie from "../assets/nutrizie/nutrizie-cover.webp"
 import coverWeestaw from "../assets/weestaw/weestaw-cover.webp"
 import coverGaneshacup from "../assets/ganeshacup/ganeshacup-cover.webp"
 import coverEgoverselogo from "../assets/egoverse/egoverselogo-cover.webp"
@@ -26,12 +26,12 @@ import Egoverse3 from "../assets/egoverse/egoverse-car-3.webp"
 import Egoverse4 from "../assets/egoverse/egoverse-car-4.webp"
 import Egoverse5 from "../assets/egoverse/egoverse-car-5.webp"
 
-// Anaksehat
-import Anaksehat1 from "../assets/anaksehat/anaksehat-car-1.webp"
-import Anaksehat2 from "../assets/anaksehat/anaksehat-car-2.webp"
-import Anaksehat3 from "../assets/anaksehat/anaksehat-car-3.webp"
-import Anaksehat4 from "../assets/anaksehat/anaksehat-car-4.webp"
-import Anaksehat5 from "../assets/anaksehat/anaksehat-car-5.webp"
+// Nutrizie
+import Nutrizie1 from "../assets/nutrizie/nutrizie-car-1.webp"
+import Nutrizie2 from "../assets/nutrizie/nutrizie-car-2.webp"
+import Nutrizie3 from "../assets/nutrizie/nutrizie-car-3.webp"
+import Nutrizie4 from "../assets/nutrizie/nutrizie-car-4.webp"
+import Nutrizie5 from "../assets/nutrizie/nutrizie-car-5.webp"
 
 // Labhub
 import Labhub1 from "../assets/labhub/labhub-car-1.webp"
@@ -69,7 +69,7 @@ import Kknlogo3 from "../assets/kkn/kknlogo-car-3.webp"
 const showcase = [
 
     // Web
-    {   
+    {
         id: 1,
         category: "dev",
         title: "Labhub",
@@ -100,9 +100,9 @@ const showcase = [
         subproblem: {
             en: [
                 "Disruptions to ongoing academic activities due to slow problem handling",
-                "Lack of a structured communication channel between lab users and management staff", 
-                "Risk of data inconsistency or errors with manual reporting methods", 
-                "Inefficient service delivery for students experiencing technical issues", 
+                "Lack of a structured communication channel between lab users and management staff",
+                "Risk of data inconsistency or errors with manual reporting methods",
+                "Inefficient service delivery for students experiencing technical issues",
             ],
             id: [
                 "Gangguan pada kegiatan perkuliahan akibat penanganan masalah yang lambat",
@@ -122,10 +122,10 @@ const showcase = [
         keyfeatures: {
             en: [
                 "Customtkinter Graphical User Interface (GUI)",
-                "MySQL Database Integration", 
-                "PHP Data Presentation Webpage", 
-                "User-friendly Input Form", 
-                "Data Submission Confirmation & Error Handling",             
+                "MySQL Database Integration",
+                "PHP Data Presentation Webpage",
+                "User-friendly Input Form",
+                "Data Submission Confirmation & Error Handling",
             ],
             id: [
                 "Antarmuka Pengguna Grafis (GUI) Customtkinter",
@@ -136,7 +136,7 @@ const showcase = [
             ]
         },
     },
-    {   
+    {
         id: 2,
         category: "dev",
         title: "Anaksehat",
@@ -144,17 +144,17 @@ const showcase = [
             en: "Nutrition Education & Prediction",
             id: "Edukasi & Prediksi Gizi"
         },
-        cover: coverAnaksehat,
+        cover: coverNutrizie,
         images: [
-            Anaksehat1,
-            Anaksehat2,
-            Anaksehat3,
-            Anaksehat4,
-            Anaksehat5            
+            Nutrizie1,
+            Nutrizie2,
+            Nutrizie3,
+            Nutrizie4,
+            Nutrizie5
         ],
         description: {
-            en: "Anaksehat is a website that contains nutritional information equipped with a toddler nutritional status calculation system using the z-score method according to standards. This website was created as an effort to reduce stunting in Indonesia through the dissemination of nutritional information and flexibility in checking the nutritional status of toddlers.",
-            id: "Anaksehat merupakan sebuah web edukasi yang tidak hanya menyediakan informasi gizi, tetapi juga dilengkapi dengan sistem perhitungan status gizi balita menggunakan metode z-score sesuai standar. Web ini dibuat sebagai upaya untuk mengurangi stunting di Indonesia melalui penyebaran informasi gizi dan fleksibilitas dalam mengecek status gizi balita."
+            en: "Nutrizie is a website that contains nutritional information equipped with a toddler nutritional status calculation system using the z-score method according to standards. This website was created as an effort to reduce stunting in Indonesia through the dissemination of nutritional information and flexibility in checking the nutritional status of toddlers.",
+            id: "Nutrizie merupakan sebuah web edukasi yang tidak hanya menyediakan informasi gizi, tetapi juga dilengkapi dengan sistem perhitungan status gizi balita menggunakan metode z-score sesuai standar. Web ini dibuat sebagai upaya untuk mengurangi stunting di Indonesia melalui penyebaran informasi gizi dan fleksibilitas dalam mengecek status gizi balita."
         },
         techstack: ["PHP", "JS", "Laravel", "MySQL", "TailwindCSS", "Vite", "Filament", "AlpineJS"],
         role: {
@@ -168,9 +168,9 @@ const showcase = [
         subproblem: {
             en: [
                 "High prevalence of stunting due to chronic micro and macronutrient deficiencies",
-                "Limited parental home-based nutritional screening", 
-                "The complexity of calculating nutritional status manually using anthropometric tables", 
-                "Lack of a centralized and manageable platform for disseminating validated nutritional education", 
+                "Limited parental home-based nutritional screening",
+                "The complexity of calculating nutritional status manually using anthropometric tables",
+                "Lack of a centralized and manageable platform for disseminating validated nutritional education",
                 "The urgent need for digital tools to support government programs in reducing stunting rates",
             ],
             id: [
@@ -192,21 +192,21 @@ const showcase = [
         keyfeatures: {
             en: [
                 "Z-Score Nutritional Status Calculator",
-                "Anthropometric Standard Integration", 
-                "Filament-Powered Admin Dashboard", 
-                "Educational Content Management", 
-                "Responsive Informational Interface",             
+                "Anthropometric Standard Integration",
+                "Filament-Powered Admin Dashboard",
+                "Educational Content Management",
+                "Responsive Informational Interface",
             ],
             id: [
                 "Kalkulator Status Gizi Z-Score",
-                "Integrasi Standar Antropometri", 
-                "Dashboard Admin Berbasis Filament", 
-                "Manajemen Konten Edukasi", 
-                "Antarmuka Informasi Responsif",             
+                "Integrasi Standar Antropometri",
+                "Dashboard Admin Berbasis Filament",
+                "Manajemen Konten Edukasi",
+                "Antarmuka Informasi Responsif",
             ]
         },
     },
-    {   
+    {
         id: 3,
         category: "dev",
         title: "eGoverse",
@@ -238,17 +238,17 @@ const showcase = [
         subproblem: {
             en: [
                 "Inefficient manual submission methods for government services",
-                "Lack of transparency and accountability in administrative processes", 
-                "Limited accessibility for the public to monitor their submission status", 
-                "Misalignment with Good Governance principles regarding budget and administrative efficiency", 
+                "Lack of transparency and accountability in administrative processes",
+                "Limited accessibility for the public to monitor their submission status",
+                "Misalignment with Good Governance principles regarding budget and administrative efficiency",
                 "Low public awareness and socialization of existing electronic government systems",
                 "The need for a more intuitive interface to bridge the gap between technology and public users",
             ],
             id: [
                 "Metode pengajuan layanan pemerintah yang tidak efisien melalui cara manual",
-                "Kurangnya transparansi dan akuntabilitas dalam proses administrasi", 
-                "Aksesibilitas terbatas bagi publik untuk memantau status pengajuan mereka", 
-                "Ketidakselarasan dengan prinsip Good Governance terkait efisiensi anggaran dan administrasi", 
+                "Kurangnya transparansi dan akuntabilitas dalam proses administrasi",
+                "Aksesibilitas terbatas bagi publik untuk memantau status pengajuan mereka",
+                "Ketidakselarasan dengan prinsip Good Governance terkait efisiensi anggaran dan administrasi",
                 "Rendahnya kesadaran dan sosialisasi publik terhadap sistem pemerintahan elektronik yang ada",
                 "Kebutuhan akan antarmuka yang intuitif untuk menjembatani celah antara teknologi dan pengguna publik",
             ]
@@ -264,21 +264,21 @@ const showcase = [
         keyfeatures: {
             en: [
                 "Integrated Service Dashboard",
-                "Digital Submission Forms", 
-                "Real-time Process Tracking", 
-                "Public Information Portal", 
-                "Administrative Verification Panel", 
+                "Digital Submission Forms",
+                "Real-time Process Tracking",
+                "Public Information Portal",
+                "Administrative Verification Panel",
             ],
             id: [
                 "Dashboard Layanan Terintegrasi",
-                "Formulir Pengajuan Digital", 
-                "Pelacakan Proses Real-time", 
-                "Portal Informasi Publik", 
-                "Panel Verifikasi Administratif", 
+                "Formulir Pengajuan Digital",
+                "Pelacakan Proses Real-time",
+                "Portal Informasi Publik",
+                "Panel Verifikasi Administratif",
             ]
         },
     },
-    {   
+    {
         id: 4,
         category: "dev",
         title: "Internval",
@@ -310,17 +310,17 @@ const showcase = [
         subproblem: {
             en: [
                 "Students must physically visit campus just to collect paper forms",
-                "Manual entries increase the risk of errors and data inconsistency", 
-                "Validation is delayed by the requirement for the Program Head's physical presence", 
-                "Students must move between offices multiple times to complete the process", 
+                "Manual entries increase the risk of errors and data inconsistency",
+                "Validation is delayed by the requirement for the Program Head's physical presence",
+                "Students must move between offices multiple times to complete the process",
                 "The absence of real-time tracking forces manual status checks",
                 "Irresponsible multiple applications damage the university's reputation",
             ],
             id: [
                 "Mahasiswa harus datang secara fisik ke kampus hanya untuk mengambil formulir kertas",
-                "Entri data manual meningkatkan risiko kesalahan dan ketidakkonsistenan data", 
-                "Validasi tertunda karena keharusan kehadiran fisik Ketua Program Studi", 
-                "Mahasiswa harus berpindah antar kantor berkali-kali untuk menyelesaikan proses", 
+                "Entri data manual meningkatkan risiko kesalahan dan ketidakkonsistenan data",
+                "Validasi tertunda karena keharusan kehadiran fisik Ketua Program Studi",
+                "Mahasiswa harus berpindah antar kantor berkali-kali untuk menyelesaikan proses",
                 "Tidak adanya pelacakan real-time memaksa pengecekan status dilakukan secara manual",
                 "Pengajuan ganda yang tidak bertanggung jawab merusak reputasi universitas",
             ]
@@ -336,25 +336,25 @@ const showcase = [
         keyfeatures: {
             en: [
                 "Responsive Digital Forms",
-                "Dynamic Data Handling", 
-                "Real-Time Application Tracking", 
-                "Automated PDF & QR Code Engine", 
+                "Dynamic Data Handling",
+                "Real-Time Application Tracking",
+                "Automated PDF & QR Code Engine",
                 "Multi-Role Dashboard",
                 "Centralized Management System",
             ],
             id: [
                 "Formulir Digital Responsif",
-                "Penanganan Data Dinamis", 
-                "Pelacakan Pengajuan Real-Time", 
-                "Mesin PDF & Kode QR Otomatis", 
+                "Penanganan Data Dinamis",
+                "Pelacakan Pengajuan Real-Time",
+                "Mesin PDF & Kode QR Otomatis",
                 "Dashboard Multi-Peran",
                 "Sistem Manajemen Terpusat",
             ]
         },
     },
-    
+
     // Design
-    {   
+    {
         id: 4,
         category: "design",
         title: "Weestaw",
@@ -382,7 +382,7 @@ const showcase = [
         challenge: {
             en: "The primary challenge involves designing a specialized ecosystem that legitimizes thrifting as a professional trade. Current sellers are forced to use non-commercial social media platforms like Instagram and TikTok, which lack structured transaction tools. Furthermore, general e-commerce platforms often mix new and used items, creating a high risk of customer misunderstanding regarding the actual condition of the products.",
             id: "Tantangan utamanya adalah merancang ekosistem khusus yang melegitimasi thrifting sebagai perdagangan profesional. Penjual saat ini terpaksa menggunakan platform media sosial non-komersial seperti Instagram dan TikTok yang tidak memiliki alat transaksi terstruktur. Selain itu, platform e-commerce umum sering mencampur barang baru dan bekas, sehingga menciptakan risiko tinggi kesalahpahaman pelanggan terkait kondisi sebenarnya dari produk tersebut."
-        },        
+        },
         concept: {
             en: "This app themed Transparency and Trust aims to dispel the stigma that all secondhand goods are inherently bad. With a clean UI and comprehensive information about the item's condition, users can clearly understand and appreciate its condition.",
             id: "Aplikasi ini mengangkat tema Transparansi dan Kepercayaan untuk menghilangkan stigma bahwa semua barang bekas pasti buruk. Dengan UI bersih dan informasi yang lengkap terkait kondisi barang, pengguna dapat mengerti dan memahami kondisi barang dengan jelas."
@@ -394,21 +394,21 @@ const showcase = [
         deliverables: {
             en: [
                 "Specialized Product Condition Grading UI",
-                "Seller-to-Buyer Direct Communication Flow", 
-                "Curated Thrift Store Discovery Interface", 
-                "Standardized Pre-loved Item Listing System", 
+                "Seller-to-Buyer Direct Communication Flow",
+                "Curated Thrift Store Discovery Interface",
+                "Standardized Pre-loved Item Listing System",
                 "High-Fidelity Interactive Mobile Prototype",
             ],
             id: [
                 "UI Grading Kondisi Produk Khusus",
-                "Alur Komunikasi Langsung Penjual-ke-Pembeli", 
-                "Antarmuka Penemuan Toko Thrift Terkurasi", 
-                "Sistem Daftar Barang Pre-loved Standar", 
+                "Alur Komunikasi Langsung Penjual-ke-Pembeli",
+                "Antarmuka Penemuan Toko Thrift Terkurasi",
+                "Sistem Daftar Barang Pre-loved Standar",
                 "Prototipe Mobile Interaktif High-Fidelity",
             ]
         },
     },
-    {   
+    {
         id: 5,
         category: "design",
         title: "Ganesha Cup II",
@@ -420,7 +420,7 @@ const showcase = [
         images: [
             Ganeshacup1,
             Ganeshacup2,
-            Ganeshacup3,            
+            Ganeshacup3,
         ],
         description: {
             en: "A complete suite of print-ready designs for a futsal tournament, the Ganesha Cup II. The project included backdrop designs and several award banners, all maintaining a consistent visual theme to reinforce the event's identity and professionalism.",
@@ -434,7 +434,7 @@ const showcase = [
         challenge: {
             en: "The challenge was to determine key colors that would represent the spirit of the event. These colors would be applied throughout the entire event design. Furthermore, the design had to be flexible enough to be applied to multiple print media of varying sizes.",
             id: "Tantangannya adalah menentukan warna-warna utama yang dapat merepresentasikan semangat acara tersebut, warna-warna tersebut akan diterapkan pada seluruh desain acara. Selain itu desain harus cukup fleksibel untuk diaplikasikan pada beberapa media cetak yang memiliki perbedaan ukuran."
-        },        
+        },
         concept: {
             en: "This design takes its meaning from the slogan 'Empower Together: Uniting Minds, Shaping Success!' and the Ganesha Futsal team logo which produces several colors, namely sky blue, white, and yellow. The color combination reflects the harmony between youthful enthusiasm, clean sportsmanship, and the ambition to achieve the highest achievements on the field.",
             id: "Design ini mengambil makna pada slogan 'Empower Together: Uniting Minds, Shaping Success!' serta logo tim Ganesha Futsal yang menghasilkan beberapa warna yaitu biru langit, putih, dan kuning.Kombinasi warna tersebut mencerminkan harmoni antara semangat muda, sportivitas yang bersih, serta ambisi untuk meraih prestasi tertinggi di lapangan."
@@ -446,21 +446,21 @@ const showcase = [
         deliverables: {
             en: [
                 "Main Event Photo Backdrop",
-                "Best Player & Top Scorer Award Banners", 
-                "1st, 2nd, and 3rd Place Winner Banners", 
-                "Cohesive Typography System", 
+                "Best Player & Top Scorer Award Banners",
+                "1st, 2nd, and 3rd Place Winner Banners",
+                "Cohesive Typography System",
                 "Standardized Event Color Guide",
             ],
             id: [
                 "Backdrop Acara Utama",
-                "Banner Penghargaan Pemain Terbaik & Top Scorer", 
-                "Banner Pemenang Juara 1, 2, dan 3", 
-                "Sistem Tipografi yang Tegas", 
+                "Banner Penghargaan Pemain Terbaik & Top Scorer",
+                "Banner Pemenang Juara 1, 2, dan 3",
+                "Sistem Tipografi yang Tegas",
                 "Panduan Warna Acara Terstandarisasi",
             ]
         },
     },
-    {   
+    {
         id: 6,
         category: "design",
         title: "eGoverse",
@@ -471,7 +471,7 @@ const showcase = [
         cover: coverEgoverselogo,
         images: [
             Egoverselogo1,
-            Egoverselogo2            
+            Egoverselogo2
         ],
         description: {
             en: "Complete visual identity design for Egoverse (E-Government Services) at the Pekalongan Regency Communications and Information Office. This identity aims to bridge conventional government administration with a more efficient digital system, creating more reliable and accessible public services.",
@@ -485,7 +485,7 @@ const showcase = [
         challenge: {
             en: "The primary challenge was creating a visual identity that made the bureaucracy feel more welcoming and human. This branding reflected the transition from a manual, paper-based system to transparent digital services (e-government), while still prioritizing good governance and the technical expertise of the Communications and Information Technology Office.",
             id: "Tantangan utamanya adalah menciptakan identitas visual yang membuat birokrasi terasa lebih ramah dan manusiawi. Branding ini harus menggambarkan transisi dari sistem manual berbasis kertas ke layanan digital (E-Government) yang transparan, dengan tetap mengutamakan tata kelola pemerintahan yang baik serta keahlian teknis Dinkominfo."
-        },        
+        },
         concept: {
             en: "The 'eGoverse' identity utilizes a 'Modern-Global' approach. The logo features a stylized globe icon held by symmetrical hands, symbolizing universal service, care, and the protection of public interests. A professional monochromatic blue gradient is used to project stability, technology, and transparency. The use of a bold, rounded sans-serif typeface ensures high legibility and a friendly, accessible persona for the digital government initiative.",
             id: "'eGoverse' mengangkat tema 'Modern-Global'. Logo tersebut menampilkan ikon bola dunia yang ditopang oleh tangan simetris, melambangkan layanan universal, kepedulian, dan perlindungan kepentingan publik. Gradasi biru monokromatik profesional digunakan untuk memproyeksikan stabilitas, teknologi, dan transparansi. Penggunaan tipografi sans-serif bulat yang tebal memastikan keterbacaan tinggi dan persona yang ramah serta mudah diakses untuk inisiatif pemerintah digital."
@@ -497,21 +497,21 @@ const showcase = [
         deliverables: {
             en: [
                 "Primary Logo with Global & Guardian Symbolism",
-                "Institutional Blue Gradient Color System", 
-                "Dynamic Background Pattern for Digital Assets", 
-                "Brand Application on Official Administrative Portals", 
+                "Institutional Blue Gradient Color System",
+                "Dynamic Background Pattern for Digital Assets",
+                "Brand Application on Official Administrative Portals",
                 "E-Government Visual Style Guide",
             ],
             id: [
                 "Logo Utama dengan Simbolisme Global & Penjagaan",
-                "Sistem Warna Gradasi Biru Institusional", 
-                "Pola Latar Belakang Dinamis untuk Aset Digital", 
-                "Aplikasi Brand pada Portal Administratif Resmi", 
+                "Sistem Warna Gradasi Biru Institusional",
+                "Pola Latar Belakang Dinamis untuk Aset Digital",
+                "Aplikasi Brand pada Portal Administratif Resmi",
                 "Panduan Gaya Visual E-Government (Visual Style Guide)",
             ]
         },
     },
-    {   
+    {
         id: 7,
         category: "design",
         title: "Internval",
@@ -537,7 +537,7 @@ const showcase = [
         challenge: {
             en: "The challenge was to visually translate the binary nature of administrative approval (yes or no) into a sophisticated brand mark. The identity had to represent the complex 'stages' of internal submissions while maintaining a clean and modern aesthetic that aligns with the speed of digital transformation.",
             id: "Tantangannya adalah menerjemahkan sistem persetujuan administrasi yang bersifat pasti (ya atau tidak) ke dalam identitas visual yang modern. Desain ini harus mampu menggambarkan kerumitan tahapan pengajuan internal, namun tetap mempertahankan estetika bersih dan dinamis yang sejalan dengan laju transformasi digital."
-        },        
+        },
         concept: {
             en: "The 'Internval' logo is inspired by the checkbox element, which represents yes or no. Visually, an empty checkbox means no, and in the case of an application, it means it has not been approved. By 'slicing' the shape into segments of varying lengths, the design visualizes the sequential stages and time-consuming nature of internal academic systems, ultimately resolved through digital efficiency.",
             id: "Logo 'Internval' terinspirasi dari elemen kotak centang (checkbox), yang merepresentasikan ya atau tidak, secara visual checkbox kosong berarti tidak, dalam hal pengajuan bisa diartikan belum disetujui. Dengan 'memotong' bentuk tersebut menjadi beberapa segmen dengan panjang yang bervariasi, desain ini memvisualisasikan tahapan berurutan dan sifat sistem akademik internal yang memakan waktu, yang akhirnya diselesaikan melalui efisiensi digital."
@@ -549,21 +549,21 @@ const showcase = [
         deliverables: {
             en: [
                 "Grid-Perfect Primary Logo Mark",
-                "Clash Display Typography System", 
-                "Monochromatic Green Color Scheme (representing digital approval)", 
-                "Systemic Branding for Internship Stages", 
+                "Clash Display Typography System",
+                "Monochromatic Green Color Scheme (representing digital approval)",
+                "Systemic Branding for Internship Stages",
                 "Visual Documentation of Logo Construction",
             ],
             id: [
                 "Tanda Logo Utama dengan Presisi Grid",
-                "Sistem Tipografi Clash Display", 
-                "Skema Warna Hijau Monokromatik (melambangkan persetujuan digital)", 
-                "Branding Sistemik untuk Tahapan Magang", 
+                "Sistem Tipografi Clash Display",
+                "Skema Warna Hijau Monokromatik (melambangkan persetujuan digital)",
+                "Branding Sistemik untuk Tahapan Magang",
                 "Dokumentasi Visual Konstruksi Logo",
             ]
         },
-    },    
-    {   
+    },
+    {
         id: 8,
         category: "design",
         title: "KKN Logo",
@@ -589,7 +589,7 @@ const showcase = [
         challenge: {
             en: "The challenge was to unite five diverse local identities, ranging from geography, coastal culture, the batik industry, history, and regional icons, into one cohesive symbol. This logo must feel close to the hearts of the PasirKratonKramat residents while still appearing professional as the identity of the KKN program. By harmonizing these distinctive elements, the resulting visual identity is expected to strengthen the community's emotional bond with their region.",
             id: "Tantangannya adalah menyatukan lima identitas lokal yang beragam, mulai dari kondisi geografis, budaya pesisir, industri batik, sejarah, hingga ikon daerah, menjadi satu lambang yang utuh. Logo ini harus terasa dekat di hati warga PasirKratonKramat namun tetap terlihat profesional sebagai identitas program KKN. Dengan menyelaraskan berbagai elemen khas ini, identitas visual yang dihasilkan diharapkan dapat memperkuat ikatan emosional masyarakat terhadap daerahnya sendiri."
-        },        
+        },
         concept: {
             en: "This logo uses a 'Layered Symbolism' approach, where each element tells a profound story about the KKN location. By combining organic natural forms such as coastal waves and stretches of sand, distinctive cultural patterns of Batik, and the architectural silhouette of Hoegeng Stadium, this design serves as a visual map that encapsulates the entire identity of the village. This combination not only highlights the physical beauty of the area but also weaves the historical values ​​and life of the local community into a strong visual unity.",
             id: "Logo ini menggunakan pendekatan 'Simbolisme Berlapis', di mana setiap elemennya menceritakan kisah mendalam tentang lokasi KKN. Dengan memadukan bentuk organik alam seperti gelombang pesisir dan hamparan pasir, pola budaya khas Batik, hingga siluet arsitektur Stadion Hoegeng, desain ini berfungsi sebagai peta visual yang merangkum seluruh identitas kelurahan tersebut. Kombinasi ini tidak hanya menonjolkan keindahan fisik daerahnya, tetapi juga merajut nilai sejarah dan kehidupan masyarakat setempat dalam satu kesatuan visual yang kuat."
@@ -601,16 +601,16 @@ const showcase = [
         deliverables: {
             en: [
                 "Philosophical Logo with Deep Local Symbolism",
-                "Community Service Program Branding", 
-                "Visual Documentation of Local Cultural Values", 
-                "Social Media & Printed Event Assets", 
+                "Community Service Program Branding",
+                "Visual Documentation of Local Cultural Values",
+                "Social Media & Printed Event Assets",
                 "Institutional Identity for Regional Collaboration",
             ],
             id: [
                 "Logo Filosofis dengan Simbolisme Lokal yang Mendalam",
-                "Branding Program Pengabdian Masyarakat", 
-                "Dokumentasi Visual Nilai-Nilai Budaya Lokal", 
-                "Aset Media Sosial & Media Cetak Acara", 
+                "Branding Program Pengabdian Masyarakat",
+                "Dokumentasi Visual Nilai-Nilai Budaya Lokal",
+                "Aset Media Sosial & Media Cetak Acara",
                 "Identitas Institusional untuk Kolaborasi Regional",
             ]
         },
