@@ -8,7 +8,7 @@ const Talklink = [
     {
         id: 2,
         name: "Linkedin",
-        link: "https://www.linkedin.com/in/amntllhz/"
+        link: "https://www.linkedin.com/in/aldiamn/"
     },
     {
         id: 3,
