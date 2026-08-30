@@ -32,6 +32,7 @@ import Nutrizie2 from "../assets/nutrizie/nutrizie-car-2.webp"
 import Nutrizie3 from "../assets/nutrizie/nutrizie-car-3.webp"
 import Nutrizie4 from "../assets/nutrizie/nutrizie-car-4.webp"
 import Nutrizie5 from "../assets/nutrizie/nutrizie-car-5.webp"
+import Nutrizie6 from "../assets/nutrizie/nutrizie-car-6.webp"
 
 // Labhub
 import Labhub1 from "../assets/labhub/labhub-car-1.webp"
@@ -150,7 +151,8 @@ const showcase = [
             Nutrizie2,
             Nutrizie3,
             Nutrizie4,
-            Nutrizie5
+            Nutrizie5,
+            Nutrizie6
         ],
         description: {
             en: "Nutrizie is a website that contains nutritional information equipped with a toddler nutritional status calculation system using the z-score method according to standards. This website was created as an effort to reduce stunting in Indonesia through the dissemination of nutritional information and flexibility in checking the nutritional status of toddlers.",
