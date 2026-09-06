@@ -8,9 +8,9 @@ const IconMap = {
     "Contact": CiChat2
 };
 
-const Navigation = ({active, onChange}) => {    
+const Navigation = ({ active, onChange }) => {
     return (
-        <>             
+        <>
 
             <div className="relative flex justify-center items-center">
                 <div className="
@@ -29,23 +29,22 @@ const Navigation = ({active, onChange}) => {
 
                         return (
                             <button
-                            key={section.key}
-                            onClick={() => onChange(section.key)}
-                            className={`
-                                rounded-sm cursor-pointer p-1 transition-colors
-                                ${isActive 
-                                ? "bg-gray-200 dark:bg-neutral-800" 
-                                : "hover:bg-gray-100 dark:hover:bg-neutral-800"}
+                                key={section.key}
+                                onClick={() => onChange(section.key)}
+                                className={`
+                                rounded-sm cursor-pointer p-1 transition-all duration-400 transform
+                                ${isActive
+                                        ? "bg-gray-200 dark:bg-neutral-800"
+                                        : "hover:bg-gray-100 dark:hover:bg-neutral-800"}
                             `}
-                            aria-label={section.title}
+                                aria-label={section.title}
                             >
-                            <Icon
-                                className={`text-2xl transition-colors ${
-                                isActive
-                                    ? "text-gray-600 dark:text-neutral-200"
-                                    : "text-gray-400 dark:text-neutral-500"
-                                }`}
-                            />
+                                <Icon
+                                    className={`text-2xl transition-colors ${isActive
+                                        ? "text-gray-600 dark:text-neutral-200"
+                                        : "text-gray-400 dark:text-neutral-500"
+                                        }`}
+                                />
                             </button>
                         );
                     })}
