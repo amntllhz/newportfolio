@@ -162,7 +162,7 @@ const showcase = [
             en: "Nutrizie is a website that contains nutritional information equipped with a toddler nutritional status calculation system using the z-score method according to standards. This website was created as an effort to reduce stunting in Indonesia through the dissemination of nutritional information and flexibility in checking the nutritional status of toddlers.",
             id: "Nutrizie merupakan sebuah web edukasi yang tidak hanya menyediakan informasi gizi, tetapi juga dilengkapi dengan sistem perhitungan status gizi balita menggunakan metode z-score sesuai standar. Web ini dibuat sebagai upaya untuk mengurangi stunting di Indonesia melalui penyebaran informasi gizi dan fleksibilitas dalam mengecek status gizi balita."
         },
-        techstack: ["PHP", "JS", "Laravel", "React", "Inertia", "MySQL", "TailwindCSS", "Vite", "AlpineJS"],
+        techstack: ["PHP", "JS", "Laravel", "React", "Inertia", "MySQL", "Docker", "TailwindCSS", "Vite", "AlpineJS"],
         role: {
             en: ["Fullstack Web Developer", "UI/UX Designer"],
             id: ["Fullstack Web Developer", "Desainer UI/UX"]
