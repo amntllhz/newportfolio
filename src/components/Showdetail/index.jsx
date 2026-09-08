@@ -156,7 +156,7 @@ const Showdetail = ({ project, onBack, scrollRef }) => {
 
                     {/* Techstack */}
                     <motion.div variants={containerVariants} className="flex justify-start items-start gap-1.5">
-                        <p className="font-main shrink-0 lg:py-1 xs:py-1.5 text-xs text-gray-400 dark:text-neutral-400">{isDev ? t("detail.buildWith") : t("detail.madeUsing")}</p>
+                        <p className="font-main shrink-0 lg:py-1 xs:py-1.25 text-xs text-gray-400 dark:text-neutral-400">{isDev ? t("detail.buildWith") : t("detail.madeUsing")}</p>
                         <Techbadge roundedSize="rounded-sm" iconSize="text-2xl" items={project.techstack} variants={itemVariants}></Techbadge>
                     </motion.div>
 
