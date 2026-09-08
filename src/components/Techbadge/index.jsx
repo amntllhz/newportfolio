@@ -1,5 +1,5 @@
 import techstack from "../../data/techstack"
-import { SiAdobeillustrator, SiAdobephotoshop, SiAlpinedotjs, SiBootstrap, SiCss3, SiFigma, SiFilament, SiGit, SiGithub, SiHtml5, SiInertia, SiJavascript, SiLaravel, SiMysql, SiNpm, SiPhp, SiPython, SiReact, SiTailwindcss, SiVite } from "react-icons/si"
+import { SiAdobeillustrator, SiAdobephotoshop, SiAlpinedotjs, SiBootstrap, SiCss3, SiDocker, SiFigma, SiFilament, SiGit, SiGithub, SiHtml5, SiInertia, SiJavascript, SiLaravel, SiMongodb, SiMysql, SiNpm, SiPhp, SiPython, SiReact, SiTailwindcss, SiVite } from "react-icons/si"
 import { motion } from "framer-motion"
 import {
   Tooltip,
@@ -49,7 +49,9 @@ const IconMap = {
   "Filament": SiFilament,
   "Python": SiPython,
   "Customtkinter": Customtkinter,
-  "Inertia": SiInertia
+  "Inertia": SiInertia,
+  "Docker": SiDocker,
+  "MongoDB": SiMongodb
 };
 
 const Techbadge = ({ variants, items, iconSize = "text-3xl", roundedSize = "rounded-md" }) => {

@@ -89,6 +89,16 @@ const techstack = [
         id: 18,
         name: "Inertia",
         icon: "Inertia"
+    },
+    {
+        id: 19,
+        name: "Docker",
+        icon: "Docker"
+    },
+    {
+        id: 20,
+        name: "MongoDB",
+        icon: "MongoDB"
     }
 ]
 
