@@ -142,6 +142,78 @@ const showcase = [
     {
         id: 2,
         category: "dev",
+        title: "eGoverse",
+        subtitle: {
+            en: "E-Government Services",
+            id: "Layanan E-Government"
+        },
+        cover: coverEgoverse,
+        images: [
+            Egoverse1,
+            Egoverse2,
+            Egoverse3,
+            Egoverse4,
+            Egoverse5
+        ],
+        description: {
+            en: "eGoverse or E-Government Services is an innovative OPD (Regional Apparatus Organization) Digitalization Service Portal designed to facilitate the submission of Clearance, Server, Device services, and other support to enhance the efficiency and performance of Regional Apparatus Organizations (OPD) in Pekalongan Regency.",
+            id: "eGoverse atau E-Government Services adalah Portal Layanan Digitalisasi OPD (Organisasi Perangkat Daerah) inovatif yang dirancang untuk memfasilitasi pengajuan layanan Clearance, Server, Perangkat, dan dukungan lainnya guna meningkatkan efisiensi serta kinerja OPD di Kabupaten Pekalongan."
+        },
+        techstack: ["PHP", "JS", "Laravel", "MySQL", "TailwindCSS", "AlpineJS", "Filament"],
+        role: {
+            en: ["Front-end Web Developer", "UI/UX Designer"],
+            id: ["Front-end Web Developer", "Desainer UI/UX"]
+        },
+        problem: {
+            en: "Despite the push for E-Government, service submissions at the Dinkominfo of Pekalongan Regency are still conducted manually. This manual process is inefficient, lacks transparency, and does not fully align with the principles of Good Governance, contributing to Indonesia's relatively low E-Government Development Index (EGDI).",
+            id: "Meskipun ada dorongan untuk E-Government, pengajuan layanan di Dinkominfo Kabupaten Pekalongan masih dilakukan secara manual. Proses manual ini tidak efisien, kurang transparan, dan belum sepenuhnya selaras dengan prinsip Tata Kelola Pemerintahan yang Baik (Good Governance), yang berkontribusi pada rendahnya Indeks Pengembangan E-Government (EGDI) Indonesia."
+        },
+        subproblem: {
+            en: [
+                "Inefficient manual submission methods for government services",
+                "Lack of transparency and accountability in administrative processes",
+                "Limited accessibility for the public to monitor their submission status",
+                "Misalignment with Good Governance principles regarding budget and administrative efficiency",
+                "Low public awareness and socialization of existing electronic government systems",
+                "The need for a more intuitive interface to bridge the gap between technology and public users",
+            ],
+            id: [
+                "Metode pengajuan layanan pemerintah yang tidak efisien melalui cara manual",
+                "Kurangnya transparansi dan akuntabilitas dalam proses administrasi",
+                "Aksesibilitas terbatas bagi publik untuk memantau status pengajuan mereka",
+                "Ketidakselarasan dengan prinsip Good Governance terkait efisiensi anggaran dan administrasi",
+                "Rendahnya kesadaran dan sosialisasi publik terhadap sistem pemerintahan elektronik yang ada",
+                "Kebutuhan akan antarmuka yang intuitif untuk menjembatani celah antara teknologi dan pengguna publik",
+            ]
+        },
+        solution: {
+            en: "Developed the Egoverse interface to modernize and streamline the submission process. By digitalizing service requests, the platform ensures more effective service delivery, reduces bureaucratic bottlenecks, and provides a structured information flow that supports the realization of an efficient E-Government ecosystem in Pekalongan Regency.",
+            id: "Mengembangkan antarmuka Egoverse untuk memodernisasi dan menyederhanakan proses pengajuan. Dengan mendigitalisasi permintaan layanan, platform ini memastikan pengiriman layanan yang lebih efektif, mengurangi hambatan birokrasi, dan menyediakan alur informasi terstruktur yang mendukung terwujudnya ekosistem E-Government yang efisien di Kabupaten Pekalongan."
+        },
+        keyfeaturesdesc: {
+            en: "The interface was designed to simplify interactions between citizens and government bodies through several key components:",
+            id: "Antarmuka ini dirancang untuk menyederhanakan interaksi antara warga dan badan pemerintah melalui beberapa komponen utama:"
+        },
+        keyfeatures: {
+            en: [
+                "Integrated Service Dashboard",
+                "Digital Submission Forms",
+                "Real-time Process Tracking",
+                "Public Information Portal",
+                "Administrative Verification Panel",
+            ],
+            id: [
+                "Dashboard Layanan Terintegrasi",
+                "Formulir Pengajuan Digital",
+                "Pelacakan Proses Real-time",
+                "Portal Informasi Publik",
+                "Panel Verifikasi Administratif",
+            ]
+        },
+    },
+    {
+        id: 3,
+        category: "dev",
         title: "Nutrizie",
         subtitle: {
             en: "Nutrition Education & Prediction",
@@ -209,78 +281,6 @@ const showcase = [
                 "Dashboard Admin Berbasis Filament",
                 "Manajemen Konten Edukasi",
                 "Antarmuka Informasi Responsif",
-            ]
-        },
-    },
-    {
-        id: 3,
-        category: "dev",
-        title: "eGoverse",
-        subtitle: {
-            en: "E-Government Services",
-            id: "Layanan E-Government"
-        },
-        cover: coverEgoverse,
-        images: [
-            Egoverse1,
-            Egoverse2,
-            Egoverse3,
-            Egoverse4,
-            Egoverse5
-        ],
-        description: {
-            en: "eGoverse or E-Government Services is an innovative OPD (Regional Apparatus Organization) Digitalization Service Portal designed to facilitate the submission of Clearance, Server, Device services, and other support to enhance the efficiency and performance of Regional Apparatus Organizations (OPD) in Pekalongan Regency.",
-            id: "eGoverse atau E-Government Services adalah Portal Layanan Digitalisasi OPD (Organisasi Perangkat Daerah) inovatif yang dirancang untuk memfasilitasi pengajuan layanan Clearance, Server, Perangkat, dan dukungan lainnya guna meningkatkan efisiensi serta kinerja OPD di Kabupaten Pekalongan."
-        },
-        techstack: ["PHP", "JS", "Laravel", "MySQL", "TailwindCSS", "AlpineJS", "Filament"],
-        role: {
-            en: ["Front-end Web Developer", "UI/UX Designer"],
-            id: ["Front-end Web Developer", "Desainer UI/UX"]
-        },
-        problem: {
-            en: "Despite the push for E-Government, service submissions at the Dinkominfo of Pekalongan Regency are still conducted manually. This manual process is inefficient, lacks transparency, and does not fully align with the principles of Good Governance, contributing to Indonesia's relatively low E-Government Development Index (EGDI).",
-            id: "Meskipun ada dorongan untuk E-Government, pengajuan layanan di Dinkominfo Kabupaten Pekalongan masih dilakukan secara manual. Proses manual ini tidak efisien, kurang transparan, dan belum sepenuhnya selaras dengan prinsip Tata Kelola Pemerintahan yang Baik (Good Governance), yang berkontribusi pada rendahnya Indeks Pengembangan E-Government (EGDI) Indonesia."
-        },
-        subproblem: {
-            en: [
-                "Inefficient manual submission methods for government services",
-                "Lack of transparency and accountability in administrative processes",
-                "Limited accessibility for the public to monitor their submission status",
-                "Misalignment with Good Governance principles regarding budget and administrative efficiency",
-                "Low public awareness and socialization of existing electronic government systems",
-                "The need for a more intuitive interface to bridge the gap between technology and public users",
-            ],
-            id: [
-                "Metode pengajuan layanan pemerintah yang tidak efisien melalui cara manual",
-                "Kurangnya transparansi dan akuntabilitas dalam proses administrasi",
-                "Aksesibilitas terbatas bagi publik untuk memantau status pengajuan mereka",
-                "Ketidakselarasan dengan prinsip Good Governance terkait efisiensi anggaran dan administrasi",
-                "Rendahnya kesadaran dan sosialisasi publik terhadap sistem pemerintahan elektronik yang ada",
-                "Kebutuhan akan antarmuka yang intuitif untuk menjembatani celah antara teknologi dan pengguna publik",
-            ]
-        },
-        solution: {
-            en: "Developed the Egoverse interface to modernize and streamline the submission process. By digitalizing service requests, the platform ensures more effective service delivery, reduces bureaucratic bottlenecks, and provides a structured information flow that supports the realization of an efficient E-Government ecosystem in Pekalongan Regency.",
-            id: "Mengembangkan antarmuka Egoverse untuk memodernisasi dan menyederhanakan proses pengajuan. Dengan mendigitalisasi permintaan layanan, platform ini memastikan pengiriman layanan yang lebih efektif, mengurangi hambatan birokrasi, dan menyediakan alur informasi terstruktur yang mendukung terwujudnya ekosistem E-Government yang efisien di Kabupaten Pekalongan."
-        },
-        keyfeaturesdesc: {
-            en: "The interface was designed to simplify interactions between citizens and government bodies through several key components:",
-            id: "Antarmuka ini dirancang untuk menyederhanakan interaksi antara warga dan badan pemerintah melalui beberapa komponen utama:"
-        },
-        keyfeatures: {
-            en: [
-                "Integrated Service Dashboard",
-                "Digital Submission Forms",
-                "Real-time Process Tracking",
-                "Public Information Portal",
-                "Administrative Verification Panel",
-            ],
-            id: [
-                "Dashboard Layanan Terintegrasi",
-                "Formulir Pengajuan Digital",
-                "Pelacakan Proses Real-time",
-                "Portal Informasi Publik",
-                "Panel Verifikasi Administratif",
             ]
         },
     },
