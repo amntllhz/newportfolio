@@ -41,7 +41,8 @@ i18n
             showcase: "Showcase",
           },
           hero: {
-            greeting: "Halo, I'm M. Aldi Amanatullah Syahputra,",
+            greeting: "M. Aldi Amanatullah Syahputra",
+            basein: "Batang, Central Java, Indonesia",
             p1_start: "A passionate individual with a deep enthusiasm for visual technology and modern design. As a",
             p1_middle: "and",
             p1_end: ", I focus on creating digital products that are not only functional but also visually balanced and aesthetically pleasing.",
@@ -79,8 +80,9 @@ i18n
             showcase: "Proyek",
           },
           hero: {
-            greeting: "Halo, Saya M. Aldi Amanatullah Syahputra,",
-            p1_start: "Seseorang yang memiliki ketertarikan dalam teknologi visual dan desain modern. Sebagai seorang",
+            greeting: "M. Aldi Amanatullah Syahputra",
+            basein: "Batang, Jawa Tengah, Indonesia",
+            p1_start: "Saya memiliki ketertarikan dalam teknologi visual dan desain modern. Sebagai seorang",
             p1_middle: "dan",
             p1_end: ", saya berfokus untuk menciptakan sebuah produk digital yang tidak hanya baik secara fungsional tetapi juga seimbang dari segi visual dan estetika.",
             p2: "Saya selalu berusaha menciptakan antarmuka modern dan pengalaman pengguna yang halus dengan menjaga keseimbangan inovasi dan kegunaan. Saya sangat menyukai kerja sama tim, saya percaya kolaborasi menciptakan solusi yang lebih efisien dan efektif."
