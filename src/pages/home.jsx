@@ -5,12 +5,14 @@ import Education from "../sections/Education";
 import Projects from "@/sections/Projects";
 import Contact from "../sections/Contact";
 import SettingsFAB from "@/components/SettingsFAB";
+import Skill from "@/sections/Skill";
 
 const SECTION_MAP = {
-  profile: Hero, 
-  education: Education,
-  projects: Projects,
-  contact: Contact
+    profile: Hero,
+    skill: Skill,
+    education: Education,
+    projects: Projects,
+    contact: Contact
 };
 
 const Home = () => {
@@ -19,9 +21,9 @@ const Home = () => {
     const ActiveSection = SECTION_MAP[activeSection];
 
     return (
-        <>                        
-            {ActiveSection && <ActiveSection />}            
-            
+        <>
+            {ActiveSection && <ActiveSection />}
+
             <Navigation
                 active={activeSection}
                 onChange={setActiveSection}

@@ -1,8 +1,9 @@
-import { CiChat2, CiGrid31, CiMap, CiUser } from "react-icons/ci";
+import { CiChat2, CiGrid31, CiMap, CiMedal, CiPenpot, CiUser } from "react-icons/ci";
 import tabs from "../../data/sections"
 
 const IconMap = {
     "Profile": CiUser,
+    "Skill": CiPenpot,
     "Education": CiMap,
     "Projects": CiGrid31,
     "Contact": CiChat2
