@@ -48,6 +48,9 @@ i18n
             p1_end: ", I focus on creating digital products that are not only functional but also visually balanced and aesthetically pleasing.",
             p2: "I always strive to deliver modern interfaces with seamless user experience, while keeping innovation and usability in harmony. I value teamwork highly, i believe collaboration creates more efficient and effective solutions."
           },
+          skill: {
+            techdesc: "Technologies and tools I master to build high-quality digital products"
+          },
           contact: {
             cv: "Download CV",
             title: "Maybe we can Talk",
@@ -86,6 +89,9 @@ i18n
             p1_middle: "dan",
             p1_end: ", saya berfokus untuk menciptakan sebuah produk digital yang tidak hanya baik secara fungsional tetapi juga seimbang dari segi visual dan estetika.",
             p2: "Saya selalu berusaha menciptakan antarmuka modern dan pengalaman pengguna yang halus dengan menjaga keseimbangan inovasi dan kegunaan. Saya sangat menyukai kerja sama tim, saya percaya kolaborasi menciptakan solusi yang lebih efisien dan efektif."
+          },
+          skill: {
+            techdesc: "Teknologi dan alat bantu yang saya kuasai untuk membangun produk digital"
           },
           contact: {
             cv: "Unduh CV",

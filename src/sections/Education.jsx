@@ -1,7 +1,6 @@
 import { ScrollArea } from "@/components/ui/scroll-area"
 import Experience from "../organism/Experience"
 import School from "../organism/School"
-import Technical from "@/organism/Technical"
 
 const Education = () => {
     return (

@@ -61,7 +61,7 @@ const Techbadge = ({ variants, items, iconSize = "text-3xl", roundedSize = "roun
   return (
     <>
       <div className="relative flex justify-center items-center">
-        <div variants={variants} className="flex flex-wrap lg:max-w-lg xs:max-w-full justify-left items-center gap-2.5">
+        <div variants={variants} className="flex flex-wrap lg:max-w-lg xs:max-w-full lg:justify-start xs:justify-center items-center gap-2.5">
           {displayItems.map((techName) => {
             const Icon = IconMap[techName];
             if (!Icon) return null;
