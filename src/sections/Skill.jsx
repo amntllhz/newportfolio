@@ -1,5 +1,5 @@
 import { ScrollArea } from "@/components/ui/scroll-area"
-import Technical from "@/organism/technical"
+import Technical from "@/organism/Technical"
 
 const Skill = () => {
     return (
