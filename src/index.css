@@ -16,6 +16,11 @@
 
     /* Colors */  
   --color-primary: #FFFFFF;
+  --color-brand-200: #b8c7ff;
+  --color-brand-300: #8da3ff;
+  --color-brand-400: #5c75ff;
+  --color-brand-500: #2A52FF;
+  --color-brand-600: #1d3de8;
 
     /* Font */
   --font-main: "Geist", sans-serif;
