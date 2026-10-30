@@ -99,6 +99,21 @@ const techstack = [
         id: 20,
         name: "MongoDB",
         icon: "MongoDB"
+    },
+    {
+        id: 21,
+        name: "PostgreSQL",
+        icon: "PostgreSQl"
+    },
+    {
+        id: 22,
+        name: "TypeScript",
+        icon: "TypeScript"
+    },
+    {
+        id: 23,
+        name: "NextJS",
+        icon: "NextJS"
     }
 ]
 
