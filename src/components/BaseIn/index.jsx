@@ -6,8 +6,8 @@ const BaseIn = () => {
     return (
         <>
             <div className="flex w-fit justify-center items-center gap-1.5">
-                <CiLocationOn className="size-3 text-gray-500/80 dark:text-brand-500" />
-                <p className="text-xs font-main text-gray-500/80 dark:text-brand-500">{t("hero.basein")}</p>
+                <CiLocationOn className="size-2.5 text-gray-500/80 dark:text-white" />
+                <p className="text-[11px] font-main text-gray-500/80 dark:text-white">{t("hero.basein")}</p>
             </div>
         </>
     )

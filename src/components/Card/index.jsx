@@ -8,7 +8,7 @@ const Card = ({ variants }) => {
 
     return (
         <>
-            <motion.div variants={variants} className="flex bg-white outline outline-offset-0 outline-gray-300/80 p-1 w-fit justify-center items-center rounded-xl dark:bg-neutral-950 dark:outline-neutral-800">
+            <motion.div variants={variants} className="flex bg-white/10 outline outline-offset-0 outline-gray-300/30 p-1 w-fit justify-center items-center rounded-xl dark:bg-neutral-950/10 dark:outline-neutral-800/30 backdrop-blur-xs">
 
                 {/* Tambahkan relative + ukuran eksplisit di sini */}
                 <div className="relative lg:w-40 lg:h-40 xs:w-12 xs:h-12 overflow-hidden rounded-lg">

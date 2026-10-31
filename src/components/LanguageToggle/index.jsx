@@ -17,7 +17,7 @@ export function LanguageToggle() {
       size="icon"
       onClick={toggleLanguage}
       // Samakan persis dengan class ModeToggle kamu
-      className="bg-gray-100 dark:bg-neutral-900 cursor-pointer"
+      className="bg-gray-100 dark:bg-neutral-900/30 backdrop-blur-xs cursor-pointer"
     >
       <AnimatePresence mode="wait">
         <motion.span

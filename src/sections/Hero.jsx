@@ -49,7 +49,7 @@ const Hero = () => {
 
 
         <div className="flex flex-col gap-1 lg:max-w-lg xs:max-w-9/10">
-          <div className="flex flex-col space-y-1 mb-1.5 lg:block xs:hidden">
+          <div className="flex flex-col space-y-0.5 mb-1.5 lg:block xs:hidden">
             <motion.h1 variants={itemVariants} className="font-main font-semibold lg:text-xl text-gray-900 lg:text-left dark:text-white">
               {t("hero.greeting")}
             </motion.h1>
@@ -58,14 +58,14 @@ const Hero = () => {
               <OpenWork />
             </motion.div>
           </div>
-          <motion.p variants={itemVariants} className="font-main text-xs text-gray-400 text-justify leading-normal dark:text-neutral-400">
+          <motion.p variants={itemVariants} className="font-main text-xs text-gray-400 text-justify leading-normal dark:text-neutral-300">
             {t("hero.p1_start")}
             <span className="font-semibold text-gray-500/80 dark:text-neutral-100"> Web Developer </span>
             {t("hero.p1_middle")}
             <span className="font-semibold text-gray-500/80 dark:text-neutral-100"> Graphic Designer </span>
             {t("hero.p1_end")}
           </motion.p>
-          <motion.p variants={itemVariants} className="font-main text-xs text-gray-400 text-justify leading-normal dark:text-neutral-400">
+          <motion.p variants={itemVariants} className="font-main text-xs text-gray-400 text-justify leading-normal dark:text-neutral-300">
             {t("hero.p2")}
           </motion.p>
         </div>

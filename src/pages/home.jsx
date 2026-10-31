@@ -6,6 +6,7 @@ import Projects from "@/sections/Projects";
 import Contact from "../sections/Contact";
 import SettingsFAB from "@/components/SettingsFAB";
 import Skill from "@/sections/Skill";
+import SiteBackground from "@/components/SiteBackground";
 
 const SECTION_MAP = {
     profile: Hero,
@@ -21,16 +22,20 @@ const Home = () => {
     const ActiveSection = SECTION_MAP[activeSection];
 
     return (
-        <>
-            {ActiveSection && <ActiveSection />}
+        <div className="relative isolate min-h-screen">
+            <SiteBackground />
 
-            <Navigation
-                active={activeSection}
-                onChange={setActiveSection}
-            />
+            <main className="relative z-10">
+                {ActiveSection && <ActiveSection />}
 
-            <SettingsFAB />
-        </>
+                <Navigation
+                    active={activeSection}
+                    onChange={setActiveSection}
+                />
+
+                <SettingsFAB />
+            </main>
+        </div>
     )
 }
 

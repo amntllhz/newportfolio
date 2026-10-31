@@ -8,99 +8,98 @@ import showcase from "../../data/showcase"
 import { useTranslation } from "react-i18next";
 
 const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      // Memberikan jeda 0.2 detik antar elemen anak
-      staggerChildren: 0.1, 
-      delayChildren: 0.1,
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            // Memberikan jeda 0.2 detik antar elemen anak
+            staggerChildren: 0.1,
+            delayChildren: 0.1,
+        },
     },
-  },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { 
-    opacity: 1, 
-    y: 0, 
-    transition: { type: "spring", stiffness: 100 } 
-  },
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { type: "spring", stiffness: 100 }
+    },
 };
 
-const Showcase = ({scrollRef}) => {
+const Showcase = ({ scrollRef }) => {
     const { t } = useTranslation();
-    const [selectedProject, setSelectedProject] = useState(null);   
+    const [selectedProject, setSelectedProject] = useState(null);
     const [activeTab, setActiveTab] = useState("dev");
-    const filteredData = showcase.filter((item) => item.category === activeTab);     
+    const filteredData = showcase.filter((item) => item.category === activeTab);
 
     return (
         <>
-            <div className="px-1 mt-8 lg:mb-8 xs:mb-20 flex flex-col justify-center items-center w-full">                
+            <div className="px-1 mt-8 lg:mb-8 xs:mb-20 flex flex-col justify-center items-center w-full">
 
-                
+
                 {!selectedProject && (
                     <motion.div layout variants={containerVariants} initial="hidden" animate="visible" exit="hidden" className="flex justify-between lg:max-w-2xl xs:max-w-full w-full mb-2.5">
-                        <Subhead icon={CiBoxList }>{t("subhead.showcase")}</Subhead>
+                        <Subhead icon={CiBoxList}>{t("subhead.showcase")}</Subhead>
 
-                        <motion.div variants={itemVariants} className="flex gap-2 p-1 bg-gray-100/50 w-fit rounded-lg outline outline-offset-0 outline-gray-300/80 dark:bg-neutral-950 dark:outline-neutral-800">
+                        <motion.div variants={itemVariants} className="flex gap-2 p-1 bg-gray-100/50 w-fit rounded-lg outline -outline-offset-1 outline-gray-300/80 dark:bg-neutral-900/10 backdrop-blur-xs dark:outline-neutral-800/20">
                             {["dev", "design"].map((tab) => (
-                                <button                                                                        
+                                <button
                                     key={tab}
                                     onClick={() => setActiveTab(tab)}
-                                    className={`px-4 py-1.5 rounded-md text-xs font-main transition-colors duration-200 cursor-pointer border ${
-                                    activeTab === tab
-                                        ? "bg-white text-gray-900 border-gray-200 dark:border-neutral-900 dark:bg-neutral-900 dark:text-neutral-100"
-                                        : "text-gray-400 border-transparent hover:text-gray-600 dark:text-neutral-600 dark:hover:text-neutral-600"
-                                    }`}
+                                    className={`px-4 py-1.5 rounded-md text-xs font-main transition-colors duration-200 cursor-pointer border ${activeTab === tab
+                                        ? "bg-white text-gray-900 border-gray-200 dark:border-neutral-900/10 dark:bg-neutral-900/10 backdrop-blur-xs dark:text-white"
+                                        : "text-gray-400 border-transparent hover:text-gray-600 dark:text-neutral-300 dark:hover:text-white"
+                                        }`}
                                 >
                                     {tab === "dev" ? t("tabs.dev") : t("tabs.design")}
                                 </button>
                             ))}
                         </motion.div>
-                    </motion.div>                    
-                )}                
+                    </motion.div>
+                )}
 
                 <AnimatePresence mode="wait">
-                    {selectedProject ? (  
-                        <motion.div 
-                            key="condetail" 
-                            variants={containerVariants} 
-                            initial="hidden" 
-                            animate="visible" 
+                    {selectedProject ? (
+                        <motion.div
+                            key="condetail"
+                            variants={containerVariants}
+                            initial="hidden"
+                            animate="visible"
                             exit="hidden"
-                            className="flex flex-col gap-2.5 w-full max-w-full justify-center items-center" 
+                            className="flex flex-col gap-2.5 w-full max-w-full justify-center items-center"
                         >
-                            <Showdetail 
-                                key="detail"                                
-                                project={selectedProject} 
+                            <Showdetail
+                                key="detail"
+                                project={selectedProject}
                                 scrollRef={scrollRef}
                                 onBack={() => setSelectedProject(null)}
                             />
                         </motion.div>
-                    ) : (                      
-                        <motion.div                           
+                    ) : (
+                        <motion.div
                             key={`list-${activeTab}`}
-                            variants={containerVariants} 
-                            initial="hidden" 
-                            animate="visible" 
+                            variants={containerVariants}
+                            initial="hidden"
+                            animate="visible"
                             exit="hidden"
                             className="flex flex-col w-full justify-left items-start "
-                        >                                 
+                        >
 
-                            <Showcard 
+                            <Showcard
                                 key={activeTab}
-                                data={filteredData}                               
-                                variants={itemVariants} 
-                                onSelect={(project) => setSelectedProject(project)} 
+                                data={filteredData}
+                                variants={itemVariants}
+                                onSelect={(project) => setSelectedProject(project)}
                             />
                         </motion.div>
                     )}
-                </AnimatePresence>                
+                </AnimatePresence>
 
             </div>
         </>
     )
-}    
+}
 
 export default Showcase
