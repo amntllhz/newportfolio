@@ -1,11 +1,11 @@
 import { motion } from "framer-motion"
 
 const Subhead = (props) => {
-    const { icon: Icon, children, labelSize = "text-lg", labelColor = "text-gray-400", fontWeight = "font-normal" } = props
+    const { icon: Icon, children, labelSize = "text-lg", labelColor = "text-gray-400", fontWeight = "font-semibold" } = props
     return (
         <>
             <motion.div initial={{ opacity: 0, y: 80 }} animate={{ opacity: 1, y: 0 }} transition={{ ease: "easeOut", type: "spring" }} className="flex space-x-2 justify-center items-center mb-2">
-                {Icon && <Icon className="text-3xl text-gray-400 p-1 rounded-md bg-gray-100  backdrop-blur-lg dark:bg-neutral-900/10 dark:text-white" />}
+                {Icon && <Icon className="text-xl text-gray-400 dark:text-white" />}
                 <p className={`font-main ${fontWeight} ${labelSize} ${labelColor} dark:text-white`}>{children}</p>
             </motion.div>
         </>

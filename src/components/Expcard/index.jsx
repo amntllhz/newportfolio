@@ -24,10 +24,10 @@ const ExpcardItem = ({ exp, variants, currentLang }) => {
     const [isLoaded, setIsLoaded] = useState(false);
 
     return (
-        <motion.div variants={variants} className="flex rounded-xl p-1 justify-left items-start outline -outline-offset-1 outline-gray-300/80 w-full gap-1 dark:bg-neutral-900/5 backdrop-blur-xs dark:outline-neutral-800/20">
+        <motion.div variants={variants} className="flex rounded-xl p-1 justify-left items-start outline -outline-offset-1 outline-gray-300/80 w-full gap-1 dark:bg-neutral-900/5 backdrop-blur-sm dark:outline-neutral-800/10">
 
             {/* Tambah relative + ukuran eksplisit */}
-            <div className="relative lg:w-20 lg:h-20 xs:w-18 xs:h-18 shrink-0 overflow-hidden rounded-lg bg-radial from-transparent to-transparent dark:bg-radial dark:from-transparent dark:to-neutral-400/5 backdrop-blur-xs outline outline-offset-0 outline-gray-300/80 dark:outline-neutral-800/20">
+            <div className="relative lg:w-20 lg:h-20 xs:w-18 xs:h-18 shrink-0 overflow-hidden rounded-lg bg-radial from-transparent to-transparent dark:bg-radial dark:from-transparent dark:to-neutral-400/5 backdrop-blur-sm outline outline-offset-0 outline-gray-300/80 dark:outline-neutral-800/10">
 
                 {!isLoaded && (
                     <Skeleton className="absolute inset-0 w-full h-full rounded-lg z-10" />
