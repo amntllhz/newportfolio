@@ -50,7 +50,7 @@ const Contact = () => {
             </ImagesBadge>
           </motion.div>
           <motion.h1 variants={itemVariants} className="font-main text-center font-semibold lg:text-2xl xs:text-xl text-gray-900 dark:text-neutral-100">{t("contact.title")}</motion.h1>
-          <motion.p variants={itemVariants} className="font-main text-xs text-gray-400 text-center leading-normal dark:text-neutral-400 mb-1">
+          <motion.p variants={itemVariants} className="font-main text-xs text-gray-400 text-center leading-normal dark:text-neutral-300 mb-1">
             {t("contact.desc")}
           </motion.p>
           <Talk variants={itemVariants}></Talk>

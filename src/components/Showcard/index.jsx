@@ -27,10 +27,10 @@ const ShowcardItem = ({ show, variants, onSelect }) => {
             layout
             onClick={() => onSelect(show)}
             variants={variants}
-            className="group flex flex-col outline -outline-offset-1 outline-gray-300/80 lg:p-1 xs:p-1.5 w-full rounded-xl gap-2 cursor-pointer dark:bg-neutral-800/10 backdrop-blur-xs dark:outline-neutral-800/20"
+            className="group flex flex-col outline -outline-offset-1 outline-gray-300/80 lg:p-1 xs:p-1.5 w-full rounded-xl gap-2 cursor-pointer dark:bg-neutral-800/10 backdrop-blur-sm dark:outline-neutral-800/10"
         >
             {/* Rasio eksak 1616:976 agar skeleton & gambar identik */}
-            <div className="relative aspect-1616/976 w-full rounded-lg overflow-hidden outline -outline-offset-1 outline-gray-300/80 dark:outline-neutral-800/20">
+            <div className="relative aspect-1616/976 w-full rounded-lg overflow-hidden outline -outline-offset-1 outline-gray-300/80 dark:outline-neutral-800/10">
 
                 {!isLoaded && (
                     <Skeleton className="absolute inset-0 w-full h-full rounded-lg z-10" />
