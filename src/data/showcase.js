@@ -9,6 +9,7 @@ import coverEgoverselogo from "../assets/egoverse/egoverselogo-cover.webp"
 import coverInternvallogo from "../assets/internval/internvallogo-cover.webp"
 import coverKknlogo from "../assets/kkn/kknlogo-cover.webp"
 import coverLabhub from "../assets/labhub/labhub-cover.webp"
+import coverTemanternak from "../assets/temanternak/temanternak-cover.jpg"
 
 // Images
 
@@ -41,6 +42,13 @@ import Labhub1 from "../assets/labhub/labhub-car-1.webp"
 import Labhub2 from "../assets/labhub/labhub-car-2.webp"
 import Labhub3 from "../assets/labhub/labhub-car-3.webp"
 import Labhub4 from "../assets/labhub/labhub-car-4.webp"
+
+// Temanternak
+import Temanternak1 from "../assets/temanternak/temanternak-car-1.jpg"
+import Temanternak2 from "../assets/temanternak/temanternak-car-2.jpg"
+import Temanternak3 from "../assets/temanternak/temanternak-car-3.jpg"
+import Temanternak4 from "../assets/temanternak/temanternak-car-4.jpg"
+
 
 // Weestaw
 import Weestaw1 from "../assets/weestaw/weestaw-car-1.webp"
@@ -355,6 +363,74 @@ const showcase = [
                 "Mesin PDF & Kode QR Otomatis",
                 "Dashboard Multi-Peran",
                 "Sistem Manajemen Terpusat",
+            ]
+        },
+    },
+    {
+        id: 5,
+        category: "dev",
+        title: "TemanTernak",
+        subtitle: {
+            en: "Poultry Farming Monitoring Application",
+            id: "Aplikasi Monitoring Peternakan Unggas"
+        },
+        cover: coverTemanternak,
+        images: [
+            coverTemanternak,
+            Temanternak1,
+            Temanternak2,
+            Temanternak3,
+            Temanternak4
+        ],
+        description: {
+            en: "An integrated smart poultry ecosystem combining IoT hardware sensors (ESP32 Hub, DHT22, MQ-137, BH1750, Load Cell) for 24/7 microclimate monitoring and a comprehensive ERP software dashboard for tracking Hen-Day production, FCR ratios, and farm financial management.",
+            id: "Ekosistem peternakan puyuh cerdas terintegrasi yang menggabungkan perangkat keras sensor IoT (ESP32 Hub, DHT22, MQ-137, BH1750, Load Cell) untuk pemantauan mikroiklim 24/7 serta dasbor perangkat lunak ERP komprehensif guna melacak produksi Hen-Day, rasio FCR, dan manajemen keuangan peternakan."
+        },
+        techstack: ["React", "JS", "Springboot", "TailwindCSS", "Vite"],
+        role: {
+            en: ["Frontend Developer", "UI/UX Designer"],
+            id: ["Frontend Developer", "Desainer UI/UX"]
+        },
+        problem: {
+            en: "Traditional poultry farming methods suffer from high mortality rates due to unstable microclimates, high feed waste, and inefficient manual record-keeping which obscures accurate business financial analysis.",
+            id: "Metode peternakan unggas konvensional sering menghadapi tingkat mortalitas tinggi akibat ketidakstabilan mikroiklim, pemborosan pakan yang tinggi, serta pencatatan manual yang tidak efisien sehingga mengaburkan analisis keuangan bisnis yang akurat."
+        },
+        subproblem: {
+            en: [
+                "Uncontrolled cage temperature and humidity leading to heat stress and bird mortality",
+                "Lack of real-time monitoring for ammonia levels and lighting intensity",
+                "Inefficient feed management causing high Feed Conversion Ratio (FCR)",
+                "Manual operational recording prone to human error and delayed financial evaluation",
+            ],
+            id: [
+                "Suhu dan kelembapan kandang yang tidak terkontrol memicu heat stress dan kematian burung",
+                "Kurangnya pemantauan waktu nyata untuk kadar amonia dan intensitas pencahayaan",
+                "Manajemen pakan yang tidak efisien menyebabkan rasio konversi pakan (FCR) yang tinggi",
+                "Pencatatan operasional manual yang rentan kesalahan manusia serta evaluasi keuangan yang terlambat",
+            ]
+        },
+        solution: {
+            en: "Developed an end-to-end smart farming ecosystem featuring automated IoT sensor data acquisition for microclimate control and a centralized ERP web dashboard built with modern frontend frameworks to streamline farm operations, feed analytics, and financial forecasting.",
+            id: "Mengembangkan ekosistem smart farming end-to-end yang menampilkan akuisisi data sensor IoT otomatis untuk kontrol mikroiklim serta dasbor web ERP terpusat yang dibangun dengan kerangka kerja frontend modern guna merampingkan operasional kandang, analitik pakan, dan proyeksi keuangan."
+        },
+        keyfeaturesdesc: {
+            en: "The platform provides core functionalities to optimize poultry farm productivity and management:",
+            id: "Platform ini menyediakan fungsi inti untuk mengoptimalkan produktivitas dan manajemen peternakan unggas:"
+        },
+        keyfeatures: {
+            en: [
+                "24/7 Real-time Microclimate Monitoring (Temperature, Humidity, Ammonia, Light)",
+                "Automated Load Cell Feed & Water Flow Tracking",
+                "Integrated ERP Dashboard for Hen-Day & FCR Analytics",
+                "Interactive Financial & Business Analysis Simulator",
+                "Responsive B2B Landing Page & Direct Consultation Workflow",
+            ],
+            id: [
+                "Pemantauan Mikroiklim Real-time 24/7 (Suhu, Kelembapan, Amonia, Cahaya)",
+                "Pelacakan Pakan Load Cell & Aliran Air Otomatis",
+                "Dasbor ERP Terintegrasi untuk Analitik Hen-Day & FCR",
+                "Simulator Analisis Finansial & Bisnis Interaktif",
+                "Landing Page B2B Responsif & Alur Konsultasi Langsung",
             ]
         },
     },

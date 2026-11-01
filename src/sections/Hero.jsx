@@ -60,13 +60,6 @@ const Hero = () => {
           </div>
           <motion.p variants={itemVariants} className="font-main text-xs text-slate-600 text-justify leading-normal dark:text-neutral-300">
             {t("hero.p1_start")}
-            <span className="font-semibold text-slate-900 dark:text-neutral-100"> Web Developer </span>
-            {t("hero.p1_middle")}
-            <span className="font-semibold text-slate-900 dark:text-neutral-100"> Graphic Designer </span>
-            {t("hero.p1_end")}
-          </motion.p>
-          <motion.p variants={itemVariants} className="font-main text-xs text-slate-600 text-justify leading-normal dark:text-neutral-300">
-            {t("hero.p2")}
           </motion.p>
         </div>
       </motion.div>

@@ -43,10 +43,7 @@ i18n
           hero: {
             greeting: "M. Aldi Amanatullah Syahputra",
             basein: "Batang, Central Java, Indonesia",
-            p1_start: "A passionate individual with a deep enthusiasm for visual technology and modern design. As a",
-            p1_middle: "and",
-            p1_end: ", I focus on creating digital products that are not only functional but also visually balanced and aesthetically pleasing.",
-            p2: "I always strive to deliver modern interfaces with seamless user experience, while keeping innovation and usability in harmony. I value teamwork highly, i believe collaboration creates more efficient and effective solutions."
+            p1_start: "Informatics graduate and Fullstack Web Developer with a strong background in visual Design. Experience in building responsive web applications, database architecture, and digitalizing manual workflows. Focus on creating digital products that are not only functional but also visually balanced and aesthetically pleasing. Detail-oriented developer committed to writing clean, scalable, and maintainable code.",
           },
           skill: {
             techdesc: "Technologies and tools I master to build high-quality digital products"
@@ -85,10 +82,7 @@ i18n
           hero: {
             greeting: "M. Aldi Amanatullah Syahputra",
             basein: "Batang, Jawa Tengah, Indonesia",
-            p1_start: "Saya memiliki ketertarikan dalam teknologi visual dan desain modern. Sebagai seorang",
-            p1_middle: "dan",
-            p1_end: ", saya berfokus untuk menciptakan sebuah produk digital yang tidak hanya baik secara fungsional tetapi juga seimbang dari segi visual dan estetika.",
-            p2: "Saya selalu berusaha menciptakan antarmuka modern dan pengalaman pengguna yang halus dengan menjaga keseimbangan inovasi dan kegunaan. Saya sangat menyukai kerja sama tim, saya percaya kolaborasi menciptakan solusi yang lebih efisien dan efektif."
+            p1_start: "Lulusan Informatika dan Fullstack Web Developer dengan background kuat di bidang desain visual. Berpengalaman membangun aplikasi web responsif, merancang arsitektur database, dan mendigitalisasi alur kerja manual. Berfokus menciptakan produk digital yang tidak hanya fungsional, tetapi juga seimbang secara visual dan estetis. Saya berusaha menjadi developer yang teliti dan berkomitmen menulis kode yang bersih, rapi, scalable, dan mudah dimaintenance.",
           },
           skill: {
             techdesc: "Teknologi dan alat bantu yang saya kuasai untuk membangun produk digital"
