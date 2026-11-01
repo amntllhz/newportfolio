@@ -5,7 +5,7 @@ const Badge = (props) => {
     return (
         <>
             <motion.div initial="hidden" animate="visible" variants={variants} className="relative rounded-sm outline outline-offset-0 outline-gray-300/80 py-0.5 px-3 w-fit dark:outline-neutral-700">
-                <p className="font-main text-gray-400 text-xs font-normal dark:text-neutral-400">{children}</p>
+                <p className="font-main text-slate-600 text-xs font-normal dark:text-neutral-400">{children}</p>
             </motion.div>
         </>
     )

@@ -72,7 +72,7 @@ const Techbadge = ({ variants, items, iconSize = "text-3xl", roundedSize = "roun
               <Tooltip key={techName}>
                 <TooltipTrigger asChild>
                   <motion.div variants={variants} className="relative flex justify-center items-center">
-                    <Icon className={`${iconSize} text-gray-400/70 p-1 ${roundedSize} bg-gray-100/10 backdrop-blur-xs dark:bg-neutral-900/10 dark:text-white`} />
+                    <Icon className={`${iconSize} text-slate-500 p-1 ${roundedSize} bg-gray-100/10 backdrop-blur-xs dark:bg-neutral-900/10 dark:text-white`} />
                   </motion.div>
                 </TooltipTrigger>
                 <TooltipContent className="">

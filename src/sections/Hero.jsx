@@ -58,14 +58,14 @@ const Hero = () => {
               <OpenWork />
             </motion.div>
           </div>
-          <motion.p variants={itemVariants} className="font-main text-xs text-gray-400 text-justify leading-normal dark:text-neutral-300">
+          <motion.p variants={itemVariants} className="font-main text-xs text-slate-600 text-justify leading-normal dark:text-neutral-300">
             {t("hero.p1_start")}
-            <span className="font-semibold text-gray-500/80 dark:text-neutral-100"> Web Developer </span>
+            <span className="font-semibold text-slate-900 dark:text-neutral-100"> Web Developer </span>
             {t("hero.p1_middle")}
-            <span className="font-semibold text-gray-500/80 dark:text-neutral-100"> Graphic Designer </span>
+            <span className="font-semibold text-slate-900 dark:text-neutral-100"> Graphic Designer </span>
             {t("hero.p1_end")}
           </motion.p>
-          <motion.p variants={itemVariants} className="font-main text-xs text-gray-400 text-justify leading-normal dark:text-neutral-300">
+          <motion.p variants={itemVariants} className="font-main text-xs text-slate-600 text-justify leading-normal dark:text-neutral-300">
             {t("hero.p2")}
           </motion.p>
         </div>

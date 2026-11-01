@@ -35,7 +35,7 @@ const Contact = () => {
     <>
       <div className="w-full h-dvh flex items-center justify-center">
         <motion.div variants={containerVariants} initial="hidden" animate="visible" className="flex flex-col items-center gap-0.5 lg:max-w-lg xs:max-w-[85%]">
-          <motion.div className="flex bg-gray-100 dark:bg-neutral-900/30 backdrop-blur-xs rounded-sm px-2 py-1 mb-1" variants={itemVariants}>
+          <motion.div className="flex bg-gray-100/30 dark:bg-neutral-900/30 backdrop-blur-xs rounded-sm px-2 py-1 mb-1" variants={itemVariants}>
             <ImagesBadge
               images={Images}
               variants={itemVariants}
@@ -49,8 +49,8 @@ const Contact = () => {
               hoverSpread={14}>
             </ImagesBadge>
           </motion.div>
-          <motion.h1 variants={itemVariants} className="font-main text-center font-semibold lg:text-2xl xs:text-xl text-gray-900 dark:text-neutral-100">{t("contact.title")}</motion.h1>
-          <motion.p variants={itemVariants} className="font-main text-xs text-gray-400 text-center leading-normal dark:text-neutral-300 mb-1">
+          <motion.h1 variants={itemVariants} className="font-main text-center font-semibold lg:text-2xl xs:text-xl text-slate-900 dark:text-neutral-100">{t("contact.title")}</motion.h1>
+          <motion.p variants={itemVariants} className="font-main text-xs text-slate-600 text-center leading-normal dark:text-neutral-300 mb-1">
             {t("contact.desc")}
           </motion.p>
           <Talk variants={itemVariants}></Talk>

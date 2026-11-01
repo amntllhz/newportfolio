@@ -141,7 +141,7 @@ export function ImagesBadge({
         </motion.div>
       </motion.div>
       {/* Text */}
-      <span className="text-xs font-main font-medium text-gray-400 dark:text-neutral-400">
+      <span className="text-xs font-main font-medium text-slate-600 dark:text-neutral-400">
         {text}
       </span>
     </Component>

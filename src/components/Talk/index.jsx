@@ -20,7 +20,7 @@ const Talk = ({ variants, iconSize = "text-3xl", roundedSize = "rounded-md" }) =
                         if (!Icon) return null;
                         return (
                             <motion.a variants={variants} key={item.id} href={item.link} target={item.link.startsWith("mailto:") ? "_self" : "_blank"} rel="noopener noreferrer" className="relative flex justify-center items-center cursor-pointer">
-                                <Icon className={`${iconSize} text-gray-300/70 p-1 ${roundedSize} bg-gray-100 dark:bg-neutral-900/10 backdrop-blur-xs hover:text-gray-400/70 dark:text-white dark:hover:text-neutral-400 transition ease-in-out duration-300`} />
+                                <Icon className={`${iconSize} text-slate-600 p-1 ${roundedSize} bg-gray-100/10 dark:bg-neutral-900/10 backdrop-blur-xs hover:text-slate-500 dark:text-white dark:hover:text-neutral-400 transition ease-in-out duration-300`} />
                             </motion.a>
                         );
                     })}
