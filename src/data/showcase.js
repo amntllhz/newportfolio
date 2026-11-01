@@ -10,6 +10,7 @@ import coverInternvallogo from "../assets/internval/internvallogo-cover.webp"
 import coverKknlogo from "../assets/kkn/kknlogo-cover.webp"
 import coverLabhub from "../assets/labhub/labhub-cover.webp"
 import coverTemanternak from "../assets/temanternak/temanternak-cover.jpg"
+import coverJajankuy from "../assets/jajankuy/jajankuy-cover.jpg"
 
 // Images
 
@@ -76,6 +77,10 @@ import Kknlogo1 from "../assets/kkn/kknlogo-car-1.webp"
 import Kknlogo2 from "../assets/kkn/kknlogo-car-2.webp"
 import Kknlogo3 from "../assets/kkn/kknlogo-car-3.webp"
 
+// Jajankuy
+
+import Jajankuy1 from "../assets/jajankuy/jajankuy-car-1.jpg"
+import Jajankuy2 from "../assets/jajankuy/jajankuy-car-2.jpg"
 
 const showcase = [
 
@@ -437,7 +442,7 @@ const showcase = [
 
     // Design
     {
-        id: 4,
+        id: 6,
         category: "design",
         title: "Weestaw",
         subtitle: {
@@ -491,7 +496,7 @@ const showcase = [
         },
     },
     {
-        id: 5,
+        id: 7,
         category: "design",
         title: "Ganesha Cup II",
         subtitle: {
@@ -543,7 +548,7 @@ const showcase = [
         },
     },
     {
-        id: 6,
+        id: 8,
         category: "design",
         title: "eGoverse",
         subtitle: {
@@ -594,7 +599,7 @@ const showcase = [
         },
     },
     {
-        id: 7,
+        id: 9,
         category: "design",
         title: "Internval",
         subtitle: {
@@ -646,7 +651,7 @@ const showcase = [
         },
     },
     {
-        id: 8,
+        id: 10,
         category: "design",
         title: "KKN Logo",
         subtitle: {
@@ -697,6 +702,58 @@ const showcase = [
             ]
         },
     },
+    {
+        id: 11,
+        category: "design",
+        title: "Jajankuy",
+        subtitle: {
+            en: "Jajan Dulu Kuuy!",
+            id: "Jajan Dulu Kuuy!"
+        },
+        cover: coverJajankuy,
+        images: [
+            coverJajankuy,
+            Jajankuy1,
+            Jajankuy2
+        ],
+        description: {
+            en: "A brand identity and social media design project for 'Jajankuy', an F&B business built with a clearly defined target market. The project focuses on establishing a strong culinary brand identity through a logo design that reflects its core menu characterized by spicy and savory flavors. Furthermore, the logo has been designed for easy implementation across various media platforms.",
+            id: "Proyek brand identity dan desain sosial media untuk 'Jajankuy', sebuah bisnis F&B yang dibangun dengan target pasar yang jelas. Proyek ini berfokus pada membangun identitas merek kuliner yang kuat melalui desain logo yang merefleksikan menu utama bercita rasa pedas dan gurih. Selain itu logo dirancang agar mudah diimplementasikan di berbagai media."
+        },
+        techstack: ["Photoshop", "Illustrator", "Figma"],
+        role: {
+            en: ["Brand Designer", "Graphic Designer"],
+            id: ["Desainer Merek", "Desainer Grafis"]
+        },
+        challenge: {
+            en: "The challenge was to translate the core experience of spicy and savory street food into a modern, scalable F&B brand identity. The logo needed to instantly stimulate appetite through its visual cues while remaining flexible, clean, and memorable for social media feeds, packaging, and merchandise as the business scales.",
+            id: "Tantangannya adalah menerjemahkan pengalaman inti dari jajanan bercita rasa pedas dan gurih ke dalam identitas merek F&B yang modern dan scalable. Logo harus mampu langsung membangkitkan selera melalui isyarat visualnya, sekaligus tetap fleksibel, bersih, dan mudah diingat untuk kebutuhan feed media sosial, kemasan (packaging), seiring berkembangnya skala bisnis."
+        },
+        concept: {
+            en: "The design utilizes a dynamic and appetizing visual concept, integrating elements that subtly symbolize the fiery kick of spice and the comforting warmth of savory flavors. Using bold typography, energetic color palettes (such as warm reds, fiery oranges, and appetizing accents), and versatile shapes, the identity ensures strong visual recall, professional brand positioning, and seamless application across social media templates and food packaging.",
+            id: "Desain ini menggunakan konsep visual yang dinamis dan menggugah selera, memadukan elemen-elemen yang merepresentasikan sensasi pedas yang membakar serta kehangatan cita rasa gurih. Dengan penerapan tipografi yang tegas, palet warna yang energetik (seperti merah hangat, jingga menyala, dan aksen yang menggugah), serta bentuk yang serbaguna, identitas ini memastikan daya ingat merek yang kuat, positioning bisnis yang profesional, serta kemudahan adaptasi pada templat media sosial dan kemasan produk."
+        },
+        deliverablesdesc: {
+            en: "This project delivered a complete branding and social media toolkit to accelerate brand awareness and business growth, including:",
+            id: "Proyek ini menghasilkan rangkaian perangkat branding dan sosial media lengkap untuk mengakselerasi brand awareness dan pertumbuhan bisnis, termasuk:"
+        },
+        deliverables: {
+            en: [
+                "Scalable F&B Logo Identity & Variations",
+                "Spicy & Savory Menu-Inspired Visual Elements",
+                "Social Media Feed Templates & Content Guidelines",
+                "Packaging & Merchandise Mockup Assets",
+                "Brand Guidelines for Future Expansion"
+            ],
+            id: [
+                "Identitas Logo F&B yang Scalable & Varasinya",
+                "Elemen Visual Terinspirasi Menu Pedas & Gurih",
+                "Templat Feed Media Sosial & Panduan Konten",
+                "Aset Mockup Kemasan & Merchandise",
+                "Panduan Merek (Brand Guidelines) untuk Ekspansi Bisnis"
+            ]
+        },
+    }
 ]
 
 export default showcase
