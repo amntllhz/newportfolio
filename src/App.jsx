@@ -3,15 +3,15 @@ import { ThemeProvider } from "./components/theme-provider"
 import Home from "./pages/home"
 import "./i18n"
 
-function App() {  
+function App() {
 
   return (
     <>
-      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
         <TooltipProvider>
-          <Home />   
+          <Home />
         </TooltipProvider>
-      </ThemeProvider> 
+      </ThemeProvider>
     </>
   )
 }
