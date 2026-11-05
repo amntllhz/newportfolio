@@ -1,6 +1,6 @@
 // theme-provider.jsx
 import { useEffect, useState } from "react"
-import { ThemeProviderContext } from "./use-theme" // Impor dari file tadi
+import { ThemeProviderContext } from "./use-theme"
 
 export function ThemeProvider({
   children,
@@ -13,19 +13,21 @@ export function ThemeProvider({
 
   useEffect(() => {
     const root = window.document.documentElement
-    root.classList.remove("light", "dark")
 
-    const appliedTheme = theme === "system" 
+    const resolvedTheme = theme === "system"
       ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
       : theme
 
-    root.classList.add(appliedTheme)
+    // Only remove the opposite class — never remove the current one.
+    // This prevents a repaint flash when the inline script in index.html
+    // already applied the correct class before React mounted.
+    const oppositeTheme = resolvedTheme === "dark" ? "light" : "dark"
+    root.classList.remove(oppositeTheme)
+    root.classList.add(resolvedTheme)
 
-    // Logika meta theme-color yang kita buat tadi
     const metaThemeColor = window.document.querySelector('meta[name="theme-color"]')
     if (metaThemeColor) {
-      const color = appliedTheme === "dark" ? "#0A0A0A" : "#ffffff"
-      metaThemeColor.setAttribute("content", color)
+      metaThemeColor.setAttribute("content", resolvedTheme === "dark" ? "#0A0A0A" : "#ffffff")
     }
   }, [theme])
 

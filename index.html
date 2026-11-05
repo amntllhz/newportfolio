@@ -15,6 +15,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:ital,wght@0,200..800&display=swap" rel="stylesheet" />
     <title>Amntllhz - Portfolio</title>
+
+    <!-- Prevent flash of white before React mounts dark mode -->
+    <script>
+      (function () {
+        var storageKey = "vite-ui-theme";
+        var defaultTheme = "dark";
+        try {
+          var theme = localStorage.getItem(storageKey) || defaultTheme;
+          var appliedTheme =
+            theme === "system"
+              ? window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light"
+              : theme;
+          document.documentElement.classList.add(appliedTheme);
+          // Set background immediately before CSS loads to prevent any white flash
+          document.documentElement.style.backgroundColor = appliedTheme === "dark" ? "#0a0a0a" : "#ffffff";
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) {
+            meta.setAttribute("content", appliedTheme === "dark" ? "#0A0A0A" : "#ffffff");
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
