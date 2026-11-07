@@ -43,7 +43,7 @@ i18n
           hero: {
             greeting: "M. Aldi Amanatullah Syahputra",
             basein: "Batang, Central Java, Indonesia",
-            p1_start: "Informatics graduate and Fullstack Web Developer with a strong background in visual Design. Experienced across the full development cycle: requirements research, developoment, testing, and optimization. Hands on with database architecture, data processing, and digitalizing manual workflows.Focus on creating digital products that are not only functional but also visually balanced and aesthetically pleasing.Detailoriented developer committed to data accuracy and writing clean, scalable, and maintainable code.",
+            p1_start: "Informatics graduate and Fullstack Web Developer with a strong background in visual Design. Experienced across the full development cycle: requirements research, developoment, testing, and optimization. Hands on with database architecture, data processing, and digitalizing manual workflows. Focus on creating digital products that are not only functional but also visually balanced and aesthetically pleasing. Detail oriented developer committed to data accuracy and writing clean, scalable, and maintainable code.",
           },
           skill: {
             techdesc: "Technologies and tools I master to build high-quality digital products"
