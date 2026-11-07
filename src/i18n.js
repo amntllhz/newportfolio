@@ -43,7 +43,7 @@ i18n
           hero: {
             greeting: "M. Aldi Amanatullah Syahputra",
             basein: "Batang, Central Java, Indonesia",
-            p1_start: "Informatics graduate and Fullstack Web Developer with a strong background in visual Design. Experience in building responsive web applications, database architecture, and digitalizing manual workflows. Focus on creating digital products that are not only functional but also visually balanced and aesthetically pleasing. Detail-oriented developer committed to writing clean, scalable, and maintainable code.",
+            p1_start: "Informatics graduate and Fullstack Web Developer with a strong background in visual Design. Experienced across the full development cycle: requirements research, developoment, testing, and optimization. Hands on with database architecture, data processing, and digitalizing manual workflows.Focus on creating digital products that are not only functional but also visually balanced and aesthetically pleasing.Detailoriented developer committed to data accuracy and writing clean, scalable, and maintainable code.",
           },
           skill: {
             techdesc: "Technologies and tools I master to build high-quality digital products"
@@ -82,7 +82,7 @@ i18n
           hero: {
             greeting: "M. Aldi Amanatullah Syahputra",
             basein: "Batang, Jawa Tengah, Indonesia",
-            p1_start: "Lulusan Informatika dan Fullstack Web Developer dengan background kuat di bidang desain visual. Berpengalaman membangun aplikasi web responsif, merancang arsitektur database, dan mendigitalisasi alur kerja manual. Berfokus menciptakan produk digital yang tidak hanya fungsional, tetapi juga seimbang secara visual dan estetis. Saya berusaha menjadi developer yang teliti dan berkomitmen menulis kode yang bersih, rapi, scalable, dan mudah dimaintenance.",
+            p1_start: "Lulusan Informatika dan Fullstack Web Developer dengan background kuat di bidang desain visual. Berpengalaman dalam seluruh siklus pengembangan: riset kebutuhan, pengembangan, pengujian, dan optimalisasi. Memiliki keahlian praktis dalam arsitektur basis data, pemrosesan data, dan digitalisasi alur kerja manual. Berfokus pada penciptaan produk digital yang tidak hanya fungsional, tetapi juga seimbang secara visual dan estetis. Saya berusaha menjadi developer yang teliti dan berkomitmen menulis kode yang bersih, rapi, scalable, dan mudah dimaintenance.",
           },
           skill: {
             techdesc: "Teknologi dan alat bantu yang saya kuasai untuk membangun produk digital"
