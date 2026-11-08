@@ -103,7 +103,7 @@ const techstack = [
     {
         id: 21,
         name: "PostgreSQL",
-        icon: "PostgreSQl"
+        icon: "PostgreSQL"
     },
     {
         id: 22,
